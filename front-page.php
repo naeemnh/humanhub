@@ -1,4 +1,10 @@
-<?php get_header(); ?>
+<?php
+
+/**
+ * Template Name: Front Page
+ * Template Post Type: page
+ */
+get_header(); ?>
 
 <!-- Begin Slider Area -->
 <div class="slider-area">
@@ -141,10 +147,10 @@
             <div class="col-lg-6">
                 <div class="introduction-img_area">
                     <div class="inner-img">
-                        <img class="img-full" src="assets/images/introduction/1.jpg" alt="Introduction Image" />
+                        <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/introduction/1.jpg" alt="Introduction Image" />
                         <div class="popup-btn">
                             <a class="popup-vimeo" href="https://player.vimeo.com/video/172601404?autoplay=1">
-                                <img src="assets/images/banner/video-play-btn.png" alt="Play Button" />
+                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/banner/video-play-btn.png" alt="Play Button" />
                             </a>
                         </div>
                     </div>
@@ -312,7 +318,7 @@
                         <div class="col-lg-4">
                             <div class="intro-item bg-white_color">
                                 <div class="intro-img">
-                                    <img src="assets/images/introduction/small-size/university.png" alt="Introduction Image" />
+                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/introduction/small-size/university.png" alt="Introduction Image" />
                                 </div>
                                 <h2 class="title mb-0">Our school</h2>
                                 <p class="short-desc mb-0">
@@ -324,7 +330,7 @@
                         <div class="col-lg-4">
                             <div class="intro-item bg-white_color">
                                 <div class="intro-img">
-                                    <img src="assets/images/introduction/small-size/mortarboard.png" alt="Introduction Image" />
+                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/introduction/small-size/mortarboard.png" alt="Introduction Image" />
                                 </div>
                                 <h2 class="title mb-0">Why Choose Us?</h2>
                                 <p class="short-desc mb-0">
@@ -336,7 +342,7 @@
                         <div class="col-lg-4">
                             <div class="intro-item bg-white_color">
                                 <div class="intro-img">
-                                    <img src="assets/images/introduction/small-size/open-book.png" alt="Introduction Image" />
+                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/introduction/small-size/open-book.png" alt="Introduction Image" />
                                 </div>
                                 <h2 class="title mb-0">Achievements</h2>
                                 <p class="short-desc mb-0">
@@ -432,7 +438,7 @@
                                         <div class="single-item img-zoom_effect">
                                             <div class="single-img">
                                                 <a href="single-post.html">
-                                                    <img class="img-full" src="assets/images/latest-news/medium-size/1.jpg" alt="Latest News Image" />
+                                                    <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/latest-news/medium-size/1.jpg" alt="Latest News Image" />
                                                 </a>
                                                 <div class="inner-btn">
                                                     <a class="ademy-btn denim-color_btn with-border_radius btn-md_size" href="single-post.html">Read more</a>
@@ -481,7 +487,7 @@
                                         <div class="single-item img-zoom_effect">
                                             <div class="single-img">
                                                 <a href="single-post.html">
-                                                    <img class="img-full" src="assets/images/latest-news/medium-size/2.jpg" alt="Latest News Image" />
+                                                    <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/latest-news/medium-size/2.jpg" alt="Latest News Image" />
                                                 </a>
                                                 <div class="inner-btn">
                                                     <a class="ademy-btn denim-color_btn with-border_radius btn-md_size" href="single-post.html">Read more</a>
@@ -530,7 +536,7 @@
                                         <div class="single-item img-zoom_effect">
                                             <div class="single-img">
                                                 <a href="single-post.html">
-                                                    <img class="img-full" src="assets/images/latest-news/medium-size/3.jpg" alt="Latest News Image" />
+                                                    <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/latest-news/medium-size/3.jpg" alt="Latest News Image" />
                                                 </a>
                                                 <div class="inner-btn">
                                                     <a class="ademy-btn denim-color_btn with-border_radius btn-md_size" href="single-post.html">Read more</a>
@@ -579,7 +585,7 @@
                                         <div class="single-item img-zoom_effect">
                                             <div class="single-img">
                                                 <a href="single-post.html">
-                                                    <img class="img-full" src="assets/images/latest-news/medium-size/4.jpg" alt="Latest News Image" />
+                                                    <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/latest-news/medium-size/4.jpg" alt="Latest News Image" />
                                                 </a>
                                                 <div class="inner-btn">
                                                     <a class="ademy-btn denim-color_btn with-border_radius btn-md_size" href="single-post.html">Read more</a>
@@ -628,7 +634,7 @@
                                         <div class="single-item img-zoom_effect">
                                             <div class="single-img">
                                                 <a href="single-post.html">
-                                                    <img class="img-full" src="assets/images/latest-news/medium-size/5.jpg" alt="Latest News Image" />
+                                                    <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/latest-news/medium-size/5.jpg" alt="Latest News Image" />
                                                 </a>
                                                 <div class="inner-btn">
                                                     <a class="ademy-btn denim-color_btn with-border_radius btn-md_size" href="single-post.html">Read more</a>
@@ -677,7 +683,7 @@
                                         <div class="single-item img-zoom_effect">
                                             <div class="single-img">
                                                 <a href="single-post.html">
-                                                    <img class="img-full" src="assets/images/latest-news/medium-size/6.jpg" alt="Latest News Image" />
+                                                    <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/latest-news/medium-size/6.jpg" alt="Latest News Image" />
                                                 </a>
                                                 <div class="inner-btn">
                                                     <a class="ademy-btn denim-color_btn with-border_radius btn-md_size" href="single-post.html">Read more</a>
@@ -726,7 +732,7 @@
                                         <div class="single-item img-zoom_effect">
                                             <div class="single-img">
                                                 <a href="single-post.html">
-                                                    <img class="img-full" src="assets/images/latest-news/medium-size/7.jpg" alt="Latest News Image" />
+                                                    <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/latest-news/medium-size/7.jpg" alt="Latest News Image" />
                                                 </a>
                                                 <div class="inner-btn">
                                                     <a class="ademy-btn denim-color_btn with-border_radius btn-md_size" href="single-post.html">Read more</a>
@@ -775,7 +781,7 @@
                                         <div class="single-item img-zoom_effect">
                                             <div class="single-img">
                                                 <a href="single-post.html">
-                                                    <img class="img-full" src="assets/images/latest-news/medium-size/8.jpg" alt="Latest News Image" />
+                                                    <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/latest-news/medium-size/8.jpg" alt="Latest News Image" />
                                                 </a>
                                                 <div class="inner-btn">
                                                     <a class="ademy-btn denim-color_btn with-border_radius btn-md_size" href="single-post.html">Read more</a>
@@ -824,7 +830,7 @@
                                         <div class="single-item img-zoom_effect">
                                             <div class="single-img">
                                                 <a href="single-post.html">
-                                                    <img class="img-full" src="assets/images/latest-news/medium-size/9.jpg" alt="Latest News Image" />
+                                                    <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/latest-news/medium-size/9.jpg" alt="Latest News Image" />
                                                 </a>
                                                 <div class="inner-btn">
                                                     <a class="ademy-btn denim-color_btn with-border_radius btn-md_size" href="single-post.html">Read more</a>
@@ -873,7 +879,7 @@
                                         <div class="single-item img-zoom_effect">
                                             <div class="single-img">
                                                 <a href="single-post.html">
-                                                    <img class="img-full" src="assets/images/latest-news/medium-size/10.jpg" alt="Latest News Image" />
+                                                    <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/latest-news/medium-size/10.jpg" alt="Latest News Image" />
                                                 </a>
                                                 <div class="inner-btn">
                                                     <a class="ademy-btn denim-color_btn with-border_radius btn-md_size" href="single-post.html">Read more</a>
@@ -922,7 +928,7 @@
                                         <div class="single-item img-zoom_effect">
                                             <div class="single-img">
                                                 <a href="single-post.html">
-                                                    <img class="img-full" src="assets/images/latest-news/medium-size/11.jpg" alt="Latest News Image" />
+                                                    <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/latest-news/medium-size/11.jpg" alt="Latest News Image" />
                                                 </a>
                                                 <div class="inner-btn">
                                                     <a class="ademy-btn denim-color_btn with-border_radius btn-md_size" href="single-post.html">Read more</a>
@@ -971,7 +977,7 @@
                                         <div class="single-item img-zoom_effect">
                                             <div class="single-img">
                                                 <a href="single-post.html">
-                                                    <img class="img-full" src="assets/images/latest-news/medium-size/12.jpg" alt="Latest News Image" />
+                                                    <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/latest-news/medium-size/12.jpg" alt="Latest News Image" />
                                                 </a>
                                                 <div class="inner-btn">
                                                     <a class="ademy-btn denim-color_btn with-border_radius btn-md_size" href="single-post.html">Read more</a>
@@ -1041,7 +1047,7 @@
                                         <div class="single-item img-zoom_effect">
                                             <div class="single-img">
                                                 <a href="single-post.html">
-                                                    <img class="img-full" src="assets/images/latest-news/medium-size/1.jpg" alt="Latest News Image" />
+                                                    <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/latest-news/medium-size/1.jpg" alt="Latest News Image" />
                                                 </a>
                                                 <div class="inner-btn">
                                                     <a class="ademy-btn denim-color_btn with-border_radius btn-md_size" href="single-post.html">Read more</a>
@@ -1090,7 +1096,7 @@
                                         <div class="single-item img-zoom_effect">
                                             <div class="single-img">
                                                 <a href="single-post.html">
-                                                    <img class="img-full" src="assets/images/latest-news/medium-size/2.jpg" alt="Latest News Image" />
+                                                    <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/latest-news/medium-size/2.jpg" alt="Latest News Image" />
                                                 </a>
                                                 <div class="inner-btn">
                                                     <a class="ademy-btn denim-color_btn with-border_radius btn-md_size" href="single-post.html">Read more</a>
@@ -1139,7 +1145,7 @@
                                         <div class="single-item img-zoom_effect">
                                             <div class="single-img">
                                                 <a href="single-post.html">
-                                                    <img class="img-full" src="assets/images/latest-news/medium-size/3.jpg" alt="Latest News Image" />
+                                                    <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/latest-news/medium-size/3.jpg" alt="Latest News Image" />
                                                 </a>
                                                 <div class="inner-btn">
                                                     <a class="ademy-btn denim-color_btn with-border_radius btn-md_size" href="single-post.html">Read more</a>
@@ -1188,7 +1194,7 @@
                                         <div class="single-item img-zoom_effect">
                                             <div class="single-img">
                                                 <a href="single-post.html">
-                                                    <img class="img-full" src="assets/images/latest-news/medium-size/4.jpg" alt="Latest News Image" />
+                                                    <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/latest-news/medium-size/4.jpg" alt="Latest News Image" />
                                                 </a>
                                                 <div class="inner-btn">
                                                     <a class="ademy-btn denim-color_btn with-border_radius btn-md_size" href="single-post.html">Read more</a>
@@ -1258,7 +1264,7 @@
                                         <div class="single-item img-zoom_effect">
                                             <div class="single-img">
                                                 <a href="single-post.html">
-                                                    <img class="img-full" src="assets/images/latest-news/medium-size/5.jpg" alt="Latest News Image" />
+                                                    <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/latest-news/medium-size/5.jpg" alt="Latest News Image" />
                                                 </a>
                                                 <div class="inner-btn">
                                                     <a class="ademy-btn denim-color_btn with-border_radius btn-md_size" href="single-post.html">Read more</a>
@@ -1307,7 +1313,7 @@
                                         <div class="single-item img-zoom_effect">
                                             <div class="single-img">
                                                 <a href="single-post.html">
-                                                    <img class="img-full" src="assets/images/latest-news/medium-size/6.jpg" alt="Latest News Image" />
+                                                    <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/latest-news/medium-size/6.jpg" alt="Latest News Image" />
                                                 </a>
                                                 <div class="inner-btn">
                                                     <a class="ademy-btn denim-color_btn with-border_radius btn-md_size" href="single-post.html">Read more</a>
@@ -1356,7 +1362,7 @@
                                         <div class="single-item img-zoom_effect">
                                             <div class="single-img">
                                                 <a href="single-post.html">
-                                                    <img class="img-full" src="assets/images/latest-news/medium-size/7.jpg" alt="Latest News Image" />
+                                                    <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/latest-news/medium-size/7.jpg" alt="Latest News Image" />
                                                 </a>
                                                 <div class="inner-btn">
                                                     <a class="ademy-btn denim-color_btn with-border_radius btn-md_size" href="single-post.html">Read more</a>
@@ -1405,7 +1411,7 @@
                                         <div class="single-item img-zoom_effect">
                                             <div class="single-img">
                                                 <a href="single-post.html">
-                                                    <img class="img-full" src="assets/images/latest-news/medium-size/8.jpg" alt="Latest News Image" />
+                                                    <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/latest-news/medium-size/8.jpg" alt="Latest News Image" />
                                                 </a>
                                                 <div class="inner-btn">
                                                     <a class="ademy-btn denim-color_btn with-border_radius btn-md_size" href="single-post.html">Read more</a>
@@ -1475,7 +1481,7 @@
                                         <div class="single-item img-zoom_effect">
                                             <div class="single-img">
                                                 <a href="single-post.html">
-                                                    <img class="img-full" src="assets/images/latest-news/medium-size/9.jpg" alt="Latest News Image" />
+                                                    <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/latest-news/medium-size/9.jpg" alt="Latest News Image" />
                                                 </a>
                                                 <div class="inner-btn">
                                                     <a class="ademy-btn denim-color_btn with-border_radius btn-md_size" href="single-post.html">Read more</a>
@@ -1524,7 +1530,7 @@
                                         <div class="single-item img-zoom_effect">
                                             <div class="single-img">
                                                 <a href="single-post.html">
-                                                    <img class="img-full" src="assets/images/latest-news/medium-size/10.jpg" alt="Latest News Image" />
+                                                    <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/latest-news/medium-size/10.jpg" alt="Latest News Image" />
                                                 </a>
                                                 <div class="inner-btn">
                                                     <a class="ademy-btn denim-color_btn with-border_radius btn-md_size" href="single-post.html">Read more</a>
@@ -1573,7 +1579,7 @@
                                         <div class="single-item img-zoom_effect">
                                             <div class="single-img">
                                                 <a href="single-post.html">
-                                                    <img class="img-full" src="assets/images/latest-news/medium-size/11.jpg" alt="Latest News Image" />
+                                                    <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/latest-news/medium-size/11.jpg" alt="Latest News Image" />
                                                 </a>
                                                 <div class="inner-btn">
                                                     <a class="ademy-btn denim-color_btn with-border_radius btn-md_size" href="single-post.html">Read more</a>
@@ -1622,7 +1628,7 @@
                                         <div class="single-item img-zoom_effect">
                                             <div class="single-img">
                                                 <a href="single-post.html">
-                                                    <img class="img-full" src="assets/images/latest-news/medium-size/12.jpg" alt="Latest News Image" />
+                                                    <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/latest-news/medium-size/12.jpg" alt="Latest News Image" />
                                                 </a>
                                                 <div class="inner-btn">
                                                     <a class="ademy-btn denim-color_btn with-border_radius btn-md_size" href="single-post.html">Read more</a>
@@ -1692,7 +1698,7 @@
                                         <div class="single-item img-zoom_effect">
                                             <div class="single-img">
                                                 <a href="single-post.html">
-                                                    <img class="img-full" src="assets/images/latest-news/medium-size/6.jpg" alt="Latest News Image" />
+                                                    <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/latest-news/medium-size/6.jpg" alt="Latest News Image" />
                                                 </a>
                                                 <div class="inner-btn">
                                                     <a class="ademy-btn denim-color_btn with-border_radius btn-md_size" href="single-post.html">Read more</a>
@@ -1741,7 +1747,7 @@
                                         <div class="single-item img-zoom_effect">
                                             <div class="single-img">
                                                 <a href="single-post.html">
-                                                    <img class="img-full" src="assets/images/latest-news/medium-size/7.jpg" alt="Latest News Image" />
+                                                    <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/latest-news/medium-size/7.jpg" alt="Latest News Image" />
                                                 </a>
                                                 <div class="inner-btn">
                                                     <a class="ademy-btn denim-color_btn with-border_radius btn-md_size" href="single-post.html">Read more</a>
@@ -1790,7 +1796,7 @@
                                         <div class="single-item img-zoom_effect">
                                             <div class="single-img">
                                                 <a href="single-post.html">
-                                                    <img class="img-full" src="assets/images/latest-news/medium-size/8.jpg" alt="Latest News Image" />
+                                                    <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/latest-news/medium-size/8.jpg" alt="Latest News Image" />
                                                 </a>
                                                 <div class="inner-btn">
                                                     <a class="ademy-btn denim-color_btn with-border_radius btn-md_size" href="single-post.html">Read more</a>
@@ -1839,7 +1845,7 @@
                                         <div class="single-item img-zoom_effect">
                                             <div class="single-img">
                                                 <a href="single-post.html">
-                                                    <img class="img-full" src="assets/images/latest-news/medium-size/9.jpg" alt="Latest News Image" />
+                                                    <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/latest-news/medium-size/9.jpg" alt="Latest News Image" />
                                                 </a>
                                                 <div class="inner-btn">
                                                     <a class="ademy-btn denim-color_btn with-border_radius btn-md_size" href="single-post.html">Read more</a>
@@ -1928,7 +1934,7 @@
                         <div class="single-item">
                             <div class="single-img">
                                 <a href="single-post.html">
-                                    <img class="img-full" src="assets/images/event/1.jpg" alt="Event Image" />
+                                    <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/event/1.jpg" alt="Event Image" />
                                 </a>
                                 <div class="inner-content">
                                     <div class="inner-content_wrap position-relative">
@@ -1968,7 +1974,7 @@
                         <div class="single-item">
                             <div class="single-img">
                                 <a href="single-post.html">
-                                    <img class="img-full" src="assets/images/event/2.jpg" alt="Event Image" />
+                                    <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/event/2.jpg" alt="Event Image" />
                                 </a>
                                 <div class="inner-content">
                                     <div class="inner-content_wrap position-relative">
@@ -2018,7 +2024,7 @@
             <div class="col-lg-12">
                 <div class="ticket-item">
                     <div class="heading-wrap">
-                        <img src="assets/images/ticket/arrow.png" alt="Ticket Arrow" />
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/ticket/arrow.png" alt="Ticket Arrow" />
                         <h2 class="heading mb-0">Buy early bird ticket now!</h2>
                     </div>
                     <div class="group-btn_wrap d-flex">
@@ -2069,7 +2075,7 @@
                         <div class="single-item">
                             <div class="single-img">
                                 <a href="javascript:void(0)">
-                                    <img src="assets/images/testimonials/1.jpg" alt="Testimonial Image" />
+                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/testimonials/1.jpg" alt="Testimonial Image" />
                                 </a>
                             </div>
                             <div class="single-item_content">
@@ -2099,7 +2105,7 @@
                         <div class="single-item">
                             <div class="single-img">
                                 <a href="javascript:void(0)">
-                                    <img src="assets/images/testimonials/2.jpg" alt="Testimonial Image" />
+                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/testimonials/2.jpg" alt="Testimonial Image" />
                                 </a>
                             </div>
                             <div class="single-item_content">
@@ -2129,7 +2135,7 @@
                         <div class="single-item">
                             <div class="single-img">
                                 <a href="javascript:void(0)">
-                                    <img src="assets/images/testimonials/3.jpg" alt="Testimonial Image" />
+                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/testimonials/3.jpg" alt="Testimonial Image" />
                                 </a>
                             </div>
                             <div class="single-item_content">

@@ -9,7 +9,7 @@
                             <div class="footer-widgets_area">
                                 <div class="logo">
                                     <a href="index.html">
-                                        <img src="<?php echo get_template_directory_uri() ?>assets/images/logo/1.png" alt="Footer Logo" />
+                                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/logo/1.png" alt="Footer Logo" />
                                     </a>
                                 </div>
                                 <p class="short-desc mb-0">
@@ -130,36 +130,37 @@
 ============================================ -->
 
 <!-- jQuery JS -->
-<script src="<?php echo get_template_directory_uri() ?>assets/js/vendor/jquery-3.6.0.min.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/assets/js/vendor/jquery-3.6.0.min.js"></script>
 <!-- jQuery Migrate JS -->
-<script src="<?php echo get_template_directory_uri() ?>assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
 <!-- Modernizer JS -->
-<script src="<?php echo get_template_directory_uri() ?>assets/js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/assets/js/vendor/modernizr-3.11.2.min.js"></script>
 <!-- Bootstrap JS -->
-<script src="<?php echo get_template_directory_uri() ?>assets/js/vendor/bootstrap.bundle.min.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/assets/js/vendor/bootstrap.bundle.min.js"></script>
 
 <!-- Slick Slider JS -->
-<script src="<?php echo get_template_directory_uri() ?>assets/js/plugins/slick.min.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/assets/js/plugins/slick.min.js"></script>
 <!-- Counterup JS -->
-<script src="<?php echo get_template_directory_uri() ?>assets/js/plugins/jquery.counterup.min.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/assets/js/plugins/jquery.counterup.min.js"></script>
 <!-- Nice Select JS -->
-<script src="<?php echo get_template_directory_uri() ?>assets/js/plugins/jquery.nice-select.min.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/assets/js/plugins/jquery.nice-select.min.js"></script>
 <!-- Jquery-ui JS -->
-<script src="<?php echo get_template_directory_uri() ?>assets/js/plugins/jquery-ui.min.js"></script>
-<script src="<?php echo get_template_directory_uri() ?>assets/js/plugins/jquery.ui.touch-punch.min.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/assets/js/plugins/jquery-ui.min.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/assets/js/plugins/jquery.ui.touch-punch.min.js"></script>
 <!-- Waypoints JS -->
-<script src="<?php echo get_template_directory_uri() ?>assets/js/plugins/waypoints.min.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/assets/js/plugins/waypoints.min.js"></script>
 <!-- Wow JS -->
-<script src="<?php echo get_template_directory_uri() ?>assets/js/plugins/wow.min.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/assets/js/plugins/wow.min.js"></script>
 <!-- Animated Headlines JS -->
-<script src="<?php echo get_template_directory_uri() ?>assets/js/plugins/animated-headlines.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/assets/js/plugins/animated-headlines.js"></script>
 <!-- Magnific Popup JS -->
-<script src="<?php echo get_template_directory_uri() ?>assets/js/plugins/jquery.magnific-popup.min.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/assets/js/plugins/jquery.magnific-popup.min.js"></script>
 <!-- datetimepicker JS -->
-<script src="<?php echo get_template_directory_uri() ?>assets/js/plugins/jquery.datetimepicker.full.min.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/assets/js/plugins/jquery.datetimepicker.full.min.js"></script>
 
 <!-- Main JS -->
-<script src="<?php echo get_template_directory_uri() ?>assets/js/main.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/assets/js/main.js"></script>
+<?php wp_footer(); ?>
 </body>
 
 </html>

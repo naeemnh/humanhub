@@ -9,33 +9,33 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="<?php echo get_template_directory_uri() ?>assets/images/favicon.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo get_template_directory_uri() ?>/assets/images/favicon.png" />
 
     <!-- CSS
 	============================================ -->
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/bootstrap.min.css" />
     <!-- Ionicons -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>assets/css/ion-fonts.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/ion-fonts.css" />
     <!-- Themify Icon -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>assets/css/themify-icons.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/themify-icons.css" />
     <!-- Slick CSS -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>assets/css/slick.min.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/slick.min.css" />
     <!-- Animation -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>assets/css/animate.min.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/animate.min.css" />
     <!-- jQuery Ui -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>assets/css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/jquery-ui.min.css" />
     <!-- Nice Select -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>assets/css/nice-select.min.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/nice-select.min.css" />
     <!-- Animated Headlines -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>assets/css/animated-headlines.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/animated-headlines.css" />
     <!-- Magnific Popup -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>assets/css/magnific-popup.min.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/magnific-popup.min.css" />
     <!-- datetimepicker -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>assets/css/jquery.datetimepicker.min.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/jquery.datetimepicker.min.css" />
     <!-- Main Style CSS -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>assets/css/style.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/style.css" />
     <?php wp_head(); ?>
 </head>
 
@@ -43,40 +43,6 @@
     <div class="main-wrapper">
         <!-- Begin Main Header Area -->
         <header class="main-header_area">
-            <!-- <div class="header-top_area bg-charcoal_color d-none d-md-block">
-					<div class="container-fluid">
-						<div class="row align-items-center">
-							<div class="col-lg-4">
-								<div class="ht-left">
-									<span class="ht-intro font-italic"
-										>Welcome to Ademy HTML Template!</span
-									>
-								</div>
-							</div>
-							<div class="col-lg-8">
-								<div class="ht-right">
-									<ul>
-										<li class="contuct-number">
-											<i class="ion-ios-telephone me-1"></i>
-											<a href="tel://+01228899900">01228899900</a>
-										</li>
-										<li class="address">
-											<i class="ion-ios-location me-1"></i>
-											<span>614 Destany Village Apt. 968</span>
-										</li>
-										<li class="donate">
-											<a
-												class="ademy-btn atlantis-color_btn"
-												href="javascript:void(0)"
-												>Donate</a
-											>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div> -->
             <div class="main-header">
                 <div class="container-fluid">
                     <div class="row">
@@ -85,20 +51,20 @@
                                 <div class="col-xl-3 col-md-4 col-6">
                                     <div class="header-logo">
                                         <a href="index.html">
-                                            <img class="img-full" src="<?php echo get_template_directory_uri() ?>assets/images/logo/1.png" alt="Header Logo" />
+                                            <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/logo/1.png" alt="Header Logo" />
                                         </a>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 position-static d-none d-xl-block">
                                     <div class="main-menu_area d-none d-lg-block">
                                         <?php
-                                        // wp_nav_menu(array(
-                                        //     'theme-location' => 'primary-menu',
-                                        //     'container' => 'nav',
-                                        //     'container-class' => 'main-nav d-flex justify-content-center',
-                                        //     'menu-class' => '',
-                                        //     // 'walker' => new Walker_Nav_Primary(),
-                                        // ));
+                                        wp_nav_menu(array(
+                                            'theme_location' => 'primary-menu',
+                                            'container_class' => 'main-nav d-flex justify-content-center',
+                                            'container' => 'nav',
+                                            'menu_class' => '',
+                                            'walker' => new Walker_Nav_Primary(),
+                                        ));
                                         ?>
                                         <!-- <nav class="main-nav d-flex justify-content-center">
                                             <ul>
@@ -271,14 +237,11 @@
                                             </li>
                                         </ul>
                                     </div>
+                                    <!-- Start Search Form -->
                                     <div class="search-body">
-                                        <div class="inner-body">
-                                            <input class="input-field" type="text" placeholder="Keyword search..." />
-                                            <button class="inner-btn" value="Search" type="submit">
-                                                <i class="ion-ios-search-strong"></i>
-                                            </button>
-                                        </div>
+                                        <?php get_search_form(array('class' => 'inner-body')); ?>
                                     </div>
+                                    <!-- End Search Form -->
                                 </div>
                                 <div class="col-6 d-block d-md-none">
                                     <div class="header-right_area with-radius justify-content-end">
@@ -304,13 +267,22 @@
                                 <div class="col-xl-3 col-md-4 col-6">
                                     <div class="header-logo">
                                         <a href="index.html">
-                                            <img class="img-full" src="<?php echo get_template_directory_uri() ?>assets/images/logo/1.png" alt="Header Logo" />
+                                            <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/logo/1.png" alt="Header Logo" />
                                         </a>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 position-static d-none d-xl-block">
                                     <div class="main-menu_area d-none d-lg-block">
-                                        <nav class="main-nav d-flex justify-content-center">
+                                        <?php
+                                        wp_nav_menu(array(
+                                            'theme_location' => 'primary-menu',
+                                            'container_class' => 'main-nav d-flex justify-content-center',
+                                            'container' => 'nav',
+                                            'menu_class' => '',
+                                            'walker' => new Walker_Nav_Primary(),
+                                        ));
+                                        ?>
+                                        <!-- <nav class="main-nav d-flex justify-content-center">
                                             <ul>
                                                 <li>
                                                     <a href="index.html">Home</a>
@@ -443,7 +415,7 @@
                                                 </li>
                                                 <li><a href="contact.html">Contact</a></li>
                                             </ul>
-                                        </nav>
+                                        </nav> -->
                                     </div>
                                 </div>
                                 <div class="col-xl-3 col-md-8 d-none d-md-block">
@@ -481,13 +453,9 @@
                                             </li>
                                         </ul>
                                     </div>
+                                    <!-- Start Search Form -->
                                     <div class="search-body">
-                                        <div class="inner-body">
-                                            <input class="input-field" type="text" placeholder="Keyword search..." />
-                                            <button class="inner-btn" value="Search" type="submit">
-                                                <i class="ion-ios-search-strong"></i>
-                                            </button>
-                                        </div>
+                                        <?php get_search_form(array('class' => 'inner-body')); ?>
                                     </div>
                                 </div>
                                 <div class="col-6 d-block d-md-none">
@@ -509,16 +477,24 @@
             <div class="mobile-menu_wrapper" id="mobileMenu">
                 <div class="offcanvas-menu-inner">
                     <div class="offcanvas-inner_search">
-                        <form action="#" class="hm-searchbox">
-                            <input type="text" placeholder="Search for item..." />
-                            <button class="search_btn" type="submit">
-                                <i class="ion-ios-search-strong"></i>
-                            </button>
-                        </form>
+                        <!-- Start Search Form -->
+                        <div class="search-body">
+                            <?php get_search_form(array('class' => 'hm-searchbox')); ?>
+                        </div>
+                        <!-- End Search Form -->
                     </div>
                     <a href="#" class="btn-close"><i class="ion-close-round"></i></a>
                     <div class="offcanvas-navigation_wrap">
-                        <nav class="offcanvas-navigation">
+                        <?php
+                        wp_nav_menu(array(
+                            'theme_location' => 'primary-menu',
+                            'container_class' => 'offcanvas-navigation',
+                            'container' => 'nav',
+                            'menu_class' => 'mobile-menu',
+                            'walker' => new Walker_Nav_Mobile(),
+                        ));
+                        ?>
+                        <!-- <nav class="offcanvas-navigation">
                             <ul class="mobile-menu">
                                 <li class="menu-item-has-children active">
                                     <a href="#"><span class="mm-text">Home <i class="ion-ios-arrow-down"></i></span></a>
@@ -666,7 +642,7 @@
                                     </a>
                                 </li>
                             </ul>
-                        </nav>
+                        </nav> -->
                         <nav class="offcanvas-navigation-2">
                             <div class="ht-right inner-header_info">
                                 <ul>
@@ -678,9 +654,9 @@
                                         <i class="ion-ios-location me-1"></i>
                                         <span>614 Destany Village Apt. 968</span>
                                     </li>
-                                    <li class="donate">
+                                    <!-- <li class="donate">
                                         <a class="ademy-btn atlantis-color_btn" href="javascript:void(0)">Donate</a>
-                                    </li>
+                                    </li> -->
                                 </ul>
                             </div>
                             <div class="header-right_area inner-social_link justify-content-start">
