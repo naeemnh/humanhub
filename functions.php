@@ -1,6 +1,11 @@
 <?php
+/*
+    ==========================================
+	 Activate menus
+	==========================================
+*/
 
-function mehan_setup_post_types_menus()
+function mehan_theme_setup()
 {
     add_theme_support('post-thumbnails');
     add_theme_support('html5', array('search-form'));
@@ -13,12 +18,12 @@ function mehan_setup_post_types_menus()
     );
 }
 
-add_action('init', 'mehan_setup_post_types_menus');
+add_action('init', 'mehan_theme_setup');
 
 /*
-    ============================
-      Sidebar function
-    ============================
+	==========================================
+	 Sidebar function
+	==========================================
 */
 
 function mehan_widget_setup()
@@ -36,9 +41,9 @@ function mehan_widget_setup()
 add_action('widgets_init', 'mehan_widget_setup');
 
 /*
-    ============================
-      Include Walker file
-    ============================
+    ==========================================
+    Include Walker file
+    ==========================================
 */
 
 require get_template_directory() . '/inc/walker.php';
