@@ -10,7 +10,7 @@
                         <li>
                             <ul class="list-item">
                                 <li>
-                                    <a href="<?php echo get_category_link($cat->id) ?>"><?php echo $cat->name ?>
+                                    <a href="<?php echo get_category_link($cat) ?>"><?php echo $cat->name ?>
                                         <span><?php echo $cat->count ?></span>
                                     </a>
                                 </li>

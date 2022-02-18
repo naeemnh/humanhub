@@ -36,6 +36,8 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/jquery.datetimepicker.min.css" />
     <!-- Main Style CSS -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/style.css" />
+    <!-- Custom Style CSS -->
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/custom.css" />
     <?php wp_head(); ?>
 </head>
 

@@ -210,37 +210,37 @@ get_header() ?>
                     ]'>
                         <div class="brand-item">
                             <a href="javascript:void(0)">
-                                <img class="img-full" src="assets/images/brand/1.png" alt="Ademy's Brand">
+                                <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/brand/1.png" alt="Ademy's Brand">
                             </a>
                         </div>
                         <div class="brand-item">
                             <a href="javascript:void(0)">
-                                <img class="img-full" src="assets/images/brand/2.png" alt="Ademy's Brand">
+                                <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/brand/2.png" alt="Ademy's Brand">
                             </a>
                         </div>
                         <div class="brand-item">
                             <a href="javascript:void(0)">
-                                <img class="img-full" src="assets/images/brand/3.png" alt="Ademy's Brand">
+                                <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/brand/3.png" alt="Ademy's Brand">
                             </a>
                         </div>
                         <div class="brand-item">
                             <a href="javascript:void(0)">
-                                <img class="img-full" src="assets/images/brand/4.png" alt="Ademy's Brand">
+                                <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/brand/4.png" alt="Ademy's Brand">
                             </a>
                         </div>
                         <div class="brand-item">
                             <a href="javascript:void(0)">
-                                <img class="img-full" src="assets/images/brand/5.png" alt="Ademy's Brand">
+                                <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/brand/5.png" alt="Ademy's Brand">
                             </a>
                         </div>
                         <div class="brand-item">
                             <a href="javascript:void(0)">
-                                <img class="img-full" src="assets/images/brand/6.png" alt="Ademy's Brand">
+                                <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/brand/6.png" alt="Ademy's Brand">
                             </a>
                         </div>
                         <div class="brand-item">
                             <a href="javascript:void(0)">
-                                <img class="img-full" src="assets/images/brand/1.png" alt="Ademy's Brand">
+                                <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/brand/1.png" alt="Ademy's Brand">
                             </a>
                         </div>
                     </div>
