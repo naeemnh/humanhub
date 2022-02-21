@@ -36,8 +36,7 @@ function mehan_theme_setup()
         'has_archive' => true,
         'hierarchical' => true,
         'menu_position' => null,
-        'menu_icon' => 'dashicons-testimonials',
-        'taxonomies' => array('post-tag', 'category', 'brand'),
+        'menu_icon' => 'dashicons-testimonial',
         'supports' => array('title', 'editor', 'thumbnail', 'excerpt'),
     );
     register_post_type('testimonial', $args);
@@ -80,3 +79,11 @@ add_action('widgets_init', 'mehan_widget_setup');
 */
 
 require get_template_directory() . '/inc/walker.php';
+
+/*
+    ==========================================
+    Include Gutenberg Blocks
+    ==========================================
+*/
+
+require get_template_directory() . '/inc/gutenberg.php';
