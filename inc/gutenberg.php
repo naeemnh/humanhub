@@ -39,7 +39,7 @@ function mehan_gutenberg_default_colors()
     );
 }
 
-add_action('init', 'mehan_gutenberg_default_colors');
+// add_action('init', 'mehan_gutenberg_default_colors');
 
 function mehan_gutenberg_block()
 {
@@ -53,4 +53,4 @@ function mehan_gutenberg_block()
     ));
 }
 
-add_action('init', 'mehan_gutenberg_block');
+// add_action('init', 'mehan_gutenberg_block');
