@@ -53,7 +53,7 @@
                                 <div class="col-xl-3 col-md-4 col-6">
                                     <div class="header-logo">
                                         <a href="index.html">
-                                            <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/logo/1.png" alt="Header Logo" />
+                                            <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/logo/mehan_83x50.png" alt="Header Logo" />
                                         </a>
                                     </div>
                                 </div>
