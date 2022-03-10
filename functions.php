@@ -86,4 +86,4 @@ require get_template_directory() . '/inc/walker.php';
     ==========================================
 */
 
-require get_template_directory() . '/inc/gutenberg.php';
+// require get_template_directory() . '/inc/gutenberg.php';
