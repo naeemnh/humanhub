@@ -52,9 +52,10 @@
                             <div class="main-header_nav row align-items-center">
                                 <div class="col-xl-3 col-md-4 col-6">
                                     <div class="header-logo">
-                                        <a href="index.html">
+                                        <?php humanhub_the_custom_logo(); ?>
+                                        <!-- <a href="<?php home_url() ?>">
                                             <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/logo/mehan_270x163.svg" alt="Header Logo" />
-                                        </a>
+                                        </a> -->
                                     </div>
                                 </div>
                                 <div class="col-lg-6 position-static d-none d-xl-block">
@@ -268,9 +269,10 @@
                             <div class="main-header_nav row align-items-center">
                                 <div class="col-xl-3 col-md-4 col-6">
                                     <div class="header-logo">
-                                        <a href="index.html">
+                                        <?php humanhub_the_custom_logo() ?>
+                                        <!-- <a href="index.html">
                                             <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/logo/mehan_180x108.png" alt="Header Logo" />
-                                        </a>
+                                        </a> -->
                                     </div>
                                 </div>
                                 <div class="col-lg-6 position-static d-none d-xl-block">

@@ -45,34 +45,6 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="slide-item bg-2 animation-style-01">
-            <div class="slide-content">
-                <span class="intro">Welcome to ademy school</span>
-                <h1 class="heading cd-headline letters type mb-0">
-                    Today a reader. <br />
-                    tomorrow a
-                    <span class="cd-words-wrapper waiting">
-                        <b class="is-visible">founderl</b>
-                        <b>ceo</b>
-                        <b>leader</b>
-                    </span>
-                </h1>
-                <div class="button-wrap position-center">
-                    <a
-                        class="ademy-btn btn-transparent white-border with-border_radius active"
-                        href="#welcome"
-                        >Get started
-                        <i class="zmdi zmdi-arrow-forward"></i>
-                    </a>
-                    <a
-                        class="ademy-btn btn-transparent white-border with-border_radius"
-                        href="#latestnews"
-                        >Learn more
-                        <i class="zmdi zmdi-arrow-forward"></i>
-                    </a>
-                </div>
-            </div>
-        </div> -->
     </div>
 </div>
 <!-- Slider Area End Here -->

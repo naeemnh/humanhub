@@ -8,9 +8,10 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="footer-widgets_area">
                                 <div class="logo">
-                                    <a href="index.html">
-                                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/logo/1.png" alt="Footer Logo" />
-                                    </a>
+                                    <?php humanhub_the_custom_logo(); ?>
+                                    <!-- <a href="index.html">
+                                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/logo/mehan_white.png" alt="Footer Logo" />
+                                    </a> -->
                                 </div>
                                 <p class="short-desc mb-0">
                                     Welcome to Ademy – A Professional HTML Template for High
