@@ -75,6 +75,14 @@ if ($the_query->have_posts()) :
                         </div>
                     </div>
                 </div>
+                <!-- Pagination -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="paginatoin-area position-center pb-0">
+                            <?php humanhub_pagination() ?>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- News List Area End Here -->
