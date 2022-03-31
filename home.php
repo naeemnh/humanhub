@@ -70,11 +70,6 @@ if (have_posts()) :
         <div class="row">
           <div class="col-lg-12">
             <div class="paginatoin-area position-center pb-0">
-              <!-- <ul class="pagination-box">
-                <li class="active"><a href="javascript:void(0)">1</a></li>
-                <li><a href="javascript:void(0)">2</a></li>
-                <li><a href="javascript:void(0)">3</a></li>
-              </ul> -->
               <?php humanhub_pagination() ?>
             </div>
           </div>
