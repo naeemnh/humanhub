@@ -4,7 +4,6 @@
  * Template Name: Events Archive Pages
  */
 global $wp_query;
-echo $_GET['']
 get_header();
 if (have_posts()) :
   get_template_part('template-parts/part', 'breadcrumb'); ?>
@@ -147,24 +146,24 @@ if (have_posts()) :
           </div>
           <div class="col-lg-8 order-1">
             <div class="ademy-element-carousel event-list_slider" data-slick-options='{
-                        "slidesToShow": 1,
-                        "slidesToScroll": 1,
-                        "infinite": false,
-                        "arrows": false,
-                        "dots": false,
-                        "spaceBetween": 30,
-                        "rows": 6
-                        }' data-slick-responsive='[
-                        {"breakpoint": 1200, "settings": {
-                        "slidesToShow": 1
-                        }},
-                        {"breakpoint": 992, "settings": {
-                        "slidesToShow": 1
-                        }},
-                        {"breakpoint": 576, "settings": {
-                        "slidesToShow": 1
-                        }}
-                    ]'>
+                "slidesToShow": 1,
+                "slidesToScroll": 1,
+                "infinite": false,
+                "arrows": false,
+                "dots": false,
+                "spaceBetween": 30,
+                "rows": 6
+                }' data-slick-responsive='[
+                {"breakpoint": 1200, "settings": {
+                "slidesToShow": 1
+                }},
+                {"breakpoint": 992, "settings": {
+                "slidesToShow": 1
+                }},
+                {"breakpoint": 576, "settings": {
+                "slidesToShow": 1
+                }}
+              ]'>
               <?php while (have_posts()) : the_post(); ?>
                 <div class="slide-list_item">
                   <div class="single-item border-bottom-0 p-0">
@@ -215,7 +214,7 @@ if (have_posts()) :
             </div>
           </div>
         </div>
-         <!-- Pagination -->
+        <!-- Pagination -->
         <div class="row">
           <div class="col-lg-12">
             <div class="paginatoin-area position-center pb-0">
