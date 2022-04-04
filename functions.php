@@ -4,7 +4,7 @@
 	 Activate menus
 	==========================================
 */
-
+error_reporting(E_ERROR | E_PARSE);
 function mehan_theme_setup()
 {
     // Theme Support
@@ -63,8 +63,10 @@ function mehan_theme_setup()
         'public'            => true,
         'publicly_queryable' => true,
         'show_ui'           => true,
+        'show_in_rest'         => true,
         'show_in_menu'      => true,
         'query_var'         => true,
+        'taxonomies'        => ['category', 'post_tag'],
         'rewrite'           => true,
         'capability_type'   => 'post',
         'has_archive'       => true,
@@ -220,6 +222,68 @@ add_action('widgets_init', 'mehan_widget_setup');
 */
 
 require get_template_directory() . '/inc/walker.php';
+
+/*
+    ==========================================
+    Filter Posts
+    ==========================================
+*/
+
+add_filter('posts_where', 'title_like_posts_where', 10, 2);
+function title_like_posts_where($where, $wp_query)
+{
+    global $wpdb;
+    if ($post_title_like = $wp_query->get('post_title_like')) {
+        $where .= ' AND ' . $wpdb->posts . '.post_title LIKE \'%' . esc_sql($wpdb->esc_like($post_title_like)) . '%\'';
+    }
+    return $where;
+}
+
+$GLOBALS['event_query_filters'] = [
+    'field_1' => 'start_date',
+    'field_2' => 'location',
+];
+
+function event_posts($query)
+{
+    if (!is_admin() && $query->is_main_query()) {
+        if (is_post_type_archive('event')) {
+
+            // loop over filters
+            foreach ($GLOBALS['event_query_filters'] as $key => $name) {
+                // continue if not found in url
+                if (empty($_GET[$name])) continue;
+
+                // get the value for this filter
+                // eg: http://www.website.com/events?city=melbourne,sydney
+                if ($name == 'start_date') {
+                    $datetime = explode(' ', $_GET['start_date']);
+                    $value = date_i18n("Ymd", strtotime($datetime[0]));
+                    // append meta query
+                    $meta_query[] = [
+                        'key'        => $name,
+                        'value'        => $value,
+                        'compare'    => '=',
+                    ];
+                } else {
+                    $value = $_GET[$name];
+                    // append meta query
+                    $meta_query[] = [
+                        'key'        => $name,
+                        'value'        => $value,
+                        'compare'    => 'LIKE',
+                    ];
+                }
+            }
+            $query->set('meta_query', $meta_query);
+        }
+        $query->set('post_title_like', $_GET['title']);
+    }
+}
+
+add_action('pre_get_posts', 'event_posts');
+
+
 
 /*
     ==========================================

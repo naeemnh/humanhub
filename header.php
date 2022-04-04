@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Ademy - Education HTML Template</title>
+    <title><?php wp_title('', true, ''); ?></title>
     <meta name="robots" content="noindex, follow" />
-    <meta name="description" content="" />
+    <meta name="description" content="<?php echo get_bloginfo('description') ?>" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo get_template_directory_uri() ?>/assets/images/favicon.png" />

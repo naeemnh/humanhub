@@ -44,12 +44,14 @@ if (have_posts()) :
                       <?php endif; ?>
                       <li>
                         <h5 class="title mb-0">category</h5>
-                        <span><?php echo get_the_category()[0]->name; ?></span>
+                        <span>
+                          <?php echo get_the_category() ? get_the_category()[0]->name : '' ?>
+                        </span>
                       </li>
                       <?php if (get_field('location')) : ?>
                         <li>
                           <h5 class="title mb-0">location</h5>
-                          <span><a href="<?php the_field('location_url') ?>"><?php the_field('location') ?></a></span>
+                          <span><a href="<?php the_field('location_url') ?>" target="_blank"><?php the_field('location') ?></a></span>
                         </li>
                     </ul>
                   <?php endif; ?>
@@ -70,11 +72,11 @@ if (have_posts()) :
 
       <!-- Begin Single Event Area -->
       <div class="single-event_area">
-        <div class="container-fluid">
+        <div class="container">
           <div class="row">
-            <div class="col-lg-4 order-2">
-              <?php get_sidebar('event'); ?>
-            </div>
+            <!-- SIDEBAR START -->
+            <?php get_sidebar('event'); ?>
+            <!-- SIDEBAR END -->
             <div class="col-lg-8 order-1">
               <div class="event-section_title">
                 <h3 class="heading mb-0">Our Speakers <span>(3)</span></h3>
