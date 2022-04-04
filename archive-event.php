@@ -35,6 +35,7 @@ if (have_posts()) :
       <div class="container">
         <div class="row">
           <div class="col-lg-4 order-2">
+            <!-- Events Sidebar Start -->
             <div class="sidebar-area event-sidebar_area">
               <div class="widgets-area event-widgets_area">
                 <div class="inner-area">
@@ -143,6 +144,7 @@ if (have_posts()) :
                 </div>
               </div>
             </div>
+            <!-- Events Sidebar End -->
           </div>
           <div class="col-lg-8 order-1">
             <div class="ademy-element-carousel event-list_slider" data-slick-options='{
@@ -164,7 +166,14 @@ if (have_posts()) :
                 "slidesToShow": 1
                 }}
               ]'>
-              <?php while (have_posts()) : the_post(); ?>
+              <?php
+              $args = array(
+                'post_type' => 'event',
+                'post_status' => 'publish',
+                'posts_per_page' => 10,
+              );
+              $loop = new WP_Query($args);
+              while ($loop->have_posts()) : $loop->the_post(); ?>
                 <div class="slide-list_item">
                   <div class="single-item border-bottom-0 p-0">
                     <div class="single-img position-relative">

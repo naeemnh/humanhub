@@ -7,7 +7,7 @@
           <li>
             <ul class="list-item-2">
               <li class="list-item_img without-radius">
-                <img src="assets/images/sidebar/icon/1.png" alt="Class Image">
+                <img src="<?php echo get_template_directory_uri() ?> /assets/images/sidebar/icon/1.png" alt="Class Image">
               </li>
               <li class="list-item_content">
                 <a href="javascript:void(0)">Download Schedule of our activities</a>
@@ -17,7 +17,7 @@
           <li>
             <ul class="list-item-2">
               <li class="list-item_img without-radius">
-                <img src="assets/images/sidebar/icon/2.png" alt="Class Image">
+                <img src="<?php echo get_template_directory_uri() ?> /assets/images/sidebar/icon/2.png" alt="Class Image">
               </li>
               <li class="list-item_content">
                 <a href="javascript:void(0)">Download Assignments for 1st Quarter</a>
@@ -27,7 +27,7 @@
           <li>
             <ul class="list-item-2">
               <li class="list-item_img without-radius">
-                <img src="assets/images/sidebar/icon/3.png" alt="Class Image">
+                <img src="<?php echo get_template_directory_uri() ?> /assets/images/sidebar/icon/3.png" alt="Class Image">
               </li>
               <li class="list-item_content">
                 <a href="javascript:void(0)">Download Assignments for 2nd Quarter</a>
@@ -37,7 +37,7 @@
           <li>
             <ul class="list-item-2">
               <li class="list-item_img without-radius">
-                <img src="assets/images/sidebar/icon/4.png" alt="Class Image">
+                <img src="<?php echo get_template_directory_uri() ?> /assets/images/sidebar/icon/4.png" alt="Class Image">
               </li>
               <li class="list-item_content">
                 <a href="javascript:void(0)">Download Assignments for 3rd Quarter</a>
@@ -53,7 +53,7 @@
       <h2 class="heading mb-0"><span>/</span> Organizer</h2>
       <div class="widgets-item">
         <div class="organizer-img">
-          <img src="assets/images/sidebar/small-size/1.png" alt="Organizer Image">
+          <img src="<?php echo get_template_directory_uri() ?> /assets/images/sidebar/small-size/1.png" alt="Organizer Image">
         </div>
         <div class="organizer-content">
           <h3 class="organizer-name mb-0">Cory Campbell</h3>
@@ -100,7 +100,7 @@
           <li>
             <ul class="list-item event-list_item">
               <li class="list-item_img">
-                <img src="assets/images/sidebar/small-size/event/1.jpg" alt="Event Image">
+                <img src="<?php echo get_template_directory_uri() ?> /assets/images/sidebar/small-size/event/1.jpg" alt="Event Image">
               </li>
               <li class="list-item_content">
                 <a class="entry-title" href="single-event.html">Winter Sports Camp</a>
@@ -113,7 +113,7 @@
           <li>
             <ul class="list-item event-list_item">
               <li class="list-item_img">
-                <img src="assets/images/sidebar/small-size/event/2.jpg" alt="Event Image">
+                <img src="<?php echo get_template_directory_uri() ?> /assets/images/sidebar/small-size/event/2.jpg" alt="Event Image">
               </li>
               <li class="list-item_content">
                 <a class="entry-title" href="single-event.html">High School Exchange 2020</a>
@@ -126,7 +126,7 @@
           <li>
             <ul class="list-item event-list_item">
               <li class="list-item_img">
-                <img src="assets/images/sidebar/small-size/event/3.jpg" alt="Event Image">
+                <img src="<?php echo get_template_directory_uri() ?> /assets/images/sidebar/small-size/event/3.jpg" alt="Event Image">
               </li>
               <li class="list-item_content">
                 <a class="entry-title" href="single-event.html">15th Worldwide Athletic Olympiad</a>
@@ -139,7 +139,7 @@
           <li>
             <ul class="list-item event-list_item">
               <li class="list-item_img">
-                <img src="assets/images/sidebar/small-size/event/4.jpg" alt="Event Image">
+                <img src="<?php echo get_template_directory_uri() ?> /assets/images/sidebar/small-size/event/4.jpg" alt="Event Image">
               </li>
               <li class="list-item_content">
                 <a class="entry-title" href="single-event.html">15th Commencement Ceremony</a>

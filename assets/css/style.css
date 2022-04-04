@@ -2328,7 +2328,7 @@ i, .section-title > h2.sub-heading > span, .tab-content .tab-pane.active, .scrol
 
 .banner-with_coundown .banner-nav .inner-nav {
   background-color: #ffffff;
-  margin-top: -100px;
+  /* margin-top: -100px; */
 }
 
 .banner-with_coundown .banner-nav .inner-nav .banner-content {

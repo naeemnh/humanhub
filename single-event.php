@@ -24,32 +24,40 @@ if (have_posts()) :
                 <div class="col-lg-4">
                   <div class="banner-content">
                     <ul class="list-item">
-                      <li>
-                        <h5 class="title mb-0">price</h5>
-                        <span class="atlantis-color">$29</span>
-                      </li>
-                      <li>
-                        <h5 class="title mb-0">price</h5>
-                        <span>30 Mar, 2020</span>
-                      </li>
-                      <li>
-                        <h5 class="title mb-0">time</h5>
-                        <span>9:00 - 16:00</span>
-                      </li>
+                      <?php if (get_field('start_date')) : ?>
+                        <li>
+                          <h5 class="title mb-0">start date</h5>
+                          <span><?php the_field('start_date'); ?> </span>
+                        </li>
+                      <?php endif;
+                      if (get_field('end_date')) : ?>
+                        <li>
+                          <h5 class="title mb-0">end date</h5>
+                          <span><?php the_field('end_date') ?></span>
+                        </li>
+                      <?php endif;
+                      if (get_field('time')) : ?>
+                        <li>
+                          <h5 class="title mb-0">time</h5>
+                          <span><?php the_field('time'); ?></span>
+                        </li>
+                      <?php endif; ?>
                       <li>
                         <h5 class="title mb-0">category</h5>
-                        <span>Languages</span>
+                        <span><?php echo get_the_category()[0]->name; ?></span>
                       </li>
-                      <li>
-                        <h5 class="title mb-0">location</h5>
-                        <span>86 Bailey Harbor Apt</span>
-                      </li>
+                      <?php if (get_field('location')) : ?>
+                        <li>
+                          <h5 class="title mb-0">location</h5>
+                          <span><a href="<?php the_field('location_url') ?>"><?php the_field('location') ?></a></span>
+                        </li>
                     </ul>
-                    <div class="btn-wrap">
-                      <a class="ademy-btn btn-md_size with-border_radius denim-color_btn" href="javascript:void(0)">Expired
-                        <i class="ion-android-arrow-forward"></i>
-                      </a>
-                    </div>
+                  <?php endif; ?>
+                  <div class="btn-wrap">
+                    <a class="ademy-btn btn-md_size with-border_radius denim-color_btn" href="javascript:void(0)">Expired
+                      <i class="ion-android-arrow-forward"></i>
+                    </a>
+                  </div>
                   </div>
                 </div>
               </div>
@@ -72,12 +80,13 @@ if (have_posts()) :
                 <h3 class="heading mb-0">Our Speakers <span>(3)</span></h3>
                 <p class="short-desc mb-0">As honorable educational experts and educators, our guests would hold many profound talks and conferences about teaching methods and materials. Participants will be able to enjoy a variety of interesting activities and interact with guests through Q&A sessions.</p>
               </div>
+              <!-- Teachers -->
               <div class="our-teacher_area our-teacher_area-2 row">
                 <div class="col-md-4 col-sm-6">
                   <div class="single-item">
                     <div class="single-inner_item">
                       <div class="single-img with-radius">
-                        <img src="assets/images/our-teacher/1.png" alt="Our Teacher Image">
+                        <img src="<?php echo get_template_directory_uri() ?> /assets/images/our-teacher/1.png" alt="Our Teacher Image">
                       </div>
                       <div class="single-content">
                         <h3 class="teacher-name mb-0">Della Morgan</h3>
@@ -112,7 +121,7 @@ if (have_posts()) :
                   <div class="single-item">
                     <div class="single-inner_item">
                       <div class="single-img with-radius">
-                        <img src="assets/images/our-teacher/2.png" alt="Our Teacher Image">
+                        <img src="<?php echo get_template_directory_uri() ?> /assets/images/our-teacher/2.png" alt="Our Teacher Image">
                       </div>
                       <div class="single-content">
                         <h3 class="teacher-name mb-0">Joel Mills</h3>
@@ -147,7 +156,7 @@ if (have_posts()) :
                   <div class="single-item">
                     <div class="single-inner_item">
                       <div class="single-img with-radius">
-                        <img src="assets/images/our-teacher/3.png" alt="Our Teacher Image">
+                        <img src="<?php echo get_template_directory_uri() ?> /assets/images/our-teacher/3.png" alt="Our Teacher Image">
                       </div>
                       <div class="single-content">
                         <h3 class="teacher-name mb-0">Joseph Perkins</h3>
@@ -243,7 +252,8 @@ if (have_posts()) :
                   </div>
                 </div>
               </div>
-              <div class="review-area">
+              <!-- Review Area Start -->
+              <!-- <div class="review-area">
                 <div class="review-title">
                   <h3 class="heading mb-0">Reviews <span>(4)</span></h3>
                   <p class="short-desc mb-0">
@@ -252,7 +262,7 @@ if (have_posts()) :
                 </div>
                 <div class="user-info">
                   <div class="user-img">
-                    <img src="assets/images/single-class/small-size/1.jpg" alt="User Image">
+                    <img src="<?php echo get_template_directory_uri() ?> /assets/images/single-class/small-size/1.jpg" alt="User Image">
                   </div>
                   <div class="user-content">
                     <p class="user-comment font-italic mb-0">Lorem ipsum dolor sit amet, consectetur adcing elit Lorem ipsum dolor sit amet, consecte tur adip iscing elit psum</p>
@@ -265,7 +275,7 @@ if (have_posts()) :
                 </div>
                 <div class="user-info">
                   <div class="user-img">
-                    <img src="assets/images/single-class/small-size/2.jpg" alt="User Image">
+                    <img src="<?php echo get_template_directory_uri() ?> /assets/images/single-class/small-size/2.jpg" alt="User Image">
                   </div>
                   <div class="user-content">
                     <div class="rating-box">
@@ -287,7 +297,7 @@ if (have_posts()) :
                 </div>
                 <div class="user-info">
                   <div class="user-img">
-                    <img src="assets/images/single-class/small-size/3.jpg" alt="User Image">
+                    <img src="<?php echo get_template_directory_uri() ?> /assets/images/single-class/small-size/3.jpg" alt="User Image">
                   </div>
                   <div class="user-content">
                     <div class="rating-box">
@@ -309,7 +319,7 @@ if (have_posts()) :
                 </div>
                 <div class="user-info">
                   <div class="user-img">
-                    <img src="assets/images/single-class/small-size/4.jpg" alt="User Image">
+                    <img src="<?php echo get_template_directory_uri() ?> /assets/images/single-class/small-size/4.jpg" alt="User Image">
                   </div>
                   <div class="user-content">
                     <div class="rating-box">
@@ -329,8 +339,10 @@ if (have_posts()) :
                     <a href="javascript:void(0)" class="reply-btn">Reply</a>
                   </div>
                 </div>
-              </div>
-              <div class="feedback-area">
+              </div> -->
+              <!-- Review Area End -->
+              <!-- Feedback Area Start -->
+              <!-- <div class="feedback-area">
                 <div class="feedback-title">
                   <h3 class="heading mb-0">Add Your <span>Reviews</span></h3>
                   <p class="short-desc mb-0">
@@ -382,7 +394,8 @@ if (have_posts()) :
                     </a>
                   </div>
                 </div>
-              </div>
+              </div> -->
+              <!-- Feedback Area End -->
             </div>
           </div>
         </div>
