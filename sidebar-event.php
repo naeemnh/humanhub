@@ -1,11 +1,18 @@
 <div class="col-lg-4 order-2">
+
   <div class="sidebar-area event-sidebar_area">
     <div class="widgets-area categories-area">
       <div class="inner-area">
         <h2 class="heading mb-0"><span>/</span> Categories</h2>
         <div class="widgets-item">
           <ul class="list-item_wrap">
-            <?php $cats = get_categories();
+            <?php
+            $args = [
+              'type' => 'event',
+              'orderby' => 'name',
+              'order'   => 'ASC'
+            ];
+            $cats = get_categories($args);
             foreach ($cats as $cat) : ?>
               <li>
                 <ul class="list-item">

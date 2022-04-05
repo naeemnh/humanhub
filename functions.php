@@ -278,6 +278,9 @@ function event_posts($query)
             $query->set('meta_query', $meta_query);
         }
         $query->set('post_title_like', $_GET['title']);
+        if (is_category() || is_tag() && empty($query->query_vars['suppress_filters'])) {
+            $query->set('post_type', ['post', 'event']);
+        }
     }
 }
 
