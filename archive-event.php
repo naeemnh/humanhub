@@ -34,7 +34,7 @@ get_template_part('template-parts/part', 'breadcrumb'); ?>
       <div class="container">
         <div class="row">
           <!-- SIDEBAR START -->
-          <?php get_sidebar("events"); ?>
+          <?php get_sidebar("event"); ?>
           <!-- SIDEBAR END -->
           <div class="col-lg-8 order-1">
             <div class="ademy-element-carousel event-list_slider" data-slick-options='{
