@@ -4254,9 +4254,9 @@ i, .section-title > h2.sub-heading > span, .tab-content .tab-pane.active, .scrol
   }
 }
 
-.header-logo img {
+/* .header-logo img {
   width: 180px;
-}
+} */
 
 /* ---Main Header--- */
 @media (max-width: 1199px) {
@@ -4557,9 +4557,9 @@ i, .section-title > h2.sub-heading > span, .tab-content .tab-pane.active, .scrol
   padding-bottom: 25px;
 }
 
-.footer-widgets_area .logo img {
+/* .footer-widgets_area .logo img {
   width: 158px;
-}
+} */
 
 .footer-widgets_area p.short-desc {
   font-size: 14px;

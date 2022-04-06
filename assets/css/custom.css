@@ -9,3 +9,11 @@
 	padding-top: 95px;
 	padding-bottom: 100px;
 }
+
+.feedback-form .form-group.group-input .wpcf7-form-control-wrap:first-child {
+    margin-right: 1.5em !important;
+}
+
+.wpcf7-form-control-wrap {
+    flex: 50%;
+}
