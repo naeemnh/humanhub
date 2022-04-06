@@ -17,3 +17,16 @@
 .wpcf7-form-control-wrap {
     flex: 50%;
 }
+
+.introduction-img_area .inner-img {
+    background-color: #1a55a5;
+}
+
+.bg-smoke_color .introduction-img_area .inner-img {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.intro-content  p.short-desc {
+    font-size: 20px;
+}

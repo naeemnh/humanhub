@@ -56,76 +56,85 @@ get_header(); ?>
 </div>
 <!-- Slider Area End Here -->
 
-<!-- Begin Counter Area -->
-<div class="counter-area bg-denim_color">
+<!-- Begin Introduction Area -->
+<div id="welcome" class="introduction-area">
     <div class="container">
+        <div class="section-title pb-5">
+            <h6 class="heading mb-0">Our Story</h6>
+            <h2 class="sub-heading mb-0">
+                Our <span>Story</span>
+            </h2>
+        </div>
         <div class="row">
-            <div class="col-lg-3 col-sm-6">
-                <div class="counter-item h-100 d-flex flex-column justify-content-center">
-                    <div class="counter-icon">
-                        <i class="ti-medall"></i>
+            <div class="col-lg-6">
+                <div class="ademy-element-carousel introduction-slider" data-slick-options='{
+                    "slidesToShow": 1,
+                    "slidesToScroll": 1,
+                    "infinite": true,
+                    "arrows": false,
+                    "dots": false,
+                    "autoplay" : false,
+                    "fade" : false,
+                    "autoplaySpeed" : 7000,
+                    "pauseOnHover" : false,
+                    "pauseOnFocus" : false
+                    }' data-slick-responsive='[
+                    {"breakpoint":768, "settings": {
+                    "slidesToShow": 1
+                    }},
+                    {"breakpoint":575, "settings": {
+                    "slidesToShow": 1
+                    }}
+                ]'>
+                    <div class="intro-item">
+                        <div class="intro-content">
+                            <h3 class="heading mb-0">Our Story</h3>
+                            <p class="short-desc">
+                                Mehan was founded as a boutique talent acquisition agency in 2018, catering to private, semi government, and government sectors in the UAE.
+                            </p>
+                            <p class="short-desc">
+                                Venturing into innovative human capital business ideas in a continuously changing world, was only a matter of time.
+                            </p>
+                            <p class="short-desc">
+                                As we value and encourage continuous learning and transformation, we are in the business of influencing how human capital is practiced for the betterment of the human experience in the workplace.
+                            </p>
+                            <!-- <div class="intro-btn_wrap">
+                                <a class="ademy-btn denim-color_btn fullwidth-btn" href="<?php echo get_home_url() ?>/humanhub">
+                                    Learn more
+                                    <i class="ion-android-arrow-forward"></i>
+                                </a>
+                            </div> -->
+                        </div>
                     </div>
-                    <div class="count-wrap d-flex justify-content-center align-items-center">
-                        <h2 class="count font-italic mb-0">90</h2>
-                        <h2 class="number-suffix font-italic mb-0">%</h2>
-                    </div>
-                    <span class="title">Passing to universities</span>
+
                 </div>
             </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="counter-item h-100 d-flex flex-column justify-content-center">
-                    <div class="counter-icon">
-                        <i class="ti-user"></i>
+            <div class="col-lg-6">
+                <div class="introduction-img_area">
+                    <div class="inner-img">
+                        <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/introduction/home-story-img1.png" alt="Introduction Image" />
                     </div>
-                    <div class="count-wrap d-flex justify-content-center align-items-center">
-                        <h2 class="count font-italic mb-0">49</h2>
-                        <h2 class="number-suffix font-italic mb-0">K</h2>
-                    </div>
-                    <span class="title">Student enrolled</span>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="counter-item">
-                    <div class="counter-icon">
-                        <i class="ti-face-smile"></i>
-                    </div>
-                    <h2 class="count font-italic mb-0">2458</h2>
-                    <span class="title">High satisfaction</span>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="counter-item">
-                    <div class="counter-icon">
-                        <i class="ti-id-badge"></i>
-                    </div>
-                    <h2 class="count font-italic mb-0">1090</h2>
-                    <span class="title">CertIfied teacher</span>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- Counter Area End Here -->
+<!-- Introduction Area End Here -->
 
-<!-- Begin Introduction Area -->
-<div id="welcome" class="introduction-area">
+<!-- Begin Human Hub Introduction Area -->
+<div id="welcome" class="introduction-area bg-smoke_color">
     <div class="container">
         <div class="section-title pb-5">
-            <h6 class="heading mb-0">We are the best school</h6>
+            <h6 class="heading mb-0">Human Hub</h6>
             <h2 class="sub-heading mb-0">
-                Welcome to <span>Ademy</span> school
+                <span>Human</span> Hub
             </h2>
         </div>
         <div class="row">
             <div class="col-lg-6">
                 <div class="introduction-img_area">
                     <div class="inner-img">
-                        <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/introduction/1.jpg" alt="Introduction Image" />
-                        <div class="popup-btn">
-                            <a class="popup-vimeo" href="https://player.vimeo.com/video/172601404?autoplay=1">
-                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/banner/video-play-btn.png" alt="Play Button" />
-                            </a>
-                        </div>
+                        <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/introduction/group-1501.png" alt="Introduction Image" />
                     </div>
                 </div>
             </div>
@@ -151,118 +160,12 @@ get_header(); ?>
                 ]'>
                     <div class="intro-item">
                         <div class="intro-content">
-                            <h3 class="heading mb-0">Get know our school</h3>
-                            <p class="short-desc mb-0">
-                                We understand that each of our students is a uniquely
-                                talented individual. Within our supportive community,
-                                students are facilitated to develop positive relationships
-                                and grab the opportunity to realize their individual
-                                potential to the full.
+                            <h3 class="heading mb-0">Human Hub</h3>
+                            <p class="short-desc">
+                                A Continuous Learning Human Capital Hub that allows human capital professionals and students to transform, grow, share knowledge, innovate and advance in their careers by collaborating with other Human Capital professionals through virtual, mixed reality and physical platforms.
                             </p>
-                            <div class="list-item_wrap">
-                                <ul class="list-item">
-                                    <li>
-                                        <a href="javascript:void(0)">
-                                            <i class="ion-arrow-right-b"></i>
-                                            After School
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)">
-                                            <i class="ion-arrow-right-b"></i>
-                                            After School Fine Arts
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)">
-                                            <i class="ion-arrow-right-b"></i>
-                                            Athletics
-                                        </a>
-                                    </li>
-                                </ul>
-                                <ul class="list-item">
-                                    <li>
-                                        <a href="javascript:void(0)">
-                                            <i class="ion-arrow-right-b"></i>
-                                            Dining Hall
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)">
-                                            <i class="ion-arrow-right-b"></i>
-                                            College Planning Services
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)">
-                                            <i class="ion-arrow-right-b"></i>
-                                            Summer Camp Programs
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
                             <div class="intro-btn_wrap">
-                                <a class="ademy-btn denim-color_btn fullwidth-btn" href="javascript:void(0)">
-                                    Learn more
-                                    <i class="ion-android-arrow-forward"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="intro-item">
-                        <div class="intro-content">
-                            <h3 class="heading mb-0">Get know our school</h3>
-                            <p class="short-desc mb-0">
-                                We understand that each of our students is a uniquely
-                                talented individual. Within our supportive community,
-                                students are facilitated to develop positive relationships
-                                and grab the opportunity to realize their individual
-                                potential to the full.
-                            </p>
-                            <div class="list-item_wrap">
-                                <ul class="list-item">
-                                    <li>
-                                        <a href="javascript:void(0)">
-                                            <i class="ion-arrow-right-b"></i>
-                                            After School
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)">
-                                            <i class="ion-arrow-right-b"></i>
-                                            After School Fine Arts
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)">
-                                            <i class="ion-arrow-right-b"></i>
-                                            Athletics
-                                        </a>
-                                    </li>
-                                </ul>
-                                <ul class="list-item">
-                                    <li>
-                                        <a href="javascript:void(0)">
-                                            <i class="ion-arrow-right-b"></i>
-                                            Dining Hall
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)">
-                                            <i class="ion-arrow-right-b"></i>
-                                            College Planning Services
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)">
-                                            <i class="ion-arrow-right-b"></i>
-                                            Summer Camp Programs
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="intro-btn_wrap">
-                                <a class="ademy-btn denim-color_btn fullwidth-btn" href="javascript:void(0)">
+                                <a class="ademy-btn denim-color_btn fullwidth-btn" href="<?php echo get_home_url() ?>/humanhub">
                                     Learn more
                                     <i class="ion-android-arrow-forward"></i>
                                 </a>
@@ -274,85 +177,7 @@ get_header(); ?>
         </div>
     </div>
 </div>
-<!-- Introduction Area End Here -->
-
-<!-- Begin Introduction With Newsletter Area -->
-<div class="intro-with_newsletter bg-smoke_color">
-    <div class="container">
-        <div class="row align-items-end">
-            <div class="col-lg-8">
-                <div class="introduction-area-2">
-                    <h2 class="heading mb-0">
-                        Welcome to
-                        <span>Ademy</span>
-                        a prestigious secondary school
-                    </h2>
-                    <div class="row intro-item_wrap">
-                        <div class="col-lg-4">
-                            <div class="intro-item bg-white_color">
-                                <div class="intro-img">
-                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/introduction/small-size/university.png" alt="Introduction Image" />
-                                </div>
-                                <h2 class="title mb-0">Our school</h2>
-                                <p class="short-desc mb-0">
-                                    We take pride in our famous teaching traditions &
-                                    achievements.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="intro-item bg-white_color">
-                                <div class="intro-img">
-                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/introduction/small-size/mortarboard.png" alt="Introduction Image" />
-                                </div>
-                                <h2 class="title mb-0">Why Choose Us?</h2>
-                                <p class="short-desc mb-0">
-                                    Our school ranked among the top 10 best school for
-                                    children aged 13-19.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="intro-item bg-white_color">
-                                <div class="intro-img">
-                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/introduction/small-size/open-book.png" alt="Introduction Image" />
-                                </div>
-                                <h2 class="title mb-0">Achievements</h2>
-                                <p class="short-desc mb-0">
-                                    We have had the honor of becoming the Best School for
-                                    Science in 2020.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="newsletter-area">
-                    <h2 class="heading mb-0">Subscribe</h2>
-                    <h3 class="sub-heading mb-0">To our newsletters</h3>
-                    <p class="short-desc mb-0">
-                        Enter your email in the box below to receive the latest news
-                        and information about our activities and events.
-                    </p>
-                    <div class="newsletter-form_wrap">
-                        <form action="https://devitems.us11.list-manage.com/subscribe/post?u=6bbb9b6f5827bd842d9640c82&amp;id=05d85f18ef" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="newsletters-form validate" target="_blank" novalidate>
-                            <div id="mc_embed_signup_scroll">
-                                <div id="mc-form" class="mc-form subscribe-form">
-                                    <input id="mc-email" class="newsletter-input" type="email" autocomplete="off" placeholder="Email" />
-                                    <button class="newsletter-btn text-uppercase" id="mc-submit">
-                                        Subscribe
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Introduction With Newsletter Area End Here -->
+<!-- Human Hub Introduction Area End Here -->
 
 <!-- Begin Latest News Area -->
 <div id="latestnews" class="latest-news_area">
