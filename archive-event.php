@@ -75,7 +75,7 @@ get_template_part('template-parts/part', 'breadcrumb'); ?>
                           <?php echo date_i18n("d", $start_date); ?>
                         </span>
                         <span class="month text-uppercase">
-                          <?php echo date_i18n("F", $start_date); ?>
+                          <?php echo substr(date_i18n("F", $start_date), 0, 3); ?>
                         </span>
                       </div>
                     </div>
