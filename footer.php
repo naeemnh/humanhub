@@ -15,7 +15,7 @@
                                 </div>
                                 <p class="short-desc mb-0">
                                     Enrich your Human Capital Experience
-                                    <br/>
+                                    <br />
                                     Share, Network, Collaborate, Innovate, Learn, Transform, Do it again.
                                 </p>
                             </div>
@@ -25,27 +25,13 @@
                                 <h3 class="widgets-heading mb-0">Explore</h3>
                                 <div class="footer-widgets">
                                     <?php
-                                        wp_nav_menu(array(
-                                            'theme_location' => 'footer-menu-1',
-                                            'container_class' => '',
-                                            'container' => '',
-                                            'menu_class' => '',
-                                        ));
+                                    wp_nav_menu(array(
+                                        'theme_location' => 'footer-menu-1',
+                                        'container_class' => '',
+                                        'container' => '',
+                                        'menu_class' => '',
+                                    ));
                                     ?>
-                                    <!-- <ul>
-                                        <li>
-                                            <a href="javascript:void(0)">Classroom</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0)">Events</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0)">News</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0)">About</a>
-                                        </li>
-                                    </ul> -->
                                 </div>
                             </div>
                         </div>
@@ -54,25 +40,13 @@
                                 <h3 class="widgets-heading mb-0" style="visibility:hidden">Explore</h3>
                                 <div class="footer-widgets">
                                     <?php
-                                        wp_nav_menu(array(
-                                            'theme_location' => 'footer-menu-2',
-                                            'container_class' => '',
-                                            'container' => '',
-                                            'menu_class' => '',
-                                        ));
+                                    wp_nav_menu(array(
+                                        'theme_location' => 'footer-menu-2',
+                                        'container_class' => '',
+                                        'container' => '',
+                                        'menu_class' => '',
+                                    ));
                                     ?>
-                                    <!-- <ul>
-                                        <li>
-                                            <a href="javascript:void(0)"><span>58 Howard Street #2 San Francisco, CA
-                                                    94105</span></a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0)"><span class="text-lowercase">info@example.com</span></a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0)"><span>(+612) 2531 5600</span></a>
-                                        </li>
-                                    </ul> -->
                                 </div>
                             </div>
                         </div>
@@ -84,8 +58,8 @@
                                     </h3>
                                     <form action="" class="newsletters-form validate" id="mc-embedded-subscribe-form">
                                         <div class="mc-form subscribe-form">
-                                                <input id="mc-email" class="newsletter-input" type="email" autocomplete="off" placeholder="Email">
-                                                <button class="newsletter-btn text-uppercase" id="mc-submit">Subscribe</button>
+                                            <input id="mc-email" class="newsletter-input" type="email" autocomplete="off" placeholder="Email">
+                                            <button class="newsletter-btn text-uppercase" id="mc-submit">Subscribe</button>
                                         </div>
                                     </form>
                                 </div>

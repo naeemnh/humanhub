@@ -136,4 +136,12 @@
     .services-item {
         flex-direction: column;
     }
+
+    .col-lg-2 .footer-widgets_area {
+        padding-bottom: 0;
+    }
+
+    .col-lg-3 .widgets-heading {
+        display: none;
+    }
 }
