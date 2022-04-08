@@ -132,4 +132,8 @@
         top: 0;
         left: 0;
     }
+
+    .services-item {
+        flex-direction: column;
+    }
 }
