@@ -5,6 +5,11 @@
 
 ---------------------------------------- */
 
+.header-logo img {
+    height: auto;
+    width: auto;
+}
+
 .content-area {
     padding-top: 95px;
     padding-bottom: 100px;
@@ -117,5 +122,14 @@
 @media (max-width: 768px) {
     .services-item>* {
         width: 100%;
+    }
+
+    .introduction-img_area {
+        margin-right: 0;
+    }
+
+    .introduction-img_area .inner-img {
+        top: 0;
+        left: 0;
     }
 }

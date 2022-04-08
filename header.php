@@ -214,9 +214,7 @@
                 <div class="offcanvas-menu-inner">
                     <div class="offcanvas-inner_search">
                         <!-- Start Search Form -->
-                        <div class="search-body">
-                            <?php get_search_form(array('class' => 'hm-searchbox')); ?>
-                        </div>
+                        <?php get_search_form(array('class' => 'hm-searchbox')); ?>
                         <!-- End Search Form -->
                     </div>
                     <a href="#" class="btn-close"><i class="ion-close-round"></i></a>
@@ -230,165 +228,16 @@
                             'walker' => new Walker_Nav_Mobile(),
                         ));
                         ?>
-                        <!-- <nav class="offcanvas-navigation">
-                            <ul class="mobile-menu">
-                                <li class="menu-item-has-children active">
-                                    <a href="#"><span class="mm-text">Home <i class="ion-ios-arrow-down"></i></span></a>
-                                    <ul class="sub-menu">
-                                        <li>
-                                            <a href="index.html">
-                                                <span class="mm-text">Home 01</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="index-2.html">
-                                                <span class="mm-text">Home 02</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="index-3.html">
-                                                <span class="mm-text">Home 03</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">
-                                        <span class="mm-text">About <i class="ion-ios-arrow-down"></i></span>
-                                    </a>
-                                    <ul class="sub-menu">
-                                        <li>
-                                            <a href="about-us.html">
-                                                <span class="mm-text">About Us</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="pricing-plans.html">
-                                                <span class="mm-text">Pricing Plans</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">
-                                        <span class="mm-text">Academics <i class="ion-ios-arrow-down"></i></span>
-                                    </a>
-                                    <ul class="sub-menu">
-                                        <li>
-                                            <a href="academics.html">
-                                                <span class="mm-text">Academics Default</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="our-classes.html">
-                                                <span class="mm-text">Our Classes</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="our-classes-list.html">
-                                                <span class="mm-text">Our Classes List</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="single-class.html">
-                                                <span class="mm-text">Single Class</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">
-                                        <span class="mm-text">News <i class="ion-ios-arrow-down"></i></span>
-                                    </a>
-                                    <ul class="sub-menu">
-                                        <li>
-                                            <a href="news.html">
-                                                <span class="mm-text">News Default</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="news-list.html">
-                                                <span class="mm-text">News List</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="single-post.html">
-                                                <span class="mm-text">Single Post</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">
-                                        <span class="mm-text">Event <i class="ion-ios-arrow-down"></i></span>
-                                    </a>
-                                    <ul class="sub-menu">
-                                        <li>
-                                            <a href="event-page.html">
-                                                <span class="mm-text">Event Page</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="event-list.html">
-                                                <span class="mm-text">Event List</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="single-event.html">
-                                                <span class="mm-text">Single Event</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">
-                                        <span class="mm-text">Pages <i class="ion-ios-arrow-down"></i></span>
-                                    </a>
-                                    <ul class="sub-menu">
-                                        <li>
-                                            <a href="faculty-and-staff.html">
-                                                <span class="mm-text">Faculty and Staff</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="faculty-and-staff-2.html">
-                                                <span class="mm-text">Faculty and Staff 02</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="profile.html">
-                                                <span class="mm-text">Profile</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="coming-soon.html">
-                                                <span class="mm-text">Coming Soon</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="error-404.html">
-                                                <span class="mm-text">Error 404</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="contact.html">
-                                        <span class="mm-text">Contact</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav> -->
                         <nav class="offcanvas-navigation-2">
                             <div class="ht-right inner-header_info">
                                 <ul>
                                     <li class="contuct-number">
                                         <i class="ion-ios-telephone me-1"></i>
-                                        <a href="tel://+01228899900">01228899900</a>
+                                        <a href="tel:+971557560966">971557560966</a>
                                     </li>
                                     <li class="address">
                                         <i class="ion-ios-location me-1"></i>
-                                        <span>614 Destany Village Apt. 968</span>
+                                        <span>Masdar Free Zone, Abu Dhabi, AE</span>
                                     </li>
                                     <!-- <li class="donate">
                                         <a class="ademy-btn atlantis-color_btn" href="javascript:void(0)">Donate</a>
@@ -407,14 +256,14 @@
                                             <i class="ion-social-twitter"></i>
                                         </a>
                                     </li>
-                                    <li class="youtube">
-                                        <a href="https://www.youtube.com/" data-bs-toggle="tooltip" target="_blank" title="Youtube">
-                                            <i class="ion-social-youtube"></i>
+                                    <li class="linkedin">
+                                        <a href="https://www.youtube.com/" data-bs-toggle="tooltip" target="_blank" title="LinkedIn">
+                                            <i class="ion-social-linkedin"></i>
                                         </a>
                                     </li>
-                                    <li class="skype">
-                                        <a href="https://skype.com/" data-bs-toggle="tooltip" target="_blank" title="Skype">
-                                            <i class="ion-social-skype"></i>
+                                    <li class="snapchat">
+                                        <a href="https://skype.com/" data-bs-toggle="tooltip" target="_blank" title="Snapchat">
+                                            <i class="ion-social-snapchat"></i>
                                         </a>
                                     </li>
                                 </ul>
