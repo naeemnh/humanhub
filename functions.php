@@ -287,6 +287,28 @@ function event_posts($query)
 add_action('pre_get_posts', 'event_posts');
 
 
+add_action( 'admin_notices', 'mehan_dependencies' );
+
+/*
+    ==========================================
+    Plugin Checks
+    ==========================================
+*/
+
+function mehan_dependencies() {
+    if( ! function_exists('acf_add_local_field_group') ) { ?>
+        <div class="error">
+            <p>Warning: The theme needs Advanced Custom Fields to function</p>
+            <a href="/wp-admin/plugins.php?s=Advanced%20Custom%20Fields">Activate/Install Plugin</a>
+        </div>
+    <?php }
+    if( ! function_exists('wpcf7_init') ) { ?>
+        <div class="error">
+            <p>Warning: The theme needs Contact Form 7 for Contact forms to function</p>
+            <a href="/wp-admin/plugins.php?s=contact%20form%207">Activate/Install Plugin</a>
+        </div>
+    <?php }
+}
 
 /*
     ==========================================

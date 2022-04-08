@@ -14,16 +14,25 @@
                                     </a> -->
                                 </div>
                                 <p class="short-desc mb-0">
-                                    Welcome to Ademy – A Professional HTML Template for High
-                                    Schools and other Educational Institutes.
+                                    Enrich your Human Capital Experience
+                                    <br/>
+                                    Share, Network, Collaborate, Innovate, Learn, Transform, Do it again.
                                 </p>
                             </div>
                         </div>
                         <div class="col-lg-2 col-md-6">
                             <div class="footer-widgets_area">
-                                <h3 class="widgets-heading mb-0">Ours Link</h3>
+                                <h3 class="widgets-heading mb-0">Explore</h3>
                                 <div class="footer-widgets">
-                                    <ul>
+                                    <?php
+                                        wp_nav_menu(array(
+                                            'theme_location' => 'footer-menu-1',
+                                            'container_class' => '',
+                                            'container' => '',
+                                            'menu_class' => '',
+                                        ));
+                                    ?>
+                                    <!-- <ul>
                                         <li>
                                             <a href="javascript:void(0)">Classroom</a>
                                         </li>
@@ -36,15 +45,23 @@
                                         <li>
                                             <a href="javascript:void(0)">About</a>
                                         </li>
-                                    </ul>
+                                    </ul> -->
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="footer-widgets_area p-md-0">
-                                <h3 class="widgets-heading mb-0">Contact us</h3>
+                                <h3 class="widgets-heading mb-0" style="visibility:hidden">Explore</h3>
                                 <div class="footer-widgets">
-                                    <ul>
+                                    <?php
+                                        wp_nav_menu(array(
+                                            'theme_location' => 'footer-menu-2',
+                                            'container_class' => '',
+                                            'container' => '',
+                                            'menu_class' => '',
+                                        ));
+                                    ?>
+                                    <!-- <ul>
                                         <li>
                                             <a href="javascript:void(0)"><span>58 Howard Street #2 San Francisco, CA
                                                     94105</span></a>
@@ -55,21 +72,23 @@
                                         <li>
                                             <a href="javascript:void(0)"><span>(+612) 2531 5600</span></a>
                                         </li>
-                                    </ul>
+                                    </ul> -->
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="footer-widgets_area latest-tweets_widget p-md-0">
-                                <div class="tweets-widget">
-                                    <a href="javascript:void(0)">
-                                        Discover a <span>#html</span> theme oasis; all you can
-                                        imagine & more, just make your pick!
-                                    </a>
+                                <div class="newsletter-area newsletter-form_wrap pb-5">
+                                    <h3 class="sub-heading mb-0">
+                                        <i class="ion-android-send"></i> Newsletter
+                                    </h3>
+                                    <form action="" class="newsletters-form validate" id="mc-embedded-subscribe-form">
+                                        <div class="mc-form subscribe-form">
+                                                <input id="mc-email" class="newsletter-input" type="email" autocomplete="off" placeholder="Email">
+                                                <button class="newsletter-btn text-uppercase" id="mc-submit">Subscribe</button>
+                                        </div>
+                                    </form>
                                 </div>
-                                <h3 class="title mb-0">
-                                    <i class="ion-social-twitter"></i> Web Developer
-                                </h3>
                             </div>
                         </div>
                     </div>
@@ -83,9 +102,8 @@
                 <div class="row">
                     <div class="col-lg-7 col-sm-6">
                         <div class="copyright">
-                            <span>&copy; 2020
-                                <a href="index.html">Ademy.</a>
-                                <a href="https://themeforest.net/user/bootxperts/portfolio" target="_blank">Designed By BootXperts.</a>
+                            <span>Copyright 2022 &copy;
+                                <a href="<?php echo home_url() ?>">Mehan Limited.</a>
                             </span>
                         </div>
                     </div>

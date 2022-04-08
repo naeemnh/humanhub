@@ -23,7 +23,7 @@ if (have_posts()) :
                                     <?php if (get_field('address')) : ?>
                                         <li>
                                             <h4 class="heading text-uppercase mb-0"><i class="ti-map-alt"></i>Address</h4>
-                                            <span class="short-desc"><?php get_field('address') ?></span>
+                                            <span class="short-desc"><?php the_field('address') ?></span>
                                         </li>
                                     <?php endif;
                                     if (get_field('mobile_no_1') || get_field('mobile_no_2')) : ?>
@@ -61,7 +61,6 @@ if (have_posts()) :
             <!-- Contact Area End Here -->
         </main>
         <!-- Main Content Area End Here -->
-
 <?php
     endwhile;
 endif;
