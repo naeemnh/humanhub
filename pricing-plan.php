@@ -63,7 +63,7 @@ if (have_posts()) :
                                         </div>
                                         <div class="col-md-4">
                                             <div class="pricing-plans_item large-item bg-white_color">
-                                                <h5 class="plan-method text-uppercase mb-0">Premium Plus plan</h5>
+                                                <h5 class="plan-method text-uppercase mb-0">Premium plan</h5>
                                                 <?php if ($monthly_premium['price_type'] == 'free') : ?>
                                                     <span class="price"><strong>FREE</strong></span>
                                                 <?php elseif ($monthly_premium['price_type'] == 'priced') : ?>
@@ -84,7 +84,7 @@ if (have_posts()) :
                                         </div>
                                         <div class="col-md-4">
                                             <div class="pricing-plans_item bg-snow_color">
-                                                <h5 class="plan-method text-uppercase mb-0">Premium plan</h5>
+                                                <h5 class="plan-method text-uppercase mb-0">Premium Plus plan</h5>
                                                 <?php if ($monthly_premium_plus['price_type'] == 'free') : ?>
                                                     <span class="price"><strong>FREE</strong></span>
                                                 <?php elseif ($monthly_premium_plus['price_type'] == 'priced') : ?>
@@ -130,7 +130,7 @@ if (have_posts()) :
                                         </div>
                                         <div class="col-md-4">
                                             <div class="pricing-plans_item large-item bg-white_color">
-                                                <h5 class="plan-method text-uppercase mb-0">Premium Plus plan</h5>
+                                                <h5 class="plan-method text-uppercase mb-0">Premium plan</h5>
                                                 <?php if ($yearly_premium['price_type'] == 'free') : ?>
                                                     <span class="price"><strong>FREE</strong></span>
                                                 <?php elseif ($yearly_premium['price_type'] == 'priced') : ?>
@@ -151,6 +151,7 @@ if (have_posts()) :
                                         </div>
                                         <div class="col-md-4">
                                             <div class="pricing-plans_item bg-snow_color">
+                                                <h5 class="plan-method text-uppercase mb-0">Premium Plus plan</h5>
                                                 <?php if ($yearly_premium_plus['price_type'] == 'free') : ?>
                                                     <span class="price"><strong>FREE</strong></span>
                                                 <?php elseif ($yearly_premium_plus['price_type'] == 'priced') : ?>
