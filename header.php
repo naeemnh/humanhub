@@ -69,140 +69,6 @@
                                             'walker' => new Walker_Nav_Primary(),
                                         ));
                                         ?>
-                                        <!-- <nav class="main-nav d-flex justify-content-center">
-                                            <ul>
-                                                <li>
-                                                    <a href="index.html">Home</a>
-                                                    <ul class="ademy-dropdown">
-                                                        <li>
-                                                            <a href="index-2.html">
-                                                                <i class="ion-chevron-right"></i>
-                                                                Home 02
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="index-3.html">
-                                                                <i class="ion-chevron-right"></i>
-                                                                Home 03
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <a href="about-us.html">About</a>
-                                                    <ul class="ademy-dropdown">
-                                                        <li>
-                                                            <a href="about-us.html">
-                                                                <i class="ion-chevron-right"></i>
-                                                                About us
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="pricing-plans.html">
-                                                                <i class="ion-chevron-right"></i>
-                                                                Pricing Plans
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <a href="academics.html">Academics</a>
-                                                    <ul class="ademy-dropdown">
-                                                        <li>
-                                                            <a href="our-classes.html">
-                                                                <i class="ion-chevron-right"></i>
-                                                                Our Classes
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="our-classes-list.html">
-                                                                <i class="ion-chevron-right"></i>
-                                                                Our Classes - List
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="single-class.html">
-                                                                <i class="ion-chevron-right"></i>
-                                                                Single Class
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <a href="news.html">News</a>
-                                                    <ul class="ademy-dropdown">
-                                                        <li>
-                                                            <a href="news-list.html">
-                                                                <i class="ion-chevron-right"></i>
-                                                                News - List
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="single-post.html">
-                                                                <i class="ion-chevron-right"></i>
-                                                                Single Post
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <a href="event-page.html">Event</a>
-                                                    <ul class="ademy-dropdown">
-                                                        <li>
-                                                            <a href="event-list.html">
-                                                                <i class="ion-chevron-right"></i>
-                                                                Event - List
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="single-event.html">
-                                                                <i class="ion-chevron-right"></i>
-                                                                Single Event
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:void(0)">Pages</a>
-                                                    <ul class="ademy-dropdown">
-                                                        <li class="submenu-holder">
-                                                            <a href="faculty-and-staff.html">
-                                                                <i class="ion-chevron-right"></i>
-                                                                Faculty and staff
-                                                                <span class="submenu-indicate ion-chevron-right"></span>
-                                                            </a>
-                                                            <ul class="ademy-dropdown ademy-submenu">
-                                                                <li>
-                                                                    <a href="profile.html">
-                                                                        <i class="ion-chevron-right"></i>
-                                                                        Profile
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                        <li>
-                                                            <a href="faculty-and-staff-2.html">
-                                                                <i class="ion-chevron-right"></i>
-                                                                Faculty and staff 02
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="coming-soon.html">
-                                                                <i class="ion-chevron-right"></i>
-                                                                Coming Soon
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="error-404.html">
-                                                                <i class="ion-chevron-right"></i>
-                                                                404
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="contact.html">Contact</a></li>
-                                            </ul>
-                                        </nav> -->
                                     </div>
                                 </div>
                                 <div class="col-xl-3 col-md-8 d-none d-md-block">
@@ -218,14 +84,14 @@
                                                     <i class="ion-social-twitter"></i>
                                                 </a>
                                             </li>
-                                            <li class="youtube">
-                                                <a href="https://www.youtube.com/" data-bs-toggle="tooltip" target="_blank" title="Youtube">
-                                                    <i class="ion-social-youtube"></i>
+                                            <li class="linkedin">
+                                                <a href="https://www.linkedin.com/" data-bs-toggle="tooltip" target="_blank" title="Linkedin">
+                                                    <i class="ion-social-linkedin"></i>
                                                 </a>
                                             </li>
-                                            <li class="skype">
-                                                <a href="https://skype.com/" data-bs-toggle="tooltip" target="_blank" title="Skype">
-                                                    <i class="ion-social-skype"></i>
+                                            <li class="snapchat">
+                                                <a href="https://snapchat.com/" data-bs-toggle="tooltip" target="_blank" title="Snapchat">
+                                                    <i class="ion-social-snapchat"></i>
                                                 </a>
                                             </li>
                                             <li class="search-bar d-none d-lg-inline-block">
@@ -286,140 +152,6 @@
                                             'walker' => new Walker_Nav_Primary(),
                                         ));
                                         ?>
-                                        <!-- <nav class="main-nav d-flex justify-content-center">
-                                            <ul>
-                                                <li>
-                                                    <a href="index.html">Home</a>
-                                                    <ul class="ademy-dropdown">
-                                                        <li>
-                                                            <a href="index-2.html">
-                                                                <i class="ion-chevron-right"></i>
-                                                                Home 02
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="index-3.html">
-                                                                <i class="ion-chevron-right"></i>
-                                                                Home 03
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <a href="about-us.html">About</a>
-                                                    <ul class="ademy-dropdown">
-                                                        <li>
-                                                            <a href="about-us.html">
-                                                                <i class="ion-chevron-right"></i>
-                                                                About us
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="pricing-plans.html">
-                                                                <i class="ion-chevron-right"></i>
-                                                                Pricing Plans
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <a href="academics.html">Academics</a>
-                                                    <ul class="ademy-dropdown">
-                                                        <li>
-                                                            <a href="our-classes.html">
-                                                                <i class="ion-chevron-right"></i>
-                                                                Our Classes
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="our-classes-list.html">
-                                                                <i class="ion-chevron-right"></i>
-                                                                Our Classes - List
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="single-class.html">
-                                                                <i class="ion-chevron-right"></i>
-                                                                Single Class
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <a href="news.html">News</a>
-                                                    <ul class="ademy-dropdown">
-                                                        <li>
-                                                            <a href="news-list.html">
-                                                                <i class="ion-chevron-right"></i>
-                                                                News - List
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="single-post.html">
-                                                                <i class="ion-chevron-right"></i>
-                                                                Single Post
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <a href="event-page.html">Event</a>
-                                                    <ul class="ademy-dropdown">
-                                                        <li>
-                                                            <a href="event-list.html">
-                                                                <i class="ion-chevron-right"></i>
-                                                                Event - List
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="single-event.html">
-                                                                <i class="ion-chevron-right"></i>
-                                                                Single Event
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:void(0)">Pages</a>
-                                                    <ul class="ademy-dropdown">
-                                                        <li class="submenu-holder">
-                                                            <a href="faculty-and-staff.html">
-                                                                <i class="ion-chevron-right"></i>
-                                                                Faculty and staff
-                                                                <span class="submenu-indicate ion-chevron-right"></span>
-                                                            </a>
-                                                            <ul class="ademy-dropdown ademy-submenu">
-                                                                <li>
-                                                                    <a href="profile.html">
-                                                                        <i class="ion-chevron-right"></i>
-                                                                        Profile
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                        <li>
-                                                            <a href="faculty-and-staff-2.html">
-                                                                <i class="ion-chevron-right"></i>
-                                                                Faculty and staff 02
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="coming-soon.html">
-                                                                <i class="ion-chevron-right"></i>
-                                                                Coming Soon
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="error-404.html">
-                                                                <i class="ion-chevron-right"></i>
-                                                                404
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="contact.html">Contact</a></li>
-                                            </ul>
-                                        </nav> -->
                                     </div>
                                 </div>
                                 <div class="col-xl-3 col-md-8 d-none d-md-block">
@@ -435,14 +167,14 @@
                                                     <i class="ion-social-twitter"></i>
                                                 </a>
                                             </li>
-                                            <li class="youtube">
-                                                <a href="https://www.youtube.com/" data-bs-toggle="tooltip" target="_blank" title="Youtube">
-                                                    <i class="ion-social-youtube"></i>
+                                            <li class="linkedin">
+                                                <a href="https://www.linkedin.com/" data-bs-toggle="tooltip" target="_blank" title="Linkedin">
+                                                    <i class="ion-social-linkedin"></i>
                                                 </a>
                                             </li>
-                                            <li class="skype">
-                                                <a href="https://skype.com/" data-bs-toggle="tooltip" target="_blank" title="Skype">
-                                                    <i class="ion-social-skype"></i>
+                                            <li class="snapchat">
+                                                <a href="https://snapchat.com/" data-bs-toggle="tooltip" target="_blank" title="Snapchat">
+                                                    <i class="ion-social-snapchat"></i>
                                                 </a>
                                             </li>
                                             <li class="search-bar d-none d-lg-inline-block">
