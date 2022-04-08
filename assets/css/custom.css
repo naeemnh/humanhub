@@ -88,6 +88,10 @@
     font-size: 12px;
 }
 
+.pricing-plans_area .pricing-plans_item span.price strong {
+    font-size: 48px;
+}
+
 .blue-border {
     border: 2px solid #1a55a5;
 }
