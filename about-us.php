@@ -15,40 +15,30 @@ while (have_posts()) : the_post(); ?>
         <div id="welcome" class="introduction-area introduction-area-3 pb-0">
             <div class="container">
                 <div class="section-title pb-5">
-                    <h6 class="heading mb-0">We are the best school</h6>
                     <h2 class="sub-heading mb-0">
-                        Welcome to <span>Ademy</span> school
+                        Welcome to <span>Mehan's</span> HumanHub
                     </h2>
                 </div>
                 <div class="row">
                     <div class="col-lg-5 order-2">
                         <div class="section-wrap">
-                            <h2 class="heading mb-0">
+                            <!-- <h2 class="heading mb-0">
                                 Welcome to
                                 <span>Ademy</span>
                                 a prestigious secondary school
-                            </h2>
+                            </h2> -->
                             <p class="short-desc mb-0">
-                                We understand that each of our students is a uniquely
-                                talented individual. Within our supportive community,
-                                students are facilitated to develop positive relationships
-                                and grab the opportunity to realize their individual
-                                potential to the full.
+                                Mehan's Human Hub is a continuous learning Human Capital Hub that allows human capital professionals and students to transform, grow, share knowledge, innovate and advance in their careers by collaborating with other HC professionals through virtual and physical platforms.
                             </p>
-                            <div class="btn-wrap">
+                            <!-- <div class="btn-wrap">
                                 <a class="ademy-btn denim-color_btn with-border_radius" href="academics.html">Learn more</a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="col-lg-6 order-1">
                         <div class="introduction-img_area">
                             <div class="inner-img">
-                                <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/introduction/1.jpg" alt="Introduction Image" />
-                                <div class="popup-btn">
-                                    <a class="popup-vimeo" href="https://player.vimeo.com/video/172601404?autoplay=1">
-                                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/banner/video-play-btn.png" alt="Play Button" />
-                                    </a>
-                                </div>
+                                <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/introduction/elements_human-hub-min.png" alt="Introduction Image" />
                             </div>
                         </div>
                     </div>
@@ -58,89 +48,60 @@ while (have_posts()) : the_post(); ?>
         <!-- Introduction Area Three End Here -->
 
         <!-- Begin Services Area -->
-        <div class="services-area">
+        <div class="services-area bg-denim_color">
             <div class="container">
+                <div class="section-title pb-5">
+                    <h2 class="sub-heading mb-0 white-color">What HumanHub Offers</h2>
+                </div>
                 <div class="row">
-                    <div class="col-lg-4 col-sm-6">
+                    <div class="col-lg-6 col-sm-12">
                         <div class="services-item">
-                            <div class="services-icon">
-                                <i class="ion-ios-nutrition"></i>
+                            <div class="services-img">
+                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/services/elements_human-hub-1-min.png" alt="" class="img-full">
                             </div>
                             <div class="services-content">
-                                <h3 class="title mb-0">Nutritious food</h3>
+                                <h3 class="title mb-0">Knowledge</h3>
                                 <p class="short-desc mb-0">
-                                    We have the most scientific and suitable nutrition modes
-                                    for our students.
+                                    Facilitating Knowledge and Experience Sharing among Human Capital professionals through speaking via podcasts & webinars, writing articles, and posting, brainstroming & collaborating. 
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
+                    <div class="col-lg-6 col-sm-12">
                         <div class="services-item">
-                            <div class="services-icon">
-                                <i class="ion-android-bus"></i>
+                            <div class="services-img">
+                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/services/elements_human-hub-2-min.png" alt="" class="img-full">
                             </div>
                             <div class="services-content">
-                                <h3 class="title mb-0">Bus services</h3>
+                                <h3 class="title mb-0">Enlightment</h3>
                                 <p class="short-desc mb-0">
-                                    Bus fares are completely free for both Ademy's students
-                                    and teachers.
+                                    Inspiring the next generation of Human Capital leaders through shadowing, mentorship, coaching, and internships.
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
+                    <div class="col-lg-6 col-sm-12">
                         <div class="services-item">
-                            <div class="services-icon">
-                                <i class="ion-music-note"></i>
+                            <div class="services-img">
+                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/services/elements_human-hub-4-min.png" alt="" class="img-full">
                             </div>
                             <div class="services-content">
-                                <h3 class="title mb-0">Music lessons</h3>
+                                <h3 class="title mb-0">Networking</h3>
                                 <p class="short-desc mb-0">
-                                    Students are encouraged to take music lessons for
-                                    developing artistic talents.
+                                    Providing opportunities for Human Capital professionals to strengthen their network via physical and virtual events, access to direct messaging and joining or creating groups and communities.
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
+                    <div class="col-lg-6 col-sm-12">
                         <div class="services-item">
-                            <div class="services-icon">
-                                <i class="ion-ios-football"></i>
+                            <div class="services-img">
+                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/services/elements_human-hub-3-min.png" alt="" class="img-full">
                             </div>
                             <div class="services-content">
-                                <h3 class="title mb-0">Team sports</h3>
+                                <h3 class="title mb-0">Entrepreneurship</h3>
                                 <p class="short-desc mb-0">
-                                    Team sports are for teenagers of all ages to enhance team
-                                    spirit.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="services-item">
-                            <div class="services-icon">
-                                <i class="ion-videocamera"></i>
-                            </div>
-                            <div class="services-content">
-                                <h3 class="title mb-0">Drama clubs</h3>
-                                <p class="short-desc mb-0">
-                                    Drama clubs are the most reputable and highly regarded
-                                    groups in our school.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="services-item">
-                            <div class="services-icon">
-                                <i class="ion-flag"></i>
-                            </div>
-                            <div class="services-content">
-                                <h3 class="title mb-0">Summer camps</h3>
-                                <p class="short-desc mb-0">
-                                    We organized camps for students from all over the country
-                                    every summer.
+                                    To influence human capital practices by supporting entrepreneurs and freelancers.
                                 </p>
                             </div>
                         </div>
@@ -151,7 +112,7 @@ while (have_posts()) : the_post(); ?>
         <!-- Services Area End Here -->
 
         <!-- Begin Banner Area -->
-        <div class="banner-area banner-bg-01">
+        <!-- <div class="banner-area banner-bg-01">
             <div class="container h-100">
                 <div class="row h-100">
                     <div class="col-lg-12">
@@ -173,8 +134,33 @@ while (have_posts()) : the_post(); ?>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Banner Area End Here -->
+
+        <!-- Begin Ticket Area -->
+        <div class="ticket-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="ticket-item">
+                            <div class="heading-wrap">
+                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/ticket/arrow.png" alt="Ticket Arrow" />
+                                <h2 class="heading mb-0 blue-color">Buy early bird ticket now!</h2>
+                            </div>
+                            <div class="group-btn_wrap d-flex">
+                                <a class="ademy-btn btn-transparent blue-border grey-color with-border_radius me-2" href="javascript:void(0)">Learn more
+                                    <i class="ion-android-arrow-forward"></i>
+                                </a>
+                                <a class="ademy-btn denim-color_btn with-border_radius" href="academics.html">Register Now
+                                    <i class="ion-android-arrow-forward"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Ticket Area End Here -->
 
     </main>
     <!-- Main Content Area End Here -->

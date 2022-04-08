@@ -6,8 +6,8 @@
 ---------------------------------------- */
 
 .content-area {
-	padding-top: 95px;
-	padding-bottom: 100px;
+    padding-top: 95px;
+    padding-bottom: 100px;
 }
 
 .feedback-form .form-group.group-input .wpcf7-form-control-wrap:first-child {
@@ -27,6 +27,58 @@
     box-shadow: none;
 }
 
-.intro-content  p.short-desc {
+.intro-content p.short-desc,
+.introduction-area-3 .section-wrap p.short-desc {
     font-size: 20px;
+}
+
+.ticket-area .ticket-item .heading-wrap h2.heading {
+    color: #1a55a5;
+}
+
+.newsletter-area {
+    background-color: #1a55a5;
+}
+
+.services-area [class*="col-"]:not(:nth-child(n+4)) .services-item {
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.services-area .col-lg-6 .services-item {
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.services-item>* {
+    width: 50%;
+}
+
+.blue-border {
+    border: 2px solid #1a55a5;
+}
+
+.blue-border:hover,
+.blue-border:active {
+    border: 2px solid #fff;
+}
+
+.grey-color {
+    color: #333;
+}
+
+.blue-border:hover .grey-color,
+.blue-border:active .grey-color {
+    color: #fff;
+}
+
+.white-color {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .services-item>* {
+        width: 100%;
+    }
 }
