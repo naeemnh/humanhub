@@ -28,6 +28,8 @@ get_header() ?>
                             </ul>
                         </div>
                     </div>
+                    <span class="offer-btn denim-color_btn with-border_radius">SAVE 10%</span>
+                    <h6 class="offer-info">When you pay upfront for the year</h6>
                     <div class="tab-content">
                         <div id="monthly" class="tab-pane active show" role="tabpanel">
                             <div class="row g-0 align-items-center">

@@ -286,9 +286,6 @@ function event_posts($query)
 
 add_action('pre_get_posts', 'event_posts');
 
-
-add_action( 'admin_notices', 'mehan_dependencies' );
-
 /*
     ==========================================
     Plugin Checks
@@ -309,6 +306,8 @@ function mehan_dependencies() {
         </div>
     <?php }
 }
+
+add_action( 'admin_notices', 'mehan_dependencies' );
 
 /*
     ==========================================

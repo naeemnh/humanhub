@@ -56,7 +56,7 @@ get_header(); ?>
 </div>
 <!-- Slider Area End Here -->
 
-<!-- Begin Introduction Area -->
+<!-- Begin Introduction Area - Our Story-->
 <div id="welcome" class="introduction-area">
     <div class="container">
         <div class="section-title pb-5">
@@ -121,7 +121,7 @@ get_header(); ?>
 </div>
 <!-- Introduction Area End Here -->
 
-<!-- Begin Human Hub Introduction Area -->
+<!-- Begin Human Hub Introduction Area - Human Hub -->
 <div id="welcome" class="introduction-area bg-smoke_color">
     <div class="container">
         <div class="section-title pb-5">
@@ -1293,31 +1293,6 @@ get_header(); ?>
     </div>
 </div>
 <!-- Event Area End Here -->
-
-<!-- Begin Ticket Area -->
-<div class="ticket-area bg-denim_color">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="ticket-item">
-                    <div class="heading-wrap">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/ticket/arrow.png" alt="Ticket Arrow" />
-                        <h2 class="heading mb-0">Buy early bird ticket now!</h2>
-                    </div>
-                    <div class="group-btn_wrap d-flex">
-                        <a class="ademy-btn btn-transparent white-border with-border_radius hover-white_btn me-2" href="javascript:void(0)">Learn more
-                            <i class="ion-android-arrow-forward"></i>
-                        </a>
-                        <a class="ademy-btn btn-transparent hover-white_border with-border_radius" href="javascript:void(0)">Register Now
-                            <i class="ion-android-arrow-forward"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Ticket Area End Here -->
 
 <!-- Begin Testimonials Area -->
 <div class="testimonials-area">

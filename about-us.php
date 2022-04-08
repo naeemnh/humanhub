@@ -12,7 +12,7 @@ while (have_posts()) : the_post(); ?>
     <!-- Begin Main Content Area -->
     <main class="main-content">
         <!-- Begin Introduction Area Three -->
-        <div id="welcome" class="introduction-area introduction-area-3 pb-0">
+        <div id="welcome" class="introduction-area introduction-area-3">
             <div class="container">
                 <div class="section-title pb-5">
                     <h2 class="sub-heading mb-0">
@@ -48,10 +48,10 @@ while (have_posts()) : the_post(); ?>
         <!-- Introduction Area Three End Here -->
 
         <!-- Begin Services Area -->
-        <div class="services-area bg-denim_color">
+        <div class="services-area bg-smoke_color">
             <div class="container">
                 <div class="section-title pb-5">
-                    <h2 class="sub-heading mb-0 white-color">What HumanHub Offers</h2>
+                    <h2 class="sub-heading mb-0">What HumanHub Offers</h2>
                 </div>
                 <div class="row">
                     <div class="col-lg-6 col-sm-12">
@@ -60,7 +60,7 @@ while (have_posts()) : the_post(); ?>
                                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/services/elements_human-hub-1-min.png" alt="" class="img-full">
                             </div>
                             <div class="services-content">
-                                <h3 class="title mb-0">Knowledge</h3>
+                                <h3 class="title mb-0 white-color">Knowledge</h3>
                                 <p class="short-desc mb-0">
                                     Facilitating Knowledge and Experience Sharing among Human Capital professionals through speaking via podcasts & webinars, writing articles, and posting, brainstroming & collaborating. 
                                 </p>
@@ -73,7 +73,7 @@ while (have_posts()) : the_post(); ?>
                                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/services/elements_human-hub-2-min.png" alt="" class="img-full">
                             </div>
                             <div class="services-content">
-                                <h3 class="title mb-0">Enlightment</h3>
+                                <h3 class="title mb-0 white-color">Enlightment</h3>
                                 <p class="short-desc mb-0">
                                     Inspiring the next generation of Human Capital leaders through shadowing, mentorship, coaching, and internships.
                                 </p>
@@ -86,7 +86,7 @@ while (have_posts()) : the_post(); ?>
                                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/services/elements_human-hub-4-min.png" alt="" class="img-full">
                             </div>
                             <div class="services-content">
-                                <h3 class="title mb-0">Networking</h3>
+                                <h3 class="title mb-0 white-color">Networking</h3>
                                 <p class="short-desc mb-0">
                                     Providing opportunities for Human Capital professionals to strengthen their network via physical and virtual events, access to direct messaging and joining or creating groups and communities.
                                 </p>
@@ -99,7 +99,7 @@ while (have_posts()) : the_post(); ?>
                                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/services/elements_human-hub-3-min.png" alt="" class="img-full">
                             </div>
                             <div class="services-content">
-                                <h3 class="title mb-0">Entrepreneurship</h3>
+                                <h3 class="title mb-0 white-color">Entrepreneurship</h3>
                                 <p class="short-desc mb-0">
                                     To influence human capital practices by supporting entrepreneurs and freelancers.
                                 </p>
@@ -148,7 +148,7 @@ while (have_posts()) : the_post(); ?>
                                 <h2 class="heading mb-0 blue-color">Buy early bird ticket now!</h2>
                             </div>
                             <div class="group-btn_wrap d-flex">
-                                <a class="ademy-btn btn-transparent blue-border grey-color with-border_radius me-2" href="javascript:void(0)">Learn more
+                                <a class="ademy-btn btn-transparent blue-border grey-color with-border_radius me-2" href="<?php echo home_url() ?>/pricing-plan/">Learn more
                                     <i class="ion-android-arrow-forward"></i>
                                 </a>
                                 <a class="ademy-btn denim-color_btn with-border_radius" href="academics.html">Register Now
