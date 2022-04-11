@@ -565,20 +565,20 @@ get_header(); ?>
 $today = date('Ymd');
 // query events
 $events = get_posts([
-    'posts_per_page'    => -1,
-    'post_type'            => 'event',
-    'meta_query'         => [
+    'posts_per_page' => 2,
+    'post_type' => 'event',
+    'meta_query' => [
         [
-            'key'            => 'start_date',
-            'compare'        => '<=',
-            'value'            => $today,
-            'type'            => 'DATETIME'
+            'key'       => 'start_date',
+            'compare'   => '>=',
+            'value'     => $today,
+            'type'      => 'DATETIME'
         ]
     ],
-    'order'                => 'ASC',
-    'orderby'            => 'meta_value',
-    'meta_key'            => 'start_date',
-    'meta_type'            => 'DATE'
+    'order'     => 'ASC',
+    'orderby'   => 'meta_value',
+    'meta_key'  => 'start_date',
+    'meta_type' => 'DATE'
 ]);
 if ($events) : ?>
     <div class="event-area bg-smoke_color">
