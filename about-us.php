@@ -111,32 +111,6 @@ while (have_posts()) : the_post(); ?>
         </div>
         <!-- Services Area End Here -->
 
-        <!-- Begin Banner Area -->
-        <!-- <div class="banner-area banner-bg-01">
-            <div class="container h-100">
-                <div class="row h-100">
-                    <div class="col-lg-12">
-                        <div class="inner-content">
-                            <div class="popup-btn">
-                                <a class="popup-vimeo" href="https://player.vimeo.com/video/172601404?autoplay=1">
-                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/banner/video-play-btn.png" alt="Play Button" />
-                                </a>
-                            </div>
-                            <h1 class="heading cd-headline letters type mb-0">
-                                Today a reader. Tomorrow a
-                                <span class="cd-words-wrapper waiting">
-                                    <b class="is-visible">founderl</b>
-                                    <b>ceo</b>
-                                    <b>leader</b>
-                                </span>
-                            </h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- Banner Area End Here -->
-
         <!-- Begin Ticket Area -->
         <div class="ticket-area">
             <div class="container">

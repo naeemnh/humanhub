@@ -32,8 +32,8 @@ if (have_posts()) :
                                     <div class="col-lg-12">
                                         <div class="news-topic">
                                             <div class="inner-topic">
-                                                <h2 class="heading mb-0"><a href="news-list.html"><?php echo get_the_category()[0]->name; ?></a></h2>
-                                                <h3 class="headline mb-0"><a href="single-post.html"><?php the_title() ?></a></h3>
+                                                <h2 class="heading mb-0"><a href="<?php echo get_term_link(get_the_category()[0]->term_id) ?>"><?php echo get_the_category()[0]->name; ?></a></h2>
+                                                <h3 class="headline mb-0"><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h3>
                                                 <div class="entry-meta">
                                                     <ul>
                                                         <li>

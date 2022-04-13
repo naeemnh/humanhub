@@ -251,7 +251,7 @@ get_header(); ?>
                                                         <?php endif; ?>
                                                     </a>
                                                     <div class="inner-btn">
-                                                        <a class="ademy-btn denim-color_btn with-border_radius btn-md_size" href="single-post.html">Read more</a>
+                                                        <a class="ademy-btn denim-color_btn with-border_radius btn-md_size" href="<?php the_permalink() ?>">Read more</a>
                                                     </div>
                                                 </div>
                                                 <div class="single-item_content">
@@ -335,7 +335,7 @@ get_header(); ?>
                                                         <?php endif; ?>
                                                     </a>
                                                     <div class="inner-btn">
-                                                        <a class="ademy-btn denim-color_btn with-border_radius btn-md_size" href="single-post.html">Read more</a>
+                                                        <a class="ademy-btn denim-color_btn with-border_radius btn-md_size" href="<?php the_permalink() ?>">Read more</a>
                                                     </div>
                                                 </div>
                                                 <div class="single-item_content">
@@ -419,7 +419,7 @@ get_header(); ?>
                                                         <?php endif; ?>
                                                     </a>
                                                     <div class="inner-btn">
-                                                        <a class="ademy-btn denim-color_btn with-border_radius btn-md_size" href="single-post.html">Read more</a>
+                                                        <a class="ademy-btn denim-color_btn with-border_radius btn-md_size" href="<?php the_permalink() ?>">Read more</a>
                                                     </div>
                                                 </div>
                                                 <div class="single-item_content">
@@ -504,7 +504,7 @@ get_header(); ?>
                                                         <?php endif; ?>
                                                     </a>
                                                     <div class="inner-btn">
-                                                        <a class="ademy-btn denim-color_btn with-border_radius btn-md_size" href="single-post.html">Read more</a>
+                                                        <a class="ademy-btn denim-color_btn with-border_radius btn-md_size" href="<?php the_permalink() ?>">Read more</a>
                                                     </div>
                                                 </div>
                                                 <div class="single-item_content">

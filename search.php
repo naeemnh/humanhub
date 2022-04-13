@@ -40,7 +40,7 @@ get_template_part('template-parts/part', 'breadcrumb', array('results' => $total
                                         <div class="inner-topic">
                                             <?php $cats = get_the_category();
                                             if (!empty($cats)) : ?>
-                                                <h2 class="heading mb-0"><a href="news-list.html">
+                                                <h2 class="heading mb-0"><a href="<?php echo get_term_link($cats[0]->term_id) ?>">
                                                         <?php echo $cats[0]->name ?></a>
                                                 </h2>
                                             <?php endif; ?>
@@ -85,7 +85,7 @@ get_template_part('template-parts/part', 'breadcrumb', array('results' => $total
                                 <div class="col-lg-12">
                                     <div class="news-topic">
                                         <div class="inner-topic">
-                                            <h2 class="heading mb-0"><a href="news-list.html">
+                                            <h2 class="heading mb-0"><a href="javascript:void(0)">
                                                     <?php echo $term->taxonomy ?></a>
                                             </h2>
                                             <h3 class="headline mb-0"><a href="<?php echo get_term_link($term) ?>"><?php echo $term->name ?></a></h3>
