@@ -62,7 +62,7 @@ while (have_posts()) : the_post(); ?>
                             <div class="services-content">
                                 <h3 class="title mb-0 white-color">Knowledge</h3>
                                 <p class="short-desc mb-0">
-                                    Facilitating Knowledge and Experience Sharing among Human Capital professionals through speaking via podcasts & webinars, writing articles, and posting, brainstroming & collaborating. 
+                                    Facilitating Knowledge and Experience Sharing among Human Capital professionals through speaking via podcasts & webinars, writing articles, and posting, brainstroming & collaborating.
                                 </p>
                             </div>
                         </div>
@@ -145,13 +145,13 @@ while (have_posts()) : the_post(); ?>
                         <div class="ticket-item">
                             <div class="heading-wrap">
                                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/ticket/arrow.png" alt="Ticket Arrow" />
-                                <h2 class="heading mb-0 blue-color">Buy early bird ticket now!</h2>
+                                <h2 class="heading mb-0 blue-color">Sign up and Join us today!</h2>
                             </div>
                             <div class="group-btn_wrap d-flex">
                                 <a class="ademy-btn btn-transparent blue-border grey-color with-border_radius me-2" href="<?php echo home_url() ?>/pricing-plan/">Learn more
                                     <i class="ion-android-arrow-forward"></i>
                                 </a>
-                                <a class="ademy-btn denim-color_btn with-border_radius" href="academics.html">Register Now
+                                <a class="ademy-btn denim-color_btn with-border_radius" href="https://master-7rqtwti-wdrjk567vptqw.eu-4.platformsh.site/user/register">Register Now
                                     <i class="ion-android-arrow-forward"></i>
                                 </a>
                             </div>

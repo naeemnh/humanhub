@@ -8,7 +8,7 @@ if (have_posts()) :
 
       <!-- Begin Banner With Countdown -->
       <div class="banner-with_coundown bg-denim_color">
-        <div class="container-fluid">
+        <div class="container">
           <div class="banner-nav">
             <div class="inner-nav">
               <div class="row g-0">
@@ -78,147 +78,9 @@ if (have_posts()) :
             <?php get_sidebar('event'); ?>
             <!-- SIDEBAR END -->
             <div class="col-lg-8 order-1">
-              <div class="event-section_title">
-                <h3 class="heading mb-0">Our Speakers <span>(3)</span></h3>
-                <p class="short-desc mb-0">As honorable educational experts and educators, our guests would hold many profound talks and conferences about teaching methods and materials. Participants will be able to enjoy a variety of interesting activities and interact with guests through Q&A sessions.</p>
-              </div>
-              <!-- Teachers -->
-              <div class="our-teacher_area our-teacher_area-2 row">
-                <div class="col-md-4 col-sm-6">
-                  <div class="single-item">
-                    <div class="single-inner_item">
-                      <div class="single-img with-radius">
-                        <img src="<?php echo get_template_directory_uri() ?> /assets/images/our-teacher/1.png" alt="Our Teacher Image">
-                      </div>
-                      <div class="single-content">
-                        <h3 class="teacher-name mb-0">Della Morgan</h3>
-                        <span class="teacher-position">/ Languages</span>
-                        <ul class="social-link nobel-color">
-                          <li class="facebook">
-                            <a href="https://www.facebook.com" data-bs-toggle="tooltip" target="_blank" title="Facebook">
-                              <i class="ion-social-facebook"></i>
-                            </a>
-                          </li>
-                          <li class="twitter">
-                            <a href="https://twitter.com" data-bs-toggle="tooltip" target="_blank" title="Twitter">
-                              <i class="ion-social-twitter"></i>
-                            </a>
-                          </li>
-                          <li class="youtube">
-                            <a href="https://www.youtube.com/" data-bs-toggle="tooltip" target="_blank" title="Youtube">
-                              <i class="ion-social-youtube"></i>
-                            </a>
-                          </li>
-                          <li class="skype">
-                            <a href="https://skype.com/" data-bs-toggle="tooltip" target="_blank" title="Skype">
-                              <i class="ion-social-skype"></i>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                  <div class="single-item">
-                    <div class="single-inner_item">
-                      <div class="single-img with-radius">
-                        <img src="<?php echo get_template_directory_uri() ?> /assets/images/our-teacher/2.png" alt="Our Teacher Image">
-                      </div>
-                      <div class="single-content">
-                        <h3 class="teacher-name mb-0">Joel Mills</h3>
-                        <span class="teacher-position">/ Languages</span>
-                        <ul class="social-link nobel-color">
-                          <li class="facebook">
-                            <a href="https://www.facebook.com" data-bs-toggle="tooltip" target="_blank" title="Facebook">
-                              <i class="ion-social-facebook"></i>
-                            </a>
-                          </li>
-                          <li class="twitter">
-                            <a href="https://twitter.com" data-bs-toggle="tooltip" target="_blank" title="Twitter">
-                              <i class="ion-social-twitter"></i>
-                            </a>
-                          </li>
-                          <li class="youtube">
-                            <a href="https://www.youtube.com/" data-bs-toggle="tooltip" target="_blank" title="Youtube">
-                              <i class="ion-social-youtube"></i>
-                            </a>
-                          </li>
-                          <li class="skype">
-                            <a href="https://skype.com/" data-bs-toggle="tooltip" target="_blank" title="Skype">
-                              <i class="ion-social-skype"></i>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                  <div class="single-item">
-                    <div class="single-inner_item">
-                      <div class="single-img with-radius">
-                        <img src="<?php echo get_template_directory_uri() ?> /assets/images/our-teacher/3.png" alt="Our Teacher Image">
-                      </div>
-                      <div class="single-content">
-                        <h3 class="teacher-name mb-0">Joseph Perkins</h3>
-                        <span class="teacher-position">/ Mathematics</span>
-                        <ul class="social-link nobel-color">
-                          <li class="facebook">
-                            <a href="https://www.facebook.com" data-bs-toggle="tooltip" target="_blank" title="Facebook">
-                              <i class="ion-social-facebook"></i>
-                            </a>
-                          </li>
-                          <li class="twitter">
-                            <a href="https://twitter.com" data-bs-toggle="tooltip" target="_blank" title="Twitter">
-                              <i class="ion-social-twitter"></i>
-                            </a>
-                          </li>
-                          <li class="youtube">
-                            <a href="https://www.youtube.com/" data-bs-toggle="tooltip" target="_blank" title="Youtube">
-                              <i class="ion-social-youtube"></i>
-                            </a>
-                          </li>
-                          <li class="skype">
-                            <a href="https://skype.com/" data-bs-toggle="tooltip" target="_blank" title="Skype">
-                              <i class="ion-social-skype"></i>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
               <div class="single-class_item single-event_item">
                 <div class="single-class_content single-event_content">
-                  <p class="short-desc mb-0 pb-5">Ever wondered about some of the benefits of high school art classes? In addition to a different type of thinking and opening a flood of creativity, art classes provide additional advantages for growing teens. There are numerous lessons that art classes provide to students that other classics, like typical mathematics and science courses, cannot.</p>
-                  <div class="list-item_area row">
-                    <div class="col-lg-6">
-                      <div class="list-item">
-                        <h6 class="heading text-uppercase mb-0">Dedicated Teachers</h6>
-                        <p class="short-desc mb-0">Our classes are lead by experienced and dedicated teachers, whose major is contemporary arts.</p>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="list-item">
-                        <h6 class="heading text-uppercase mb-0">Good Study Materials</h6>
-                        <p class="short-desc mb-0">Our students are provided with the best study materials from national as well as local donors.</p>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="list-item">
-                        <h6 class="heading text-uppercase mb-0">Great Study Place</h6>
-                        <p class="short-desc mb-0">The study environment is very quiet, clean, peaceful, supportive and suitable for high school students.</p>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="list-item">
-                        <h6 class="heading text-uppercase mb-0">Study Equipment</h6>
-                        <p class="short-desc mb-0">All of our study equipment is updated and advanced to the latest technology on a regular basis.</p>
-                      </div>
-                    </div>
-                  </div>
+                  <p class="short-desc mb-0 pb-5"><?php echo get_the_content() ?></p>
                 </div>
                 <div id="google-map"></div>
                 <div class="additional-content">

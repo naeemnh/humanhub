@@ -670,9 +670,9 @@ if ($events) : ?>
 <div class="testimonials-area">
     <div class="container">
         <div class="section-title pb-4">
-            <h6 class="heading text-uppercase mb-0">Satisfied parents</h6>
+            <h6 class="heading text-uppercase mb-0">Satisfied clients</h6>
             <h2 class="sub-heading text-capitalize mb-0">
-                Parents' <span>Testimonials</span>
+                Clients' <span>Testimonials</span>
             </h2>
         </div>
         <div class="row">
@@ -699,7 +699,7 @@ if ($events) : ?>
                         <div class="single-item">
                             <div class="single-img">
                                 <a href="javascript:void(0)">
-                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/testimonials/1.jpg" alt="Testimonial Image" />
+                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/testimonials/profile-picture.png" alt="Testimonial Image" />
                                 </a>
                             </div>
                             <div class="single-item_content">
@@ -725,7 +725,7 @@ if ($events) : ?>
                         <div class="single-item">
                             <div class="single-img">
                                 <a href="javascript:void(0)">
-                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/testimonials/2.jpg" alt="Testimonial Image" />
+                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/testimonials/profile-picture.png" alt="Testimonial Image" />
                                 </a>
                             </div>
                             <div class="single-item_content">
