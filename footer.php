@@ -13,11 +13,11 @@
                                         <img src="<?php echo get_template_directory_uri() ?>/assets/images/logo/mehan_white.png" alt="Footer Logo" />
                                     </a> -->
                                 </div>
-                                <p class="short-desc mb-0">
+                                <!-- <p class="short-desc mb-0">
                                     Enrich your Human Capital Experience
                                     <br />
                                     Share, Network, Collaborate, Innovate, Learn, Transform, Do it again.
-                                </p>
+                                </p> -->
                             </div>
                         </div>
                         <div class="col-lg-2 col-md-6">
@@ -51,7 +51,7 @@
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
-                            <div class="footer-widgets_area latest-tweets_widget p-md-0">
+                            <!-- <div class="footer-widgets_area latest-tweets_widget p-md-0">
                                 <div class="newsletter-area newsletter-form_wrap pb-5">
                                     <h3 class="sub-heading mb-0">
                                         <i class="ion-android-send"></i> Newsletter
@@ -63,7 +63,8 @@
                                         </div>
                                     </form>
                                 </div>
-                            </div>
+                            </div> -->
+                            <?php echo do_shortcode("[zcwp id = 1]"); ?>
                         </div>
                     </div>
                 </div>

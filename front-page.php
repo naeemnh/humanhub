@@ -27,31 +27,43 @@ get_header(); ?>
         "slidesToShow": 1
         }}
     ]'>
-        <div class="slide-item bg-1 animation-style-01">
+        <div class="slide-item bg-1 animation-style-01" style="background-image: url(<?php echo get_template_directory_uri() ?>/assets/images/slider/home-slide-1.jpg)">
             <div class="slide-content">
                 <!-- <span class="intro">Human Hub</span> -->
-                <h1 class="heading intro pb-1 mb-0">Human Hub</h1>
+                <h1 class="heading intro pb-1 mb-0">Mehan</h1>
                 <h1 class="heading cd-headline letters type mb-0">
-                    Enrich your human capital experience <br />
-                    <span class="cd-words-wrapper waiting">
-                        <b class="is-visible">Share</b>
-                        <b>Network</b>
-                        <b>Collaborate</b>
-                        <b>Innovate</b>
-                        <b>Learn</b>
-                        <b>Transform</b>
-                        <b>Do it again</b> </span>.
+                    Success through people
                 </h1>
-                <div class="button-wrap position-center">
-                    <a class="ademy-btn btn-transparent white-border with-border_radius active" href="#welcome">Get started
-                        <i class="ion-android-arrow-forward"></i>
-                    </a>
-                    <a class="ademy-btn btn-transparent white-border with-border_radius" href="#latestnews">Learn more
-                        <i class="ion-android-arrow-forward"></i>
-                    </a>
-                </div>
+                <h1 class="sub-heading cd-headline letters type white-color pb-5 mb-0">
+                    We stand for innovation and continuous transformation
+                </h1>
             </div>
         </div>
+        <div class="slide-item bg-1 animation-style-01" style="background-image: url(<?php echo get_template_directory_uri() ?>/assets/images/slider/home-slide-2.jpg)">
+            <div class="slide-content">
+                <!-- <span class="intro">Human Hub</span> -->
+                <h1 class="heading intro pb-1 mb-0">Mehan</h1>
+                <h1 class="heading cd-headline letters type mb-0">
+                    Success through people
+                </h1>
+                <h1 class="sub-heading cd-headline letters type white-color pb-5 mb-0">
+                    We stand for innovation and continuous transformation
+                </h1>
+            </div>
+        </div>
+        <div class="slide-item bg-1 animation-style-01" style="background-image: url(<?php echo get_template_directory_uri() ?>/assets/images/slider/home-slide-3.jpg)">
+            <div class="slide-content">
+                <!-- <span class="intro">Human Hub</span> -->
+                <h1 class="heading intro pb-1 mb-0">Mehan</h1>
+                <h1 class="heading cd-headline letters type mb-0">
+                    Success through people
+                </h1>
+                <h1 class="sub-heading cd-headline letters type white-color pb-5 mb-0">
+                    We stand for innovation and continuous transformation
+                </h1>
+            </div>
+        </div>
+
     </div>
 </div>
 <!-- Slider Area End Here -->
@@ -60,7 +72,7 @@ get_header(); ?>
 <div id="welcome" class="introduction-area">
     <div class="container">
         <div class="section-title pb-5">
-            <h6 class="heading mb-0">Our Story</h6>
+            <!-- <h6 class="heading mb-0">Our Story</h6> -->
             <h2 class="sub-heading mb-0">
                 Our <span>Story</span>
             </h2>
@@ -88,7 +100,7 @@ get_header(); ?>
                 ]'>
                     <div class="intro-item">
                         <div class="intro-content">
-                            <h3 class="heading mb-0">Our Story</h3>
+                            <!-- <h3 class="heading mb-0">Our Story</h3> -->
                             <p class="short-desc">
                                 Mehan was founded as a boutique talent acquisition agency in 2018, catering to private, semi government, and government sectors in the UAE.
                             </p>
@@ -125,7 +137,7 @@ get_header(); ?>
 <div id="welcome" class="introduction-area bg-smoke_color">
     <div class="container">
         <div class="section-title pb-5">
-            <h6 class="heading mb-0">Human Hub</h6>
+            <!-- <h6 class="heading mb-0">Human Hub</h6> -->
             <h2 class="sub-heading mb-0">
                 <span>Human</span> Hub
             </h2>
@@ -134,7 +146,7 @@ get_header(); ?>
             <div class="col-lg-6">
                 <div class="introduction-img_area">
                     <div class="inner-img">
-                        <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/introduction/group-1501.png" alt="Introduction Image" />
+                        <img class="img-full mx-auto" style="width: 80%" src="<?php echo get_template_directory_uri() ?>/assets/images/introduction/group-1501.png" alt="Introduction Image" />
                     </div>
                 </div>
             </div>
@@ -160,7 +172,7 @@ get_header(); ?>
                 ]'>
                     <div class="intro-item">
                         <div class="intro-content">
-                            <h3 class="heading mb-0">Human Hub</h3>
+                            <!-- <h3 class="heading mb-0">Human Hub</h3> -->
                             <p class="short-desc">
                                 A Continuous Learning Human Capital Hub that allows human capital professionals and students to transform, grow, share knowledge, innovate and advance in their careers by collaborating with other Human Capital professionals through virtual, mixed reality and physical platforms.
                             </p>
@@ -184,7 +196,7 @@ get_header(); ?>
     <div class="container">
         <div class="section-title pb-4">
             <h2 class="sub-heading text-capitalize mb-0">
-                Our latest <span>news</span>
+                Our latest <span>blogs</span>
             </h2>
         </div>
         <div class="row">
@@ -560,111 +572,6 @@ get_header(); ?>
 </div>
 <!-- Latest News Area End Here -->
 
-<!-- Begin Event Area -->
-<?php
-$today = date('Ymd');
-// query events
-$events = get_posts([
-    'posts_per_page' => 2,
-    'post_type' => 'event',
-    'meta_query' => [
-        [
-            'key'       => 'start_date',
-            'compare'   => '>=',
-            'value'     => $today,
-            'type'      => 'DATETIME'
-        ]
-    ],
-    'order'     => 'ASC',
-    'orderby'   => 'meta_value',
-    'meta_key'  => 'start_date',
-    'meta_type' => 'DATE'
-]);
-if ($events) : ?>
-    <div class="event-area bg-smoke_color">
-        <div class="container">
-            <div class="section-title pb-4">
-                <h6 class="heading text-capitalize mb-0">Explore our events</h6>
-                <h2 class="sub-heading text-capitalize mb-0">
-                    Upcoming <span>Events</span>
-                </h2>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="ademy-element-carousel event-slider" data-slick-options='{
-                        "slidesToShow": 2,
-                        "slidesToScroll": 1,
-                        "infinite": false,
-                        "arrows": false,
-                        "dots": false,
-                        "spaceBetween": 30
-                        }' data-slick-responsive='[
-                        {"breakpoint": 992, "settings": {
-                        "slidesToShow": 2
-                        }},
-                        {"breakpoint": 768, "settings": {
-                        "slidesToShow": 1
-                        }}
-                    ]'>
-                        <?php foreach ($events as $event) : ?>
-                            <div class="slide-item">
-                                <div class="single-item">
-                                    <div class="single-img">
-                                        <a href="<?php the_permalink($event->ID) ?>">
-                                            <?php if (get_the_post_thumbnail($event->ID)) : ?>
-                                                <img class="img-full" src="<?php echo get_the_post_thumbnail_url($event->ID) ?>" alt="Event Image" />
-                                            <?php else : ?>
-                                                <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/event/1.jpg" alt="Event Image" />
-                                            <?php endif; ?>
-                                        </a>
-                                        <div class="inner-content">
-                                            <div class="inner-content_wrap position-relative">
-                                                <div class="sticker-2">
-                                                    <?php
-                                                    $start_date = strtotime(get_field('start_date', $event->ID));
-                                                    ?>
-                                                    <span class="day"><?php echo date_i18n("d", $start_date); ?></span>
-                                                    <span class="month text-uppercase"><?php echo substr(date_i18n("F", $start_date), 0, 3); ?></span>
-                                                </div>
-                                                <h3 class="heading mb-0">
-                                                    <a href="<?php the_permalink($event->ID) ?>"><?php echo $event->post_title ?></a>
-                                                </h3>
-                                                <div class="event-zone">
-                                                    <ul>
-                                                        <?php if (get_field('location', $event->ID)) : ?>
-                                                            <li>
-                                                                <span>
-                                                                    <i class="ion-ios-location"></i>
-                                                                    <?php the_field('location', $event->ID); ?>
-                                                                </span>
-                                                            </li>
-                                                        <?php endif;
-                                                        if (get_field('time', $event->ID)) : ?>
-                                                            <li>
-                                                                <span>
-                                                                    <i class="ion-android-time"></i>
-                                                                    <?php the_field('time', $event->ID) ?>
-                                                                </span>
-                                                            </li>
-                                                        <?php endif; ?>
-                                                    </ul>
-                                                </div>
-                                                <p class="short-desc mb-0">
-                                                    <?php echo get_the_excerpt($event->ID) ?>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        <?php endforeach ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-<?php endif; ?>
-<!-- Event Area End Here -->
 
 <!-- Begin Testimonials Area -->
 <div class="testimonials-area">

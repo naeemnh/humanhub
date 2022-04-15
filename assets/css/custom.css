@@ -15,6 +15,18 @@
     padding-bottom: 100px;
 }
 
+.home-slider .slide-item.bg-1 {
+    background-position: 0 0;
+}
+
+.home-slider .slide-item.bg-1 .slide-content {
+    margin: auto auto 0;
+}
+
+.home-slider .slide-content>h1.heading>span {
+    color: white;
+}
+
 .feedback-form .form-group.group-input .wpcf7-form-control-wrap:first-child {
     margin-right: 1.5em !important;
 }
@@ -27,6 +39,10 @@
     background-color: #1a55a5;
 }
 
+.bg-smoke_color .introduction-img_area {
+    background-color: transparent;
+}
+
 .bg-smoke_color .introduction-img_area .inner-img {
     background-color: transparent;
     box-shadow: none;
@@ -35,18 +51,14 @@
 .intro-content p.short-desc,
 .introduction-area-3 .section-wrap p.short-desc {
     font-size: 20px;
+    line-height: 26px;
 }
 
-.services-item .services-content p.short-desc {
+/* ---------------------- What Human Hub Offers ---------------------- */
+
+.services-item .services-content p.short-desc,
+.service .service-content p.short-desc {
     color: white;
-}
-
-.ticket-area .ticket-item .heading-wrap h2.heading {
-    color: #1a55a5;
-}
-
-.newsletter-area {
-    background-color: #1a55a5;
 }
 
 .services-area [class*="col-"]:not(:nth-child(n+4)) .services-item {
@@ -62,6 +74,31 @@
 
 .services-item>* {
     width: 50%;
+}
+
+.service {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border-radius: 20px;
+    background: #1a55a5;
+    padding: 8% 14%;
+}
+
+.service>* {
+    flex: 1 2 0;
+}
+
+.services-area .col-md-6:nth-child(2) .service.flex-column:nth-child(2) {
+    padding-bottom: 13%;
+}
+
+.ticket-area .ticket-item .heading-wrap h2.heading {
+    color: #1a55a5;
+}
+
+.newsletter-area {
+    background-color: #1a55a5;
 }
 
 .pricing-plans_area .tab-section_area {
@@ -119,6 +156,67 @@
     color: #fff;
 }
 
+/* ----------------------------------------
+    Newsletter
+---------------------------------------- */
+
+.quick_form_20_css {
+    border-radius: 8px;
+    width: 100% !important;
+    padding: 14px 30px;
+}
+
+#SIGNUP_HEADING {
+    font-size: 18px !important;
+    font-family: Roboto, sans-serif !important;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+#zcampaignOptinForm div:nth-child(2),
+#zcampaignOptinForm div:nth-child(3) {
+    width: 100% !important;
+}
+
+#zcampaignOptinForm div:nth-child(4) {
+    width: fit-content !important;
+}
+
+#zcampaignOptinForm input[type=text] {
+    text-align: center !important;
+}
+
+#zcampaignOptinForm input[type=text]::placeholder {
+    color: white
+}
+
+#zcampaignOptinForm input[type=button] {
+    font-size: 14px !important;
+    padding: 10px 20px;
+}
+
+/* ----------------------------------------
+    Responsive
+---------------------------------------- */
+
+@media (min-width: 768px) {
+    .services-area .col-md-6 {
+        display: flex;
+        flex-direction: column;
+        gap: 3%;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    .service.flex-column {
+        height: 70%;
+    }
+
+    .service.flex-md-row {
+        height: 35%;
+    }
+}
+
 @media (max-width: 768px) {
     .services-item>* {
         width: 100%;
@@ -135,6 +233,14 @@
 
     .services-item {
         flex-direction: column;
+    }
+
+    .service {
+        margin-bottom: 5%;
+    }
+
+    .service.flex-column:nth-child(2) {
+        padding: 8% 14%;
     }
 
     .col-lg-2 .footer-widgets_area {
