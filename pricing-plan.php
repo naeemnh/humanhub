@@ -24,8 +24,7 @@ if (have_posts()) :
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="section-title pb-5">
-                                <h2 class="sub-heading text-capitalize mb-0"><span>Our Price</span> & Information</h2>
-                                <p class="short-desc mb-0">Check out the prices for each study package at our Ademy Secondary School to find what is suitable for your children. Adjustments can be negotiated.</p>
+                                <h2 class="sub-heading text-capitalize mb-0"><span>Membership</span> Plans</h2>
                             </div>
                             <div class="tab-section_area">
                                 <div class="pricing-plans_tab">
@@ -46,7 +45,7 @@ if (have_posts()) :
                                                 <?php if ($basic['price_type'] == 'free') : ?>
                                                     <span class="price"><strong>FREE</strong></span>
                                                 <?php elseif ($basic['price_type'] == 'priced') : ?>
-                                                    <span class="price">$ <strong><?php echo $basic['price'] ?></strong>/month</span>
+                                                    <span class="price">AED <strong><?php echo $basic['price'] ?></strong>/month</span>
                                                 <?php else : ?>
                                                     <span class="price"><strong>STAY TUNED</strong></span>
                                                 <?php endif; ?>
@@ -57,7 +56,7 @@ if (have_posts()) :
                                                     <?php endforeach; ?>
                                                 </ul>
                                                 <div class="button-wrap position-center">
-                                                    <a class="ademy-btn btn-transparent whisper-border with-border_radius" href="javascript:void(0)">Get started</a>
+                                                    <a class="ademy-btn btn-transparent whisper-border with-border_radius" href="https://master-7rqtwti-wdrjk567vptqw.eu-4.platformsh.site/user/register">Get started</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -67,7 +66,7 @@ if (have_posts()) :
                                                 <?php if ($monthly_premium['price_type'] == 'free') : ?>
                                                     <span class="price"><strong>FREE</strong></span>
                                                 <?php elseif ($monthly_premium['price_type'] == 'priced') : ?>
-                                                    <span class="price">$ <strong><?php echo $monthly_premium['price'] ?></strong>/month</span>
+                                                    <span class="price">AED <strong><?php echo $monthly_premium['price'] ?></strong>/month</span>
                                                 <?php else : ?>
                                                     <span class="price"><strong>STAY TUNED</strong></span>
                                                 <?php endif; ?>
@@ -78,7 +77,7 @@ if (have_posts()) :
                                                     <?php endforeach; ?>
                                                 </ul>
                                                 <div class="button-wrap position-center">
-                                                    <a class="ademy-btn btn-transparent whisper-border with-border_radius" href="javascript:void(0)">Get started</a>
+                                                    <a class="ademy-btn btn-transparent whisper-border with-border_radius" href="https://master-7rqtwti-wdrjk567vptqw.eu-4.platformsh.site/user/register">Get started</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -88,7 +87,7 @@ if (have_posts()) :
                                                 <?php if ($monthly_premium_plus['price_type'] == 'free') : ?>
                                                     <span class="price"><strong>FREE</strong></span>
                                                 <?php elseif ($monthly_premium_plus['price_type'] == 'priced') : ?>
-                                                    <span class="price">$ <strong><?php echo $monthly_premium_plus['price'] ?></strong>/month</span>
+                                                    <span class="price">AED <strong><?php echo $monthly_premium_plus['price'] ?></strong>/month</span>
                                                 <?php else : ?>
                                                     <span class="price"><strong>STAY TUNED</strong></span>
                                                 <?php endif; ?>
@@ -99,7 +98,7 @@ if (have_posts()) :
                                                     <?php endforeach; ?>
                                                 </ul>
                                                 <div class="button-wrap position-center">
-                                                    <a class="ademy-btn btn-transparent whisper-border with-border_radius" href="javascript:void(0)">Get started</a>
+                                                    <a class="ademy-btn btn-transparent whisper-border with-border_radius" href="https://master-7rqtwti-wdrjk567vptqw.eu-4.platformsh.site/user/register">Get started</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -113,7 +112,7 @@ if (have_posts()) :
                                                 <?php if ($basic['price_type'] == 'free') : ?>
                                                     <span class="price"><strong>FREE</strong></span>
                                                 <?php elseif ($basic['price_type'] == 'priced') : ?>
-                                                    <span class="price">$ <strong><?php echo $basic['price'] ?></strong>/month</span>
+                                                    <span class="price">AED <strong><?php echo $basic['price'] ?></strong>/month</span>
                                                 <?php else : ?>
                                                     <span class="price"><strong>STAY TUNED</strong></span>
                                                 <?php endif; ?>
@@ -124,7 +123,7 @@ if (have_posts()) :
                                                     <?php endforeach; ?>
                                                 </ul>
                                                 <div class="button-wrap position-center">
-                                                    <a class="ademy-btn btn-transparent whisper-border with-border_radius" href="javascript:void(0)">Get started</a>
+                                                    <a class="ademy-btn btn-transparent whisper-border with-border_radius" href="https://master-7rqtwti-wdrjk567vptqw.eu-4.platformsh.site/user/register">Get started</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -134,7 +133,7 @@ if (have_posts()) :
                                                 <?php if ($yearly_premium['price_type'] == 'free') : ?>
                                                     <span class="price"><strong>FREE</strong></span>
                                                 <?php elseif ($yearly_premium['price_type'] == 'priced') : ?>
-                                                    <span class="price">$ <strong><?php echo $yearly_premium['price'] ?></strong>/month</span>
+                                                    <span class="price">AED <strong><?php echo $yearly_premium['price'] ?></strong>/month</span>
                                                 <?php else : ?>
                                                     <span class="price"><strong>STAY TUNED</strong></span>
                                                 <?php endif; ?>
@@ -145,7 +144,7 @@ if (have_posts()) :
                                                     <?php endforeach; ?>
                                                 </ul>
                                                 <div class="button-wrap position-center">
-                                                    <a class="ademy-btn btn-transparent whisper-border with-border_radius" href="javascript:void(0)">Get started</a>
+                                                    <a class="ademy-btn btn-transparent whisper-border with-border_radius" href="https://master-7rqtwti-wdrjk567vptqw.eu-4.platformsh.site/user/register">Get started</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -155,7 +154,7 @@ if (have_posts()) :
                                                 <?php if ($yearly_premium_plus['price_type'] == 'free') : ?>
                                                     <span class="price"><strong>FREE</strong></span>
                                                 <?php elseif ($yearly_premium_plus['price_type'] == 'priced') : ?>
-                                                    <span class="price">$ <strong><?php echo $yearly_premium_plus['price'] ?></strong>/month</span>
+                                                    <span class="price">AED <strong><?php echo $yearly_premium_plus['price'] ?></strong>/month</span>
                                                 <?php else : ?>
                                                     <span class="price"><strong>STAY TUNED</strong></span>
                                                 <?php endif; ?>
@@ -166,7 +165,7 @@ if (have_posts()) :
                                                     <?php endforeach; ?>
                                                 </ul>
                                                 <div class="button-wrap position-center">
-                                                    <a class="ademy-btn btn-transparent whisper-border with-border_radius" href="javascript:void(0)">Get started</a>
+                                                    <a class="ademy-btn btn-transparent whisper-border with-border_radius" href="https://master-7rqtwti-wdrjk567vptqw.eu-4.platformsh.site/user/register">Get started</a>
                                                 </div>
                                             </div>
                                         </div>
