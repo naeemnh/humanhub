@@ -52,10 +52,10 @@ if (have_posts()) :
                                 <b>Do it again</b> </span>.
                         </h1>
                         <div class="button-wrap position-center">
-                            <a class="ademy-btn btn-transparent white-border with-border_radius active" href="#welcome">Get started
+                            <a class="ademy-btn btn-transparent white-border with-border_radius active" href="https://master-7rqtwti-wdrjk567vptqw.eu-4.platformsh.site/user/register">Get started
                                 <i class="ion-android-arrow-forward"></i>
                             </a>
-                            <a class="ademy-btn btn-transparent white-border with-border_radius" href="#latestnews">Learn more
+                            <a class="ademy-btn btn-transparent white-border with-border_radius" href="https://master-7rqtwti-wdrjk567vptqw.eu-4.platformsh.site/">Learn more
                                 <i class="ion-android-arrow-forward"></i>
                             </a>
                         </div>
@@ -77,10 +77,10 @@ if (have_posts()) :
                                 <b>Do it again</b> </span>.
                         </h1>
                         <div class="button-wrap position-center">
-                            <a class="ademy-btn btn-transparent white-border with-border_radius active" href="#welcome">Get started
+                            <a class="ademy-btn btn-transparent white-border with-border_radius active" href="https://master-7rqtwti-wdrjk567vptqw.eu-4.platformsh.site/user/register">Get started
                                 <i class="ion-android-arrow-forward"></i>
                             </a>
-                            <a class="ademy-btn btn-transparent white-border with-border_radius" href="#latestnews">Learn more
+                            <a class="ademy-btn btn-transparent white-border with-border_radius" href="https://master-7rqtwti-wdrjk567vptqw.eu-4.platformsh.site/">Learn more
                                 <i class="ion-android-arrow-forward"></i>
                             </a>
                         </div>
@@ -102,10 +102,10 @@ if (have_posts()) :
                                 <b>Do it again</b> </span>.
                         </h1>
                         <div class="button-wrap position-center">
-                            <a class="ademy-btn btn-transparent white-border with-border_radius active" href="#welcome">Get started
+                            <a class="ademy-btn btn-transparent white-border with-border_radius active" href="https://master-7rqtwti-wdrjk567vptqw.eu-4.platformsh.site/user/register">Get started
                                 <i class="ion-android-arrow-forward"></i>
                             </a>
-                            <a class="ademy-btn btn-transparent white-border with-border_radius" href="#latestnews">Learn more
+                            <a class="ademy-btn btn-transparent white-border with-border_radius" href="https://master-7rqtwti-wdrjk567vptqw.eu-4.platformsh.site/">Learn more
                                 <i class="ion-android-arrow-forward"></i>
                             </a>
                         </div>
