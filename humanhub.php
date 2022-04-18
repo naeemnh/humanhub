@@ -52,10 +52,10 @@ if (have_posts()) :
                                 <b>Do it again</b> </span>.
                         </h1>
                         <div class="button-wrap position-center">
-                            <a class="ademy-btn btn-transparent white-border with-border_radius active" href="https://master-7rqtwti-wdrjk567vptqw.eu-4.platformsh.site/user/register">Get started
+                            <a class="ademy-btn btn-transparent white-border with-border_radius active" href="https://humanhub.me/user/register">Get started
                                 <i class="ion-android-arrow-forward"></i>
                             </a>
-                            <a class="ademy-btn btn-transparent white-border with-border_radius" href="https://master-7rqtwti-wdrjk567vptqw.eu-4.platformsh.site/">Learn more
+                            <a class="ademy-btn btn-transparent white-border with-border_radius" href="https://humanhub.me/">Learn more
                                 <i class="ion-android-arrow-forward"></i>
                             </a>
                         </div>
@@ -77,10 +77,10 @@ if (have_posts()) :
                                 <b>Do it again</b> </span>.
                         </h1>
                         <div class="button-wrap position-center">
-                            <a class="ademy-btn btn-transparent white-border with-border_radius active" href="https://master-7rqtwti-wdrjk567vptqw.eu-4.platformsh.site/user/register">Get started
+                            <a class="ademy-btn btn-transparent white-border with-border_radius active" href="https://humanhub.me/user/register">Get started
                                 <i class="ion-android-arrow-forward"></i>
                             </a>
-                            <a class="ademy-btn btn-transparent white-border with-border_radius" href="https://master-7rqtwti-wdrjk567vptqw.eu-4.platformsh.site/">Learn more
+                            <a class="ademy-btn btn-transparent white-border with-border_radius" href="https://humanhub.me/">Learn more
                                 <i class="ion-android-arrow-forward"></i>
                             </a>
                         </div>
@@ -102,10 +102,10 @@ if (have_posts()) :
                                 <b>Do it again</b> </span>.
                         </h1>
                         <div class="button-wrap position-center">
-                            <a class="ademy-btn btn-transparent white-border with-border_radius active" href="https://master-7rqtwti-wdrjk567vptqw.eu-4.platformsh.site/user/register">Get started
+                            <a class="ademy-btn btn-transparent white-border with-border_radius active" href="https://humanhub.me/user/register">Get started
                                 <i class="ion-android-arrow-forward"></i>
                             </a>
-                            <a class="ademy-btn btn-transparent white-border with-border_radius" href="https://master-7rqtwti-wdrjk567vptqw.eu-4.platformsh.site/">Learn more
+                            <a class="ademy-btn btn-transparent white-border with-border_radius" href="https://humanhub.me/">Learn more
                                 <i class="ion-android-arrow-forward"></i>
                             </a>
                         </div>
@@ -281,8 +281,10 @@ if (have_posts()) :
                                     </ul>
                                 </div>
                             </div>
-                            <span class="offer-btn denim-color_btn with-border_radius">SAVE 10%</span>
-                            <h6 class="offer-info">When you pay upfront for the year</h6>
+                            <div class="offer">
+                                <span class="offer-btn denim-color_btn with-border_radius">SAVE 10%</span>
+                                <h6 class="offer-info">When you pay upfront for the year</h6>
+                            </div>
                             <div class="tab-content">
                                 <div id="monthly" class="tab-pane active show" role="tabpanel">
                                     <div class="row g-0 align-items-center">
@@ -302,9 +304,9 @@ if (have_posts()) :
                                                         <li><?php echo $feature ?></li>
                                                     <?php endforeach; ?>
                                                 </ul>
-                                                <div class="button-wrap position-center">
-                                                    <a class="ademy-btn btn-transparent whisper-border with-border_radius" href="https://master-7rqtwti-wdrjk567vptqw.eu-4.platformsh.site/user/register">Get started</a>
-                                                </div>
+                                                <!-- <div class="button-wrap position-center">
+                                                    <a class="ademy-btn btn-transparent whisper-border with-border_radius" href="https://humanhub.me/user/register">Get started</a>
+                                                </div> -->
                                             </div>
                                         </div>
                                         <div class="col-md-4">
@@ -323,9 +325,9 @@ if (have_posts()) :
                                                         <li><?php echo $feature ?></li>
                                                     <?php endforeach; ?>
                                                 </ul>
-                                                <div class="button-wrap position-center">
-                                                    <a class="ademy-btn btn-transparent whisper-border with-border_radius" href="https://master-7rqtwti-wdrjk567vptqw.eu-4.platformsh.site/user/register">Get started</a>
-                                                </div>
+                                                <!-- <div class="button-wrap position-center">
+                                                    <a class="ademy-btn btn-transparent whisper-border with-border_radius" href="https://humanhub.me/user/register">Get started</a>
+                                                </div> -->
                                             </div>
                                         </div>
                                         <div class="col-md-4">
@@ -344,9 +346,9 @@ if (have_posts()) :
                                                         <li><?php echo $feature ?></li>
                                                     <?php endforeach; ?>
                                                 </ul>
-                                                <div class="button-wrap position-center">
-                                                    <a class="ademy-btn btn-transparent whisper-border with-border_radius" href="https://master-7rqtwti-wdrjk567vptqw.eu-4.platformsh.site/user/register">Get started</a>
-                                                </div>
+                                                <!-- <div class="button-wrap position-center">
+                                                    <a class="ademy-btn btn-transparent whisper-border with-border_radius" href="https://humanhub.me/user/register">Get started</a>
+                                                </div> -->
                                             </div>
                                         </div>
                                     </div>
@@ -369,9 +371,9 @@ if (have_posts()) :
                                                         <li><?php echo $feature ?></li>
                                                     <?php endforeach; ?>
                                                 </ul>
-                                                <div class="button-wrap position-center">
-                                                    <a class="ademy-btn btn-transparent whisper-border with-border_radius" href="https://master-7rqtwti-wdrjk567vptqw.eu-4.platformsh.site/user/register">Get started</a>
-                                                </div>
+                                                <!-- <div class="button-wrap position-center">
+                                                    <a class="ademy-btn btn-transparent whisper-border with-border_radius" href="https://humanhub.me/user/register">Get started</a>
+                                                </div> -->
                                             </div>
                                         </div>
                                         <div class="col-md-4">
@@ -390,9 +392,9 @@ if (have_posts()) :
                                                         <li><?php echo $feature ?></li>
                                                     <?php endforeach; ?>
                                                 </ul>
-                                                <div class="button-wrap position-center">
-                                                    <a class="ademy-btn btn-transparent whisper-border with-border_radius" href="https://master-7rqtwti-wdrjk567vptqw.eu-4.platformsh.site/user/register">Get started</a>
-                                                </div>
+                                                <!-- <div class="button-wrap position-center">
+                                                    <a class="ademy-btn btn-transparent whisper-border with-border_radius" href="https://humanhub.me/user/register">Get started</a>
+                                                </div> -->
                                             </div>
                                         </div>
                                         <div class="col-md-4">
@@ -411,9 +413,9 @@ if (have_posts()) :
                                                         <li><?php echo $feature ?></li>
                                                     <?php endforeach; ?>
                                                 </ul>
-                                                <div class="button-wrap position-center">
-                                                    <a class="ademy-btn btn-transparent whisper-border with-border_radius" href="https://master-7rqtwti-wdrjk567vptqw.eu-4.platformsh.site/user/register">Get started</a>
-                                                </div>
+                                                <!-- <div class="button-wrap position-center">
+                                                    <a class="ademy-btn btn-transparent whisper-border with-border_radius" href="https://humanhub.me/user/register">Get started</a>
+                                                </div> -->
                                             </div>
                                         </div>
                                     </div>
@@ -542,10 +544,10 @@ if (have_posts()) :
                                     <h2 class="heading mb-0 blue-color">Sign up and Join us today!</h2>
                                 </div>
                                 <div class="group-btn_wrap d-flex">
-                                    <a class="ademy-btn btn-transparent blue-border grey-color with-border_radius me-2" href="<?php echo home_url() ?>/pricing-plan/">Learn more
+                                    <a class="ademy-btn btn-transparent blue-border grey-color with-border_radius me-2" href="https://humanhub.me/">Learn more
                                         <i class="ion-android-arrow-forward"></i>
                                     </a>
-                                    <a class="ademy-btn denim-color_btn with-border_radius" href="https://master-7rqtwti-wdrjk567vptqw.eu-4.platformsh.site/user/register">Register Now
+                                    <a class="ademy-btn denim-color_btn with-border_radius" href="https://humanhub.me/user/register">Register Now
                                         <i class="ion-android-arrow-forward"></i>
                                     </a>
                                 </div>

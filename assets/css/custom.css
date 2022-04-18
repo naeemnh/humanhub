@@ -105,6 +105,10 @@
     padding-bottom: 20px;
 }
 
+.offer {
+    margin-right: -12%;
+}
+
 .offer-btn {
     -webkit-box-shadow: 0px 8px 15px rgb(0 0 0 / 0%);
     box-shadow: 0px 8px 15px rgb(0 0 0 / 0%);
