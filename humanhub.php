@@ -179,7 +179,7 @@ if (have_posts()) :
                                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/services/elements_human-hub-2-min.png" alt="" class="img-full">
                                 </div>
                                 <div class="services-content">
-                                    <h3 class="title mb-0 white-color">Enlightment</h3>
+                                    <h3 class="title mb-0 white-color">Enlightenment</h3>
                                     <p class="short-desc mb-0">
                                         Inspiring the next generation of Human Capital leaders through shadowing, mentorship, coaching, and internships.
                                     </p>
@@ -226,10 +226,10 @@ if (have_posts()) :
                             </article>
                             <article class="service flex-md-row flex-sm-column flex-column">
                                 <div class="service-img">
-                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/services/elements_human-hub-4-min.png" alt="img-full">
+                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/services/elements_human-hub-2-min.png" alt="img-full">
                                 </div>
                                 <div class="service-content">
-                                    <h3 class="title mb-0 white-color">Enlightment</h3>
+                                    <h3 class="title mb-0 white-color">Enlightenment</h3>
                                     <p class="short-desc mb-0">
                                         Inspiring the next generation of Human Capital leaders through shadowing, mentorship, coaching, and internships.
                                     </p>
@@ -239,7 +239,7 @@ if (have_posts()) :
                         <div class="col-md-6 col-xs-12">
                             <article class="service flex-md-row flex-sm-column flex-column">
                                 <div class="service-img">
-                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/services/elements_human-hub-1-min.png" alt="img-full">
+                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/services/elements_human-hub-4-min.png" alt="img-full">
                                 </div>
                                 <div class="service-content">
                                     <h3 class="title mb-0 white-color">Networking</h3>
@@ -250,7 +250,7 @@ if (have_posts()) :
                             </article>
                             <article class="service flex-column">
                                 <div class="service-img">
-                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/services/elements_human-hub-4-min.png" alt="img-full">
+                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/services/elements_human-hub-3-min.png" alt="img-full">
                                 </div>
                                 <div class="service-content">
                                     <h3 class="title mb-0 white-color">Entrepreneurship</h3>
@@ -276,15 +276,18 @@ if (have_posts()) :
                             <div class="tab-section_area">
                                 <div class="pricing-plans_tab">
                                     <ul class="nav pricing-plans_menu justify-content-center">
-                                        <li><a class="active" data-bs-toggle="tab" href="#monthly"><i class="ion-android-arrow-back"></i> Monthly</a></li>
-                                        <li><a data-bs-toggle="tab" href="#yearly"><i class="ion-android-arrow-forward"></i> Yearly</a></li>
+                                        <li><a class="active" data-bs-toggle="tab" href="#monthly"><i class="ion-android-arrow-back"></i> Monthly<span>save</span></a></li>
+                                        <li><a data-bs-toggle="tab" href="#yearly"><i class="ion-android-arrow-forward"></i> Yearly<span>save 10%</span></a></li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="offer">
-                                <span class="offer-btn denim-color_btn with-border_radius">SAVE 10%</span>
-                                <h6 class="offer-info">When you pay upfront for the year</h6>
-                            </div>
+                            <!-- <div>
+                                <div class="offer">
+                                    <span class="offer-btn denim-color_btn with-border_radius">SAVE 10%</span>
+                                    <h6 class="offer-info">When you pay upfront for the year</h6>
+                                </div>
+                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/ticket/arrow.png" alt="Ticket Arrow" />
+                            </div> -->
                             <div class="tab-content">
                                 <div id="monthly" class="tab-pane active show" role="tabpanel">
                                     <div class="row g-0 align-items-center">
