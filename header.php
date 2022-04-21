@@ -94,6 +94,11 @@
                                                     <i class="ion-social-snapchat"></i>
                                                 </a>
                                             </li>
+                                            <li class="instagram">
+                                                <a href="https://instagram.com/" data-bs-toggle="tooltip" target="_blank" title="Instagram">
+                                                    <i class="ion-social-instagram"></i>
+                                                </a>
+                                            </li>
                                             <li class="search-bar d-none d-lg-inline-block">
                                                 <a class="search-btn" href="#">
                                                     <i class="ion-ios-search-strong"></i>

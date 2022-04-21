@@ -95,14 +95,19 @@
                                         <i class="ion-social-twitter"></i>
                                     </a>
                                 </li>
-                                <li class="youtube">
-                                    <a href="https://www.youtube.com/" data-bs-toggle="tooltip" target="_blank" title="Youtube">
-                                        <i class="ion-social-youtube"></i>
+                                <li class="linkedin">
+                                    <a href="https://www.linkedin.com/" data-bs-toggle="tooltip" target="_blank" title="Linkedin">
+                                        <i class="ion-social-linkedin"></i>
                                     </a>
                                 </li>
-                                <li class="skype">
-                                    <a href="https://skype.com/" data-bs-toggle="tooltip" target="_blank" title="Skype">
-                                        <i class="ion-social-skype"></i>
+                                <li class="snapchat">
+                                    <a href="https://snapchat.com/" data-bs-toggle="tooltip" target="_blank" title="Snapchat">
+                                        <i class="ion-social-snapchat"></i>
+                                    </a>
+                                </li>
+                                <li class="instagram">
+                                    <a href="https://instagram.com/" data-bs-toggle="tooltip" target="_blank" title="Instagram">
+                                        <i class="ion-social-instagram"></i>
                                     </a>
                                 </li>
                             </ul>

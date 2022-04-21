@@ -572,14 +572,13 @@ get_header(); ?>
 </div>
 <!-- Latest News Area End Here -->
 
-
 <!-- Begin Testimonials Area -->
 <div class="testimonials-area">
     <div class="container">
         <div class="section-title pb-4">
-            <h6 class="heading text-uppercase mb-0">Satisfied clients</h6>
+            <!-- <h6 class="heading text-uppercase mb-0">Satisfied clients</h6> -->
             <h2 class="sub-heading text-capitalize mb-0">
-                Clients' <span>Testimonials</span>
+                What our <span>clients</span> say about us
             </h2>
         </div>
         <div class="row">
