@@ -23,6 +23,10 @@
     margin: auto auto 0;
 }
 
+.home-slider .slide-content>h1.heading:first-child {
+    font-weight: 600;
+}
+
 .home-slider .slide-content>h1.heading>span {
     color: white;
 }
