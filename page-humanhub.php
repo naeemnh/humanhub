@@ -25,7 +25,7 @@ if (have_posts()) :
                 "dots": false,
                 "autoplay" : true,
                 "fade" : true,
-                "autoplaySpeed" : 10000,
+                "autoplaySpeed" : 32500,
                 "pauseOnHover" : false,
                 "pauseOnFocus" : false
                 }' data-slick-responsive='[
