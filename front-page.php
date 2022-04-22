@@ -257,7 +257,7 @@ get_header(); ?>
                                                 <div class="single-img">
                                                     <a href="<?php the_permalink() ?>">
                                                         <?php if (get_the_post_thumbnail_url()) : ?>
-                                                            <img class="img-full" src="<?php the_post_thumbnail_url() ?>" alt="Latest News Image" />
+                                                            <img class="img-full" src="<?php the_post_thumbnail_url('medium') ?>" alt="Latest News Image" />
                                                         <?php else : ?>
                                                             <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/latest-news/medium-size/1.jpg" alt="Latest News Image" />
                                                         <?php endif; ?>
@@ -340,7 +340,7 @@ get_header(); ?>
                                             <div class="single-item img-zoom_effect">
                                                 <div class="single-img">
                                                     <a href="<?php the_permalink() ?>">
-                                                        <?php if (the_post_thumbnail_url()) : ?>
+                                                        <?php if (get_the_post_thumbnail_url()) : ?>
                                                             <img class="img-full" src="<?php the_post_thumbnail_url() ?>" alt="Latest News Image" />
                                                         <?php else : ?>
                                                             <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/latest-news/medium-size/1.jpg" alt="Latest News Image" />
@@ -424,7 +424,7 @@ get_header(); ?>
                                             <div class="single-item img-zoom_effect">
                                                 <div class="single-img">
                                                     <a href="<?php the_permalink() ?>">
-                                                        <?php if (the_post_thumbnail_url()) : ?>
+                                                        <?php if (get_the_post_thumbnail_url()) : ?>
                                                             <img class="img-full" src="<?php the_post_thumbnail_url() ?>" alt="Latest News Image" />
                                                         <?php else : ?>
                                                             <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/latest-news/medium-size/1.jpg" alt="Latest News Image" />
@@ -509,7 +509,7 @@ get_header(); ?>
                                             <div class="single-item img-zoom_effect">
                                                 <div class="single-img">
                                                     <a href="<?php the_permalink() ?>">
-                                                        <?php if (the_post_thumbnail_url()) : ?>
+                                                        <?php if (get_the_post_thumbnail_url()) : ?>
                                                             <img class="img-full" src="<?php the_post_thumbnail_url() ?>" alt="Latest News Image" />
                                                         <?php else : ?>
                                                             <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/latest-news/medium-size/1.jpg" alt="Latest News Image" />

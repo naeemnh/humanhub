@@ -229,7 +229,12 @@ require get_template_directory() . '/inc/walker.php';
     ==========================================
 */
 
-add_filter('posts_where', 'title_like_posts_where', 10, 2);
+function new_excerpt_more($more)
+{
+    return '...';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
 function title_like_posts_where($where, $wp_query)
 {
     global $wpdb;
@@ -238,6 +243,8 @@ function title_like_posts_where($where, $wp_query)
     }
     return $where;
 }
+
+add_filter('posts_where', 'title_like_posts_where', 10, 2);
 
 $GLOBALS['event_query_filters'] = [
     'field_1' => 'start_date',
@@ -292,22 +299,23 @@ add_action('pre_get_posts', 'event_posts');
     ==========================================
 */
 
-function mehan_dependencies() {
-    if( ! function_exists('acf_add_local_field_group') ) { ?>
+function mehan_dependencies()
+{
+    if (!function_exists('acf_add_local_field_group')) { ?>
         <div class="error">
             <p>Warning: The theme needs Advanced Custom Fields to function</p>
             <a href="/wp-admin/plugins.php?s=Advanced%20Custom%20Fields">Activate/Install Plugin</a>
         </div>
     <?php }
-    if( ! function_exists('wpcf7_init') ) { ?>
+    if (!function_exists('wpcf7_init')) { ?>
         <div class="error">
             <p>Warning: The theme needs Contact Form 7 for Contact forms to function</p>
             <a href="/wp-admin/plugins.php?s=contact%20form%207">Activate/Install Plugin</a>
         </div>
-    <?php }
+<?php }
 }
 
-add_action( 'admin_notices', 'mehan_dependencies' );
+add_action('admin_notices', 'mehan_dependencies');
 
 /*
     ==========================================
