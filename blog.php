@@ -22,7 +22,7 @@ if (have_posts()) :
                             <div class="row">
                                 <?php
                                 $args = array(
-                                    'post_type' => 'post',
+                                    'post_type' => 'posts',
                                     'post_status' => 'publish',
                                     'posts_per_page' => 5,
                                 );
