@@ -7,8 +7,9 @@
 
 .single-post_item ul,
 .single-post_item ol {
-    padding-left: 2rem;
     list-style: initial;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
 }
 
 .entry-meta ul {
