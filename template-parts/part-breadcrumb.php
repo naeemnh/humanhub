@@ -20,7 +20,7 @@ $results = (is_search()) ? $args['results'] : null;
     <div class="container-fluid h-100">
         <div class="container h-100">
             <div class="breadcrumb-content h-100">
-                <h1 class="text-capitalize mb-0">
+                <h1 class="text-capitalize mb-0 white-color">
                     <?php echo (is_search()) ? '' . $results . ' Results Found' : $cur_title ?>
                 </h1>
                 <ul>

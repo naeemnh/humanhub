@@ -1,5 +1,37 @@
 <aside class="sidebar-area">
     <?php get_search_form(array('class' => 'search-box')); ?>
+    <div class="widgets-area event-widgets_area">
+        <div class="inner-area">
+            <h2 class="heading mb-0"><span>/</span> Latest Activity</h2>
+            <div class="widgets-item">
+                <ul class="list-item_wrap">
+                    <?php
+                    $args = array(
+                        'post_type' => 'post',
+                        'post_status' => 'publish',
+                        'posts_per_page' => 10,
+                    );
+                    $loop = new WP_Query($args);
+                    while ($loop->have_posts()) : $loop->the_post(); ?>
+                        <li>
+                            <ul class="list-item event-list_item">
+                                <li class="list-item_img">
+                                    <img src="<?php the_post_thumbnail_url('thumbnail'); ?>" alt="Event Image">
+                                </li>
+                                <li class="list-item_content">
+                                    <a class="entry-title" href="<?php echo get_the_permalink() ?>"><?php the_title() ?></a>
+                                    <!-- <span class="entry-view">
+                                        <i class="ion-eye"></i> 662 views
+                                    </span> -->
+                                </li>
+                            </ul>
+                        </li>
+                    <?php endwhile;
+                    wp_reset_postdata(); ?>
+                </ul>
+            </div>
+        </div>
+    </div>
     <div class="widgets-area categories-area">
         <div class="inner-area">
             <h2 class="heading mb-0"><span>/</span> Categories</h2>

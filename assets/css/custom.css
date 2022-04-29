@@ -31,6 +31,14 @@
     color: white;
 }
 
+.breadcrumb-area {
+    background-color: #1a55a5;
+}
+
+.entry-view a {
+    font-size: inherit;
+}
+
 .feedback-form .form-group.group-input .wpcf7-form-control-wrap:first-child {
     margin-right: 1.5em !important;
 }
