@@ -159,6 +159,19 @@
 
 <!-- Main JS -->
 <script src="<?php echo get_template_directory_uri() ?>/assets/js/main.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2F4M70FXHV"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-2F4M70FXHV');
+</script>
 <?php wp_footer(); ?>
 </body>
 
