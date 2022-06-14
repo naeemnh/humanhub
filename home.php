@@ -61,7 +61,7 @@ if (have_posts()) :
                         <a class="ademy-btn denim-color_btn with-border_radius" href="<?php echo get_the_permalink() ?>">Read more <i class="ion-android-arrow-forward"></i></a>
                         <!-- <a class="share-post_btn" href="javascript:void(0)">
                             <i class="ion-android-share-alt"></i>
-                          </a> -->
+                        </a> -->
                       </div>
                     </div>
                   </div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="<?php echo get_locale() ?>">
 
 <head>
     <meta charset="utf-8" />
@@ -38,13 +38,16 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/style.css" />
     <!-- Custom Style CSS -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/custom.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/rtl.css" />
     <?php wp_head(); ?>
 </head>
 
 <body class="template-color-1">
+    <!-- Start Main Wrapper -->
     <div class="main-wrapper">
         <!-- Begin Main Header Area -->
         <header class="main-header_area">
+            <!-- Start Menu -->
             <div class="main-header">
                 <div class="container-fluid">
                     <div class="row">
@@ -71,32 +74,37 @@
                                         ?>
                                     </div>
                                 </div>
-                                <div class="col-xl-3 col-md-8 d-none d-md-block">
+                                <div class="col-xl-3 col-md-8 d-none d-md-block position-relative">
                                     <div class="header-right_area with-radius">
                                         <ul class="social-link">
-                                            <li class="facebook">
+                                            <!-- <li class="facebook">
                                                 <a href="https://www.facebook.com" data-bs-toggle="tooltip" target="_blank" title="Facebook">
-                                                    <i class="ion-social-facebook"></i>
+                                                    <i class="fa-brands fa-facebook-f"></i>
                                                 </a>
                                             </li>
                                             <li class="twitter">
                                                 <a href="https://twitter.com" data-bs-toggle="tooltip" target="_blank" title="Twitter">
-                                                    <i class="ion-social-twitter"></i>
+                                                    <i class="fa-brands fa-twitter"></i>
                                                 </a>
                                             </li>
                                             <li class="linkedin">
                                                 <a href="https://www.linkedin.com/" data-bs-toggle="tooltip" target="_blank" title="Linkedin">
-                                                    <i class="ion-social-linkedin"></i>
+                                                    <i class="fa-brands fa-linkedin-in"></i>
                                                 </a>
                                             </li>
                                             <li class="snapchat">
                                                 <a href="https://snapchat.com/" data-bs-toggle="tooltip" target="_blank" title="Snapchat">
-                                                    <i class="ion-social-snapchat"></i>
+                                                    <i class="fa-brands fa-snapchat"></i>
                                                 </a>
                                             </li>
                                             <li class="instagram">
                                                 <a href="https://instagram.com/" data-bs-toggle="tooltip" target="_blank" title="Instagram">
-                                                    <i class="ion-social-instagram"></i>
+                                                    <i class="fa-brands fa-instagram"></i>
+                                                </a>
+                                            </li> -->
+                                            <li class="language d-inline-block d-lg-inline-block">
+                                                <a href="#" class="lang-btn">
+                                                    <i class="ion-ios-world-outline"></i>
                                                 </a>
                                             </li>
                                             <li class="search-bar d-none d-lg-inline-block">
@@ -111,15 +119,25 @@
                                             </li>
                                         </ul>
                                     </div>
+                                    <!-- Start Langeuage Select -->
+                                    <div class="lang-body">
+                                        <?php wp_nav_menu(['menu' => 'language',]) ?>
+                                    </div>
+                                    <!-- End Langeuage Select -->
                                     <!-- Start Search Form -->
                                     <div class="search-body">
                                         <?php get_search_form(array('class' => 'inner-body')); ?>
                                     </div>
                                     <!-- End Search Form -->
                                 </div>
-                                <div class="col-6 d-block d-md-none">
+                                <div class="col-6 d-block d-md-none position-relative">
                                     <div class="header-right_area with-radius justify-content-end">
                                         <ul>
+                                            <li class="language d-inline-block d-lg-none">
+                                                <a href="#" class="mobile-lang-btn">
+                                                    <i class="ion-ios-world-outline"></i>
+                                                </a>
+                                            </li>
                                             <li class="mobile-menu_wrap d-inline-block d-lg-none">
                                                 <a href="#mobileMenu" class="mobile-menu_btn toolbar-btn">
                                                     <i class="ion-navicon-round"></i>
@@ -127,12 +145,17 @@
                                             </li>
                                         </ul>
                                     </div>
+                                    <div class="mobile-lang-body">
+                                        <?php wp_nav_menu(['menu' => 'language',]) ?>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- End Menu -->
+            <!-- Start Sticky Menu -->
             <div class="main-header header-sticky">
                 <div class="container">
                     <div class="row">
@@ -159,10 +182,10 @@
                                         ?>
                                     </div>
                                 </div>
-                                <div class="col-xl-3 col-md-8 d-none d-md-block">
+                                <div class="col-xl-3 col-md-8 d-none d-md-block position-relative">
                                     <div class="header-right_area with-radius">
                                         <ul class="social-link">
-                                            <li class="facebook">
+                                            <!-- <li class="facebook">
                                                 <a href="https://www.facebook.com" data-bs-toggle="tooltip" target="_blank" title="Facebook">
                                                     <i class="ion-social-facebook"></i>
                                                 </a>
@@ -181,9 +204,14 @@
                                                 <a href="https://snapchat.com/" data-bs-toggle="tooltip" target="_blank" title="Snapchat">
                                                     <i class="ion-social-snapchat"></i>
                                                 </a>
+                                            </li> -->
+                                            <li class="language d-none d-lg-inline-block">
+                                                <a href="#" class="sticky-lang-btn">
+                                                    <i class="ion-ios-world-outline"></i>
+                                                </a>
                                             </li>
                                             <li class="search-bar d-none d-lg-inline-block">
-                                                <a class="search-btn" href="#">
+                                                <a class="sticky-search-btn" href="#">
                                                     <i class="ion-ios-search-strong"></i>
                                                 </a>
                                             </li>
@@ -194,8 +222,13 @@
                                             </li>
                                         </ul>
                                     </div>
+                                    <!-- Start Langeuage Select -->
+                                    <div class="sticky-lang-body">
+                                        <?php wp_nav_menu(['menu' => 'language',]) ?>
+                                    </div>
+                                    <!-- End Langeuage Select -->
                                     <!-- Start Search Form -->
-                                    <div class="search-body">
+                                    <div class="sticky-search-body">
                                         <?php get_search_form(array('class' => 'inner-body')); ?>
                                     </div>
                                 </div>
@@ -215,6 +248,8 @@
                     </div>
                 </div>
             </div>
+            <!-- End Sticky Menu -->
+            <!-- Start Mobile Menu -->
             <div class="mobile-menu_wrapper" id="mobileMenu">
                 <div class="offcanvas-menu-inner">
                     <div class="offcanvas-inner_search">
@@ -238,7 +273,7 @@
                                 <ul>
                                     <li class="contuct-number">
                                         <i class="ion-ios-telephone me-1"></i>
-                                        <a href="tel:+971557560966">971557560966</a>
+                                        <a href="tel:+971504568189">971504568189</a>
                                     </li>
                                     <li class="address">
                                         <i class="ion-ios-location me-1"></i>
@@ -274,8 +309,10 @@
                                 </ul>
                             </div>
                         </nav>
+
                     </div>
                 </div>
             </div>
+            <!-- End Mobile Menu -->
             <div class="global-overlay"></div>
         </header>

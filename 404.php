@@ -10,9 +10,21 @@
             <div class="error-img">
               <img src="<?php echo get_template_directory_uri() ?>/assets/images/error-404/1.png" alt="Error Image">
             </div>
-            <h1 class="heading mb-0">Oops! Page not found!</h1>
+            <h1 class="heading mb-0">
+              <?php if (get_locale() == 'ar') : ?>
+                أُووبس! الصفحة غير موجودة!.
+              <?php else : ?>
+                Oops! Page not found!
+              <?php endif; ?>
+            </h1>
             <div class="button-wrap position-center">
-              <a class="ademy-btn btn-transparent whisper-border btn-lg_size with-border_radius" href="<?php echo home_url() ?>">Go back to homepage</a>
+              <a class="ademy-btn btn-transparent whisper-border btn-lg_size with-border_radius" href="<?php echo home_url() ?>">
+                <?php if (get_locale() == 'ar') : ?>
+                  الى الصفحة الرئيسية
+                <?php else : ?>
+                  Go back to homepage
+                <?php endif; ?>
+              </a>
             </div>
           </div>
         </div>

@@ -19,7 +19,7 @@
 
 .header-logo img {
     height: auto;
-    width: auto;
+    width: 200px;
 }
 
 .content-area {
@@ -73,9 +73,15 @@
 }
 
 .intro-content p.short-desc,
+.intro-content p,
+.introduction-area-3 .section-wrap p,
 .introduction-area-3 .section-wrap p.short-desc {
     font-size: 20px;
     line-height: 26px;
+}
+
+.introduction-slider .intro-item .intro-content>p {
+    color: #ababab;
 }
 
 /* ---------------------- What Human Hub Offers ---------------------- */
@@ -300,5 +306,9 @@
 
     .col-lg-3 .widgets-heading {
         display: none;
+    }
+
+    #zcampaignOptinForm input[type=text] {
+        width: 80% !important;
     }
 }

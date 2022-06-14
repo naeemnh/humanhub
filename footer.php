@@ -37,7 +37,13 @@
                         </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="footer-widgets_area p-md-0">
-                                <h3 class="widgets-heading mb-0" style="visibility:hidden">Explore</h3>
+                                <h3 class="widgets-heading mb-0" style="visibility:hidden">
+                                    <?php if ($language == 'en') : ?>
+                                        Explore
+                                    <?php else : ?>
+                                        يكتشف
+                                    <?php endif; ?>
+                                </h3>
                                 <div class="footer-widgets">
                                     <?php
                                     wp_nav_menu(array(
@@ -77,8 +83,14 @@
                 <div class="row">
                     <div class="col-lg-7 col-sm-6">
                         <div class="copyright">
-                            <span>Copyright 2022 &copy;
-                                <a href="<?php echo home_url() ?>">Mehan Limited.</a>
+                            <span>
+                                <?php
+                                if (get_locale() == 'en') : ?>
+                                    Copyright 2022 &copy;
+                                    <a href="<?php echo home_url() ?>">Mehan Limited.</a>
+                                <?php else : ?>
+                                    حقوق الطبع والنشر © جميع الحقوق محفوظة <a href="<?php echo home_url() ?>"> مهن ذ م م</a>
+                                <?php endif; ?>
                             </span>
                         </div>
                     </div>
@@ -87,27 +99,27 @@
                             <ul class="social-link">
                                 <li class="facebook">
                                     <a href="https://www.facebook.com" data-bs-toggle="tooltip" target="_blank" title="Facebook">
-                                        <i class="ion-social-facebook"></i>
+                                        <i class="fa-brands fa-facebook-f"></i>
                                     </a>
                                 </li>
                                 <li class="twitter">
                                     <a href="https://twitter.com" data-bs-toggle="tooltip" target="_blank" title="Twitter">
-                                        <i class="ion-social-twitter"></i>
+                                        <i class="fa-brands fa-twitter"></i>
                                     </a>
                                 </li>
                                 <li class="linkedin">
                                     <a href="https://www.linkedin.com/" data-bs-toggle="tooltip" target="_blank" title="Linkedin">
-                                        <i class="ion-social-linkedin"></i>
+                                        <i class="fa-brands fa-linkedin-in"></i>
                                     </a>
                                 </li>
                                 <li class="snapchat">
                                     <a href="https://snapchat.com/" data-bs-toggle="tooltip" target="_blank" title="Snapchat">
-                                        <i class="ion-social-snapchat"></i>
+                                        <i class="fa-brands fa-snapchat"></i>
                                     </a>
                                 </li>
                                 <li class="instagram">
                                     <a href="https://instagram.com/" data-bs-toggle="tooltip" target="_blank" title="Instagram">
-                                        <i class="ion-social-instagram"></i>
+                                        <i class="fa-brands fa-instagram"></i>
                                     </a>
                                 </li>
                             </ul>
@@ -156,7 +168,8 @@
 <script src="<?php echo get_template_directory_uri() ?>/assets/js/plugins/jquery.magnific-popup.min.js"></script>
 <!-- datetimepicker JS -->
 <script src="<?php echo get_template_directory_uri() ?>/assets/js/plugins/jquery.datetimepicker.full.min.js"></script>
-
+<!-- Font Awesome JS -->
+<script src="https://kit.fontawesome.com/9c183d1175.js" crossorigin="anonymous"></script>
 <!-- Main JS -->
 <script src="<?php echo get_template_directory_uri() ?>/assets/js/main.js"></script>
 

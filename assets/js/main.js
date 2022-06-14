@@ -601,6 +601,25 @@
 		e.preventDefault();
 		$(".search-body").slideToggle();
 	});
+	$(".sticky-search-btn").on("click", function (e) {
+		e.preventDefault();
+		$(".sticky-search-body").slideToggle();
+	});
+	/*-----------------------
+		Language Options 
+	------------------------- */
+	$(".lang-btn").on("click", function (e) {
+		e.preventDefault();
+		$('.lang-body').toggle('slide', {direction: "right"});
+	})
+	$(".sticky-lang-btn").on("click", function (e) {
+		e.preventDefault();
+		$('.sticky-lang-body').toggle('slide', {direction: "right"});
+	})
+	$(".mobile-lang-btn").on("click", function (e) {
+		e.preventDefault();
+		$('.mobile-lang-body').toggle('slide', {direction: "right"});
+	})
 	/*--------------------------------
 	Ajax Contact Form
 	-------------------------------- */

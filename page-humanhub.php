@@ -14,7 +14,6 @@ if (have_posts()) :
         $yearly_premium_plus = get_field('yearly_premium_plus');
         // get_template_part('template-parts/part', 'breadcrumb'); 
 ?>
-
         <!-- Begin Slider Area -->
         <div class="slider-area">
             <div class="ademy-element-carousel home-slider arrow-style" data-slick-options='{
@@ -36,81 +35,56 @@ if (have_posts()) :
                 "slidesToShow": 1
                 }}
             ]'>
-                <div class="slide-item bg-2 animation-style-01" style="background-image: url(<?php echo get_template_directory_uri() ?>/assets/images/slider/humanhub-slide-1.png)">
-                    <div class="slide-content">
-                        <!-- <span class="intro">Human Hub</span> -->
-                        <h1 class="heading intro pb-1 mb-0">Human Hub</h1>
-                        <h1 class="heading cd-headline letters type mb-0">
-                            Enrich your human capital experience <br />
-                            <span class="cd-words-wrapper waiting">
-                                <b class="is-visible">Share</b>
-                                <b>Network</b>
-                                <b>Collaborate</b>
-                                <b>Innovate</b>
-                                <b>Learn</b>
-                                <b>Transform</b>
-                                <b>Do it again</b> </span>.
-                        </h1>
-                        <div class="button-wrap position-center">
-                            <a class="ademy-btn btn-transparent white-border with-border_radius active" href="https://humanhub.me/user/register">Get started
-                                <i class="ion-android-arrow-forward"></i>
-                            </a>
-                            <a class="ademy-btn btn-transparent white-border with-border_radius" href="https://humanhub.me/">Learn more
-                                <i class="ion-android-arrow-forward"></i>
-                            </a>
+                <?php for ($i = 0; $i < 3; $i++) : ?>
+                    <div class="slide-item bg-2 animation-style-01" style="background-image: url(<?php echo get_template_directory_uri() ?>/assets/images/slider/humanhub-slide-<?php echo $i + 1 ?>.png)">
+                        <div class="slide-content">
+                            <!-- <span class="intro">Human Hub</span> -->
+                            <?php if ($language == 'en') : ?>
+                                <h1 class="heading intro pb-1 mb-0">Human Hub</h1>
+                                <h1 class="heading cd-headline letters type mb-0">
+                                    Enrich your human capital experience <br />
+                                    <span class="cd-words-wrapper waiting">
+                                        <b class="is-visible">Share</b>
+                                        <b>Network</b>
+                                        <b>Collaborate</b>
+                                        <b>Innovate</b>
+                                        <b>Learn</b>
+                                        <b>Transform</b>
+                                        <b>Do it again</b> </span>.
+                                </h1>
+                                <div class="button-wrap position-center">
+                                    <a class="ademy-btn btn-transparent white-border with-border_radius active" href="https://humanhub.me/user/register">Get started
+                                        <i class="ion-android-arrow-forward"></i>
+                                    </a>
+                                    <a class="ademy-btn btn-transparent white-border with-border_radius" href="https://humanhub.me/">Learn more
+                                        <i class="ion-android-arrow-forward"></i>
+                                    </a>
+                                </div>
+                            <?php else : ?>
+                                <h1 class="heading intro pb-1 mb-0">منصة الإنسان</h1>
+                                <h1 class="heading cd-headline letters type mb-0">
+                                    إثري خبرتك في رأس المال البشري <br />
+                                    <span class="cd-words-wrapper waiting">
+                                        <b class="is-visible">شارك</b>
+                                        <b>تعرف</b>
+                                        <b>تعاون</b>
+                                        <b>ابتكر</b>
+                                        <b>تعلم</b>
+                                        <b>تحول</b>
+                                        <b>كررها</b> </span>.
+                                </h1>
+                                <div class="button-wrap position-center">
+                                    <a class="ademy-btn btn-transparent white-border with-border_radius active" href="https://humanhub.me/">Get started
+                                        <i class="ion-android-arrow-forward"></i>
+                                    </a>
+                                    <!-- <a class="ademy-btn btn-transparent white-border with-border_radius" href="https://humanhub.me/">Learn more
+                                        <i class="ion-android-arrow-forward"></i>
+                                    </a> -->
+                                </div>
+                            <?php endif; ?>
                         </div>
                     </div>
-                </div>
-                <div class="slide-item bg-2 animation-style-01" style="background-image: url(<?php echo get_template_directory_uri() ?>/assets/images/slider/humanhub-slide-2.png)">
-                    <div class="slide-content">
-                        <!-- <span class="intro">Human Hub</span> -->
-                        <h1 class="heading intro pb-1 mb-0">Human Hub</h1>
-                        <h1 class="heading cd-headline letters type mb-0">
-                            Enrich your human capital experience <br />
-                            <span class="cd-words-wrapper waiting">
-                                <b class="is-visible">Share</b>
-                                <b>Network</b>
-                                <b>Collaborate</b>
-                                <b>Innovate</b>
-                                <b>Learn</b>
-                                <b>Transform</b>
-                                <b>Do it again</b> </span>.
-                        </h1>
-                        <div class="button-wrap position-center">
-                            <a class="ademy-btn btn-transparent white-border with-border_radius active" href="https://humanhub.me/user/register">Get started
-                                <i class="ion-android-arrow-forward"></i>
-                            </a>
-                            <a class="ademy-btn btn-transparent white-border with-border_radius" href="https://humanhub.me/">Learn more
-                                <i class="ion-android-arrow-forward"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="slide-item bg-2 animation-style-01" style="background-image: url(<?php echo get_template_directory_uri() ?>/assets/images/slider/humanhub-slide-3.png)">
-                    <div class="slide-content">
-                        <!-- <span class="intro">Human Hub</span> -->
-                        <h1 class="heading intro pb-1 mb-0">Human Hub</h1>
-                        <h1 class="heading cd-headline letters type mb-0">
-                            Enrich your human capital experience <br />
-                            <span class="cd-words-wrapper waiting">
-                                <b class="is-visible">Share</b>
-                                <b>Network</b>
-                                <b>Collaborate</b>
-                                <b>Innovate</b>
-                                <b>Learn</b>
-                                <b>Transform</b>
-                                <b>Do it again</b> </span>.
-                        </h1>
-                        <div class="button-wrap position-center">
-                            <a class="ademy-btn btn-transparent white-border with-border_radius active" href="https://humanhub.me/user/register">Get started
-                                <i class="ion-android-arrow-forward"></i>
-                            </a>
-                            <a class="ademy-btn btn-transparent white-border with-border_radius" href="https://humanhub.me/">Learn more
-                                <i class="ion-android-arrow-forward"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                <?php endfor; ?>
             </div>
         </div>
         <!-- Slider Area End Here -->
@@ -122,7 +96,11 @@ if (have_posts()) :
                 <div class="container">
                     <div class="section-title pb-5">
                         <h2 class="sub-heading mb-0">
-                            Welcome to <span>Mehan's</span> HumanHub
+                            <?php if ($language == 'en') : ?>
+                                Welcome to <span>Mehan's</span> HumanHub
+                            <?php else : ?>
+                                مرحبا بكم في منصة الإنسان التابعة <span>لمهن</span>
+                            <?php endif; ?>
                         </h2>
                     </div>
                     <div class="row">
@@ -134,7 +112,11 @@ if (have_posts()) :
                                 a prestigious secondary school
                             </h2> -->
                                 <p class="short-desc mb-0">
-                                    Mehan's Human Hub is a continuous learning Human Capital Hub that allows human capital professionals and students to transform, grow, share knowledge, innovate and advance in their careers by collaborating with other HC professionals through virtual and physical platforms.
+                                    <?php if ($language == 'en') : ?>
+                                        Mehan's Human Hub is a continuous learning Human Capital Hub that allows human capital professionals and students to transform, grow, share knowledge, innovate and advance in their careers by collaborating with other HC professionals through virtual and physical platforms.
+                                    <?php else : ?>
+                                        منصة الإنسان التابعة لمهن هي منصة التعلم المستمر لرأس المال البشري التي تتيح للعاملين وطلاب رأس المال البشري التحول والنمو بمشاركتهم المعرفة والابتكار للتطور في حياتهم المهنية من خلال التعاون مع متخصصي رأس المال البشري الآخرين على منصات افتراضية وواقعية.
+                                    <?php endif; ?>
                                 </p>
                                 <!-- <div class="btn-wrap">
                                 <a class="ademy-btn denim-color_btn with-border_radius" href="academics.html">Learn more</a>
@@ -157,7 +139,13 @@ if (have_posts()) :
             <div class="services-area bg-smoke_color">
                 <div class="container">
                     <div class="section-title pb-5">
-                        <h2 class="sub-heading mb-0">What HumanHub Offers</h2>
+                        <h2 class="sub-heading mb-0">
+                            <?php if ($language == 'en') : ?>
+                                What HumanHub Offers
+                            <?php else : ?>
+                                ما تقدمه منصة الإنسان
+                            <?php endif; ?>
+                        </h2>
                     </div>
                     <div class="row">
                         <!-- <div class="col-lg-6 col-sm-12">
@@ -218,10 +206,17 @@ if (have_posts()) :
                                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/services/elements_human-hub-1-min.png" alt="img-full">
                                 </div>
                                 <div class="service-content">
-                                    <h3 class="title mb-0 white-color">Knowledge</h3>
-                                    <p class="short-desc mb-0">
-                                        Facilitating Knowledge and Experience Sharing among Human Capital professionals through speaking via podcasts & webinars, writing articles, and posting, brainstroming & collaborating.
-                                    </p>
+                                    <?php if ($language == 'en') : ?>
+                                        <h3 class="title mb-0 white-color">Knowledge</h3>
+                                        <p class="short-desc mb-0">
+                                            Facilitating Knowledge and Experience Sharing among Human Capital professionals through speaking via podcasts & webinars, writing articles, and posting, brainstroming & collaborating.
+                                        </p>
+                                    <?php else : ?>
+                                        <h3 class="title mb-0 white-color">المعرفة</h3>
+                                        <p class="short-desc mb-0">
+                                            تسهيل تبادل المعرفة والخبرات بين محترفي رأس المال البشري من خلال التحدث عبر النقل المباشر بالفيديو عبر الإنترنت ، والكتابة عبر المقالات والنشر ، وتبادل الأفكار والتعاون.
+                                        </p>
+                                    <?php endif; ?>
                                 </div>
                             </article>
                             <article class="service flex-md-row flex-sm-column flex-column">
@@ -229,10 +224,17 @@ if (have_posts()) :
                                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/services/elements_human-hub-2-min.png" alt="img-full">
                                 </div>
                                 <div class="service-content">
-                                    <h3 class="title mb-0 white-color">Enlightenment</h3>
-                                    <p class="short-desc mb-0">
-                                        Inspiring the next generation of Human Capital leaders through shadowing, mentorship, coaching, and internships.
-                                    </p>
+                                    <?php if ($language == 'en') : ?>
+                                        <h3 class="title mb-0 white-color">Enlightenment</h3>
+                                        <p class="short-desc mb-0">
+                                            Inspiring the next generation of Human Capital leaders through shadowing, mentorship, coaching, and internships.
+                                        </p>
+                                    <?php else : ?>
+                                        <h3 class="title mb-0 white-color">التنوير</h3>
+                                        <p class="short-desc mb-0">
+                                            إلهام الجيل القادم من قادة رأس المال البشري من خلال الإرشاد والتوجيه والتدريب الوظيفي.
+                                        </p>
+                                    <?php endif; ?>
                                 </div>
                             </article>
                         </div>
@@ -242,10 +244,17 @@ if (have_posts()) :
                                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/services/elements_human-hub-4-min.png" alt="img-full">
                                 </div>
                                 <div class="service-content">
-                                    <h3 class="title mb-0 white-color">Networking</h3>
-                                    <p class="short-desc mb-0">
-                                        Providing opportunities for Human Capital professionals to strengthen their network via physical and virtual events, access to direct messaging and joining or creating groups and communities.
-                                    </p>
+                                    <?php if ($language == 'en') : ?>
+                                        <h3 class="title mb-0 white-color">Networking</h3>
+                                        <p class="short-desc mb-0">
+                                            Providing opportunities for Human Capital professionals to strengthen their network via physical and virtual events, access to direct messaging and joining or creating groups and communities.
+                                        </p>
+                                    <?php else : ?>
+                                        <h3 class="title mb-0 white-color">التعرف</h3>
+                                        <p class="short-desc mb-0">
+                                            توفير الفرص لمحترفي رأس المال البشري لتعزيز معارفهم من خلال المنصات الافتراضية والواقعية ، والتراسل المباشر والانضمام أو إنشاء المجموعات والمجتمعات.
+                                        </p>
+                                    <?php endif; ?>
                                 </div>
                             </article>
                             <article class="service flex-column">
@@ -253,10 +262,17 @@ if (have_posts()) :
                                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/services/elements_human-hub-3-min.png" alt="img-full">
                                 </div>
                                 <div class="service-content">
-                                    <h3 class="title mb-0 white-color">Entrepreneurship</h3>
-                                    <p class="short-desc mb-0">
-                                        To influence human capital practices by supporting entrepreneurs and freelancers.
-                                    </p>
+                                    <?php if ($language == 'en') : ?>
+                                        <h3 class="title mb-0 white-color">Entrepreneurship</h3>
+                                        <p class="short-desc mb-0">
+                                            To influence human capital practices by supporting entrepreneurs and freelancers.
+                                        </p>
+                                    <?php else : ?>
+                                        <h3 class="title mb-0 white-color">ريادة الأعمال</h3>
+                                        <p class="short-desc mb-0">
+                                            تطوير ممارسات رأس المال البشري من خلال دعم رواد الأعمال واصحاب الأعمال الحرة.
+                                        </p>
+                                    <?php endif; ?>
                                 </div>
                             </article>
                         </div>

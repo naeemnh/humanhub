@@ -312,10 +312,33 @@ function mehan_dependencies()
             <p>Warning: The theme needs Contact Form 7 for Contact forms to function</p>
             <a href="/wp-admin/plugins.php?s=contact%20form%207">Activate/Install Plugin</a>
         </div>
+    <?php }
+    if (POLYLANG != 'Polylang') { ?>
+        <div class="error">
+            <p>Warning: The theme needs Polylang for displaying content in different content</p>
+            <a href="/wp-admin/plugins.php?s=polylang">Activate/Install Plugin</a>
+        </div>
 <?php }
 }
 
 add_action('admin_notices', 'mehan_dependencies');
+
+/*
+    ==========================================
+    Languages
+    ==========================================
+*/
+
+$english = ['en', 'en_US', 'en-US', 'en_GB'];
+$arabic = ['ar'];
+$language = null;
+if (in_array(get_locale(), $english)) {
+    $language = 'en';
+} else {
+    $language = 'ar';
+}
+
+// echo $language;
 
 /*
     ==========================================

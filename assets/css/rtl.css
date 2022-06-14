@@ -1,0 +1,38 @@
+html:lang(ar) h1,
+html:lang(ar) h2,
+html:lang(ar) h3,
+html:lang(ar) h4,
+html:lang(ar) h5,
+html:lang(ar) h6,
+html:lang(ar) p,
+html:lang(ar) p,
+html:lang(ar) ul {
+  direction: rtl;
+}
+
+html:lang(ar) .offcanvas-menu_wrapper .offcanvas-menu-inner,
+html:lang(ar) .introduction-area-3 .section-wrap,
+html:lang(ar) .event-slider .slide-item .single-item .single-img .inner-content,
+html:lang(ar) .news-list_area .news-topic {
+  text-align: right;
+}
+
+html:lang(ar) .social-link li {
+  padding-right: 0;
+  padding-left: 25px;
+}
+
+html:lang(ar) .header-right_area ul>li {
+  padding-right: 0;
+  padding-left: 5px;
+}
+
+html:lang(ar) .main-header .main-nav>ul>li:not(:last-child) {
+  padding-right: 0;
+  padding-left: 30px;
+}
+
+html:lang(ar) .latest-news_area .tab-section_area .latest-news_tab>ul.latest-news_menu>li {
+  padding-right: 0;
+  padding-left: 15px;
+}
