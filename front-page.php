@@ -196,7 +196,7 @@ get_header(); ?>
                                     هي منصة رأس المال البشري للتعلم المستمر التي يسمح لمحترفي رأس المال البشري والطلاب بالتحول، والنمو، وتبادل المعرفة، والابتكار والتقدم في حياتهم المهنية من خلال التعاون مع غيرهم من المتخصصين في رأس المال البشري عن طريق منصات افتراضية وواقعية.
                                 </p>
                                 <div class="intro-btn_wrap">
-                                    <a class="ademy-btn denim-color_btn fullwidth-btn" href="<?php echo get_home_url() ?>/humanhub">
+                                    <a class="ademy-btn denim-color_btn fullwidth-btn" href="<?php echo get_home_url() ?>/ar/هيومن-هب/">
                                         تعرف على المزيد
                                         <i class="ion-android-arrow-forward"></i>
                                     </a>

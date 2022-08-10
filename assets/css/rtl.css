@@ -36,3 +36,7 @@ html:lang(ar) .latest-news_area .tab-section_area .latest-news_tab>ul.latest-new
   padding-right: 0;
   padding-left: 15px;
 }
+
+html:lang(ar) ul.pricing-plans_menu {
+  direction: ltr;
+}

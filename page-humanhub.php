@@ -318,7 +318,7 @@ if (have_posts()) :
                                                     <span class="price"><strong>STAY TUNED</strong></span>
                                                 <?php endif; ?>
                                                 <ul class="feature-list">
-                                                    <?php $features = explode('; ', $basic['features']);
+                                                    <?php $features = $language == 'en' ? explode('; ', $basic['features']) : explode('; ', $basic['arabic_features']);
                                                     foreach ($features as $feature) : ?>
                                                         <li><?php echo $feature ?></li>
                                                     <?php endforeach; ?>
@@ -339,7 +339,7 @@ if (have_posts()) :
                                                     <span class="price"><strong>STAY TUNED</strong></span>
                                                 <?php endif; ?>
                                                 <ul class="feature-list">
-                                                    <?php $features = explode('; ', $monthly_premium['features']);
+                                                    <?php $features = $language == 'en' ? explode('; ', $monthly_premium['features']) : explode('; ', $monthly_premium['arabic_features']);
                                                     foreach ($features as $feature) : ?>
                                                         <li><?php echo $feature ?></li>
                                                     <?php endforeach; ?>
@@ -360,7 +360,7 @@ if (have_posts()) :
                                                     <span class="price"><strong>STAY TUNED</strong></span>
                                                 <?php endif; ?>
                                                 <ul class="feature-list">
-                                                    <?php $features = explode('; ', $monthly_premium_plus['features']);
+                                                    <?php $features = $language == 'en' ? explode('; ', $monthly_premium_plus['features']) : explode('; ', $monthly_premium_plus['arabic_features']);
                                                     foreach ($features as $feature) : ?>
                                                         <li><?php echo $feature ?></li>
                                                     <?php endforeach; ?>
@@ -385,7 +385,7 @@ if (have_posts()) :
                                                     <span class="price"><strong>STAY TUNED</strong></span>
                                                 <?php endif; ?>
                                                 <ul class="feature-list">
-                                                    <?php $features = explode('; ', $basic['features']);
+                                                    <?php $features = $language == 'en' ? explode('; ', $basic['features']) : explode('; ', $basic['arabic_features']);
                                                     foreach ($features as $feature) : ?>
                                                         <li><?php echo $feature ?></li>
                                                     <?php endforeach; ?>
@@ -406,7 +406,7 @@ if (have_posts()) :
                                                     <span class="price"><strong>STAY TUNED</strong></span>
                                                 <?php endif; ?>
                                                 <ul class="feature-list">
-                                                    <?php $features = explode('; ', $yearly_premium['features']);
+                                                    <?php $features = $language == 'en' ? explode('; ', $yearly_premium['features']) : explode('; ', $yearly_premium['arabic_features']);
                                                     foreach ($features as $feature) : ?>
                                                         <li><?php echo $feature ?></li>
                                                     <?php endforeach; ?>
@@ -427,7 +427,7 @@ if (have_posts()) :
                                                     <span class="price"><strong>STAY TUNED</strong></span>
                                                 <?php endif; ?>
                                                 <ul class="feature-list">
-                                                    <?php $features = explode('; ', $yearly_premium_plus['features']);
+                                                    <?php $features = $language == 'en' ? explode('; ', $yearly_premium_plus['features']) : explode('; ', $yearly_premium_plus['arabic_features']);
                                                     foreach ($features as $feature) : ?>
                                                         <li><?php echo $feature ?></li>
                                                     <?php endforeach; ?>
@@ -478,20 +478,20 @@ if (have_posts()) :
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="ademy-element-carousel event-slider" data-slick-options='{
-                        "slidesToShow": 2,
-                        "slidesToScroll": 1,
-                        "infinite": false,
-                        "arrows": false,
-                        "dots": false,
-                        "spaceBetween": 30
-                        }' data-slick-responsive='[
-                        {"breakpoint": 992, "settings": {
-                        "slidesToShow": 2
-                        }},
-                        {"breakpoint": 768, "settings": {
-                        "slidesToShow": 1
-                        }}
-                    ]'>
+                                    "slidesToShow": 2,
+                                    "slidesToScroll": 1,
+                                    "infinite": false,
+                                    "arrows": false,
+                                    "dots": false,
+                                    "spaceBetween": 30
+                                    }' data-slick-responsive='[
+                                    {"breakpoint": 992, "settings": {
+                                    "slidesToShow": 2
+                                    }},
+                                    {"breakpoint": 768, "settings": {
+                                    "slidesToShow": 1
+                                    }}
+                                ]'>
                                     <?php foreach ($events as $event) : ?>
                                         <div class="slide-item">
                                             <div class="single-item">
@@ -560,13 +560,29 @@ if (have_posts()) :
                             <div class="ticket-item">
                                 <div class="heading-wrap">
                                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/ticket/arrow.png" alt="Ticket Arrow" />
-                                    <h2 class="heading mb-0 blue-color">Sign up and Join us today!</h2>
+                                    <h2 class="heading mb-0 blue-color">
+                                        <?php if ($language == 'en') : ?>
+                                            Sign up and Join us today!
+                                        <?php else : ?>
+                                            سجل وانضم إلينا اليوم
+                                        <?php endif; ?>
+                                    </h2>
                                 </div>
                                 <div class="group-btn_wrap d-flex">
-                                    <a class="ademy-btn btn-transparent blue-border grey-color with-border_radius me-2" href="https://humanhub.me/">Learn more
+                                    <a class="ademy-btn btn-transparent blue-border grey-color with-border_radius me-2" href="https://humanhub.me/">
+                                        <?php if ($language == 'en') : ?>
+                                            Learn more
+                                        <?php else : ?>
+                                            تعرف على المزيد
+                                        <?php endif; ?>
                                         <i class="ion-android-arrow-forward"></i>
                                     </a>
-                                    <a class="ademy-btn denim-color_btn with-border_radius" href="https://humanhub.me/user/register">Register Now
+                                    <a class="ademy-btn denim-color_btn with-border_radius" href="https://humanhub.me/user/register">
+                                        <?php if ($language == 'en') : ?>
+                                            Register Now
+                                        <?php else : ?>
+                                            سجل الان
+                                        <?php endif; ?>
                                         <i class="ion-android-arrow-forward"></i>
                                     </a>
                                 </div>
@@ -576,7 +592,6 @@ if (have_posts()) :
                 </div>
             </div>
             <!-- Ticket Area End Here -->
-
         </main>
         <!-- Main Content Area End Here -->
 <?php
