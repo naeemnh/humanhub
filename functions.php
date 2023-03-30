@@ -298,27 +298,32 @@ add_action('pre_get_posts', 'event_posts');
     Plugin Checks
     ==========================================
 */
-
 function mehan_dependencies()
 {
     if (!function_exists('acf_add_local_field_group')) { ?>
         <div class="error">
             <p>Warning: The theme needs Advanced Custom Fields to function</p>
-            <a href="/wp-admin/plugins.php?s=Advanced%20Custom%20Fields">Activate/Install Plugin</a>
+            <span>
+                <a href="<?php echo get_site_url() ?>/wp-admin/plugins.php?s=Advanced%20Custom%20Fields">Activate</a>/<a href="<?php echo get_site_url() ?>/wp-admin/plugin-install.php?s=Advanced%20Custom%20Fields&tab=search&type=term">Install</a> Plugin
+            </span>
         </div>
     <?php }
     if (!function_exists('wpcf7_init')) { ?>
         <div class="error">
             <p>Warning: The theme needs Contact Form 7 for Contact forms to function</p>
-            <a href="/wp-admin/plugins.php?s=contact%20form%207">Activate/Install Plugin</a>
+            <span>
+                <a href="<?php echo get_site_url() ?>/wp-admin/plugins.php?s=Contact%20Form%207">Activate</a>/<a href="<?php echo get_site_url() ?>/wp-admin/plugin-install.php?s=Contact%20Form%207&tab=search&type=term">Install</a> Plugin
+            </span>
         </div>
     <?php }
-    if (POLYLANG != 'Polylang') { ?>
-        <div class="error">
-            <p>Warning: The theme needs Polylang for displaying content in different content</p>
+    // if (POLYLANG != 'Polylang') { 
+    ?>
+    <!-- <div class="error">
+            <p>Warning: The theme needs Polylang for displaying content in different languages</p>
             <a href="/wp-admin/plugins.php?s=polylang">Activate/Install Plugin</a>
-        </div>
-    <?php }
+        </div> -->
+<?php
+    // }
 }
 
 add_action('admin_notices', 'mehan_dependencies');
