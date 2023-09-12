@@ -38,10 +38,10 @@
                         <div class="col-lg-3 col-md-6">
                             <div class="footer-widgets_area p-md-0">
                                 <h3 class="widgets-heading mb-0" style="visibility:hidden">
-                                    <?php if ($language == 'en') : ?>
+                                    <?php if (get_locale() == 'en') : ?>
                                         Explore
                                     <?php else : ?>
-                                        يكتشف
+                                        يستكشف
                                     <?php endif; ?>
                                 </h3>
                                 <div class="footer-widgets">
