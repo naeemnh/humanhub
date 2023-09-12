@@ -31,9 +31,9 @@
     background-position: 0 0;
 }
 
-.home-slider .slide-item.bg-1 .slide-content {
+/* .home-slider .slide-item.bg-1 .slide-content {
     margin: auto auto 0;
-}
+} */
 
 .home-slider .slide-content>h1.heading:first-child {
     font-weight: 600;
@@ -265,7 +265,28 @@
     padding: 10px 20px;
 }
 
+/* ----------------------------------------
+    Career Guidance
+---------------------------------------- */
 
+.cg-works .service {
+    background: #ffffff;
+}
+
+.cg-works .service-img img {
+    display: block;
+    margin: auto;
+}
+
+.cg-works .service .service-content p.short-desc {
+    text-align: center;
+    color: inherit;
+    margin-top: 5%;
+}
+
+.services-area.cg-works .col-md-6:nth-child(2) .service.flex-column:nth-child(2) {
+    padding-bottom: 8%;
+}
 
 /* ----------------------------------------
     Show Interest Form

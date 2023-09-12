@@ -157,7 +157,13 @@ if (have_posts()) :
           <div class="row">
             <div class="col">
               <div class="show-interest">
-                <h3 class="sub-heading">Show us you interest: </h3>
+                <h3 class="sub-heading">
+                  <?php if ($language == 'en') : ?>
+                    Show us you interest:
+                  <?php else : ?>
+                    أظهر لنا اهتمامك:
+                  <?php endif; ?>
+                </h3>
                 <?php the_content() ?>
               </div>
             </div>

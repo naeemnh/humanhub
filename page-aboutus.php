@@ -7,83 +7,8 @@
 get_header();
 if (have_posts()) :
     while (have_posts()) : the_post();
-        // get_template_part('template-parts/part', 'breadcrumb'); 
+        get_template_part('template-parts/part', 'breadcrumb');
 ?>
-        <!-- Begin Slider Area -->
-        <div class="slider-area">
-            <div class="ademy-element-carousel home-slider arrow-style" data-slick-options='{
-                "slidesToShow": 1,
-                "slidesToScroll": 1,
-                "infinite": true,
-                "arrows": true,
-                "dots": false,
-                "autoplay" : true,
-                "fade" : true,
-                "autoplaySpeed" : 32500,
-                "pauseOnHover" : false,
-                "pauseOnFocus" : false
-                }' data-slick-responsive='[
-                {"breakpoint":768, "settings": {
-                "slidesToShow": 1
-                }},
-                {"breakpoint":575, "settings": {
-                "slidesToShow": 1
-                }}
-            ]'>
-                <?php for ($i = 0; $i < 3; $i++) : ?>
-                    <div class="slide-item bg-2 animation-style-01" style="background-image: url(<?php echo get_template_directory_uri() ?>/assets/images/slider/humanhub-slide-<?php echo $i + 1 ?>.png)">
-                        <div class="slide-content">
-                            <!-- <span class="intro">Human Hub</span> -->
-                            <?php if ($language == 'en') : ?>
-                                <h1 class="heading intro pb-1 mb-0">Human Hub</h1>
-                                <h1 class="heading cd-headline letters type mb-0">
-                                    Enrich your human capital experience <br />
-                                    <span class="cd-words-wrapper waiting">
-                                        <b class="is-visible">Share</b>
-                                        <b>Network</b>
-                                        <b>Collaborate</b>
-                                        <b>Innovate</b>
-                                        <b>Learn</b>
-                                        <b>Transform</b>
-                                        <b>Do it again</b> </span>.
-                                </h1>
-                                <div class="button-wrap position-center">
-                                    <a class="ademy-btn btn-transparent white-border with-border_radius active" href="https://humanhub.me/user/register">Get started
-                                        <i class="ion-android-arrow-forward"></i>
-                                    </a>
-                                    <a class="ademy-btn btn-transparent white-border with-border_radius" href="https://humanhub.me/">Learn more
-                                        <i class="ion-android-arrow-forward"></i>
-                                    </a>
-                                </div>
-                            <?php else : ?>
-                                <h1 class="heading intro pb-1 mb-0">منصة الإنسان</h1>
-                                <h1 class="heading cd-headline letters type mb-0">
-                                    إثري خبرتك في رأس المال البشري <br />
-                                    <span class="cd-words-wrapper waiting">
-                                        <b class="is-visible">شارك</b>
-                                        <b>تعرف</b>
-                                        <b>تعاون</b>
-                                        <b>ابتكر</b>
-                                        <b>تعلم</b>
-                                        <b>تحول</b>
-                                        <b>كررها</b> </span>.
-                                </h1>
-                                <div class="button-wrap position-center">
-                                    <a class="ademy-btn btn-transparent white-border with-border_radius active" href="https://humanhub.me/">Get started
-                                        <i class="ion-android-arrow-forward"></i>
-                                    </a>
-                                    <!-- <a class="ademy-btn btn-transparent white-border with-border_radius" href="https://humanhub.me/">Learn more
-                                        <i class="ion-android-arrow-forward"></i>
-                                    </a> -->
-                                </div>
-                            <?php endif; ?>
-                        </div>
-                    </div>
-                <?php endfor; ?>
-            </div>
-        </div>
-        <!-- Slider Area End Here -->
-
         <!-- Begin Main Content Area -->
         <main class="main-content">
             <!-- Begin Introduction Area Three -->

@@ -16,7 +16,11 @@
                         <li>
                             <ul class="list-item event-list_item">
                                 <li class="list-item_img">
-                                    <img src="<?php the_post_thumbnail_url('thumbnail'); ?>" alt="Event Image">
+                                    <?php if (has_post_thumbnail()) : ?>
+                                        <img src="<?php the_post_thumbnail_url('thumbnail'); ?>" alt="Image">
+                                    <?php else : ?>
+                                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/no-image.png" alt="Image">
+                                    <?php endif; ?>
                                 </li>
                                 <li class="list-item_content">
                                     <a class="entry-title" href="<?php echo get_the_permalink() ?>"><?php the_title() ?></a>
@@ -60,7 +64,7 @@
                     <?php $tags = get_tags();
                     foreach ($tags as $tag) : ?>
                         <li>
-                            <a href="<?php echo get_tag_link() ?>"><?php echo $tag->name ?></a>
+                            <a href="<?php echo get_tag_link($tag); ?>"><?php echo $tag->name ?></a>
                         </li>
                     <?php endforeach; ?>
                 </ul>
