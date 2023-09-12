@@ -189,28 +189,19 @@ get_header(); ?>
                 ]'>
                     <div class="intro-item">
                         <div class="intro-content">
-                            <!-- <h3 class="heading mb-0">Human Hub</h3> -->
-                            <?php if ($language == 'en') : ?>
-                                <p class="short-desc">
+                            <p class="short-desc">
+                                <?php if ($language == 'en') : ?>
                                     At Mehan, we help businesses headhunt the most suitable talented Emirati professionals for their Emiratization roles as well as the world’s talented professionals for their middle and senior management roles through extensive client communication, best executive search and constant networking.
-                                </p>
-                                <div class="intro-btn_wrap">
-                                    <a class="ademy-btn denim-color_btn fullwidth-btn" href="<?php echo get_home_url() ?>/humanhub">
-                                        Learn more
-                                        <i class="ion-android-arrow-forward"></i>
-                                    </a>
-                                </div>
-                            <?php else : ?>
-                                <p class="short-desc">
+                                <?php else : ?>
                                     هي منصة رأس المال البشري للتعلم المستمر التي يسمح لمحترفي رأس المال البشري والطلاب بالتحول، والنمو، وتبادل المعرفة، والابتكار والتقدم في حياتهم المهنية من خلال التعاون مع غيرهم من المتخصصين في رأس المال البشري عن طريق منصات افتراضية وواقعية.
-                                </p>
-                                <div class="intro-btn_wrap">
-                                    <a class="ademy-btn denim-color_btn fullwidth-btn" href="<?php echo get_home_url() ?>/ar/هيومن-هب/">
-                                        تعرف على المزيد
-                                        <i class="ion-android-arrow-forward"></i>
-                                    </a>
-                                </div>
-                            <?php endif; ?>
+                                <?php endif; ?>
+                            </p>
+                            <div class="intro-btn_wrap">
+                                <a class="ademy-btn denim-color_btn fullwidth-btn" href="<?php echo get_permalink(get_page_by_title($language == 'en' ? 'About Us' : 'معلومات عنا')); ?>">
+                                    <?php echo $language == 'en' ? 'Learn more' : 'تعرف على المزيد' ?>
+                                    <i class="ion-android-arrow-forward"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -221,40 +212,41 @@ get_header(); ?>
 <!-- Talent Acquisition Introduction Area End Here -->
 
 <!-- Begin Latest News Area -->
-<div id="latestnews" class="latest-news_area">
-    <div class="container">
-        <div class="section-title pb-4">
-            <h2 class="sub-heading text-capitalize mb-0">
-                Our latest <span>blogs</span>
-            </h2>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="row">
-                    <!-- Tab Buttons -->
-                    <div class="col-lg-12">
-                        <div class="tab-section_area">
-                            <div class="latest-news_tab">
-                                <ul class="nav latest-news_menu">
-                                    <li>
-                                        <a class="active" data-bs-toggle="tab" href="#all">All</a>
-                                    </li>
-                                    <li>
-                                        <a data-bs-toggle="tab" href="#hr-guides">HR Guides</a>
-                                    </li>
-                                    <li><a data-bs-toggle="tab" href="#development">Development</a></li>
-                                    <li>
-                                        <a data-bs-toggle="tab" href="#career">Career</a>
-                                    </li>
-                                </ul>
+<?php if ($language == 'en') : ?>
+    <div id="latestnews" class="latest-news_area">
+        <div class="container">
+            <div class="section-title pb-4">
+                <h2 class="sub-heading text-capitalize mb-0">
+                    Our latest <span>blogs</span>
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <!-- Tab Buttons -->
+                        <div class="col-lg-12">
+                            <div class="tab-section_area">
+                                <div class="latest-news_tab">
+                                    <ul class="nav latest-news_menu">
+                                        <li>
+                                            <a class="active" data-bs-toggle="tab" href="#all">All</a>
+                                        </li>
+                                        <li>
+                                            <a data-bs-toggle="tab" href="#hr-guides">HR Guides</a>
+                                        </li>
+                                        <li><a data-bs-toggle="tab" href="#development">Development</a></li>
+                                        <li>
+                                            <a data-bs-toggle="tab" href="#career">Career</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Tab Panels -->
-                    <div class="col-lg-12">
-                        <div class="tab-content latest-news_content">
-                            <div id="all" class="tab-pane active show" role="tabpanel">
-                                <div class="ademy-element-carousel latest-news_slider" data-slick-options='{
+                        <!-- Tab Panels -->
+                        <div class="col-lg-12">
+                            <div class="tab-content latest-news_content">
+                                <div id="all" class="tab-pane active show" role="tabpanel">
+                                    <div class="ademy-element-carousel latest-news_slider" data-slick-options='{
                                     "slidesToShow": 3,
                                     "slidesToScroll": 1,
                                     "infinite": false,
@@ -272,52 +264,52 @@ get_header(); ?>
                                     "slidesToShow": 1
                                     }}
                                 ]'>
-                                    <?php
+                                        <?php
 
-                                    $args = [
-                                        'post_type' => 'post',
-                                        'post_status' => 'publish',
-                                        'posts_per_page' => 10,
-                                        'lang' => [$language],
-                                    ];
-                                    $loop = new WP_Query($args);
-                                    while ($loop->have_posts()) : $loop->the_post();
-                                    ?>
-                                        <div class="slide-item">
-                                            <div class="single-item img-zoom_effect">
-                                                <div class="single-img">
-                                                    <a href="<?php the_permalink() ?>">
-                                                        <?php if (get_the_post_thumbnail_url()) : ?>
-                                                            <img class="img-full" src="<?php the_post_thumbnail_url('medium') ?>" alt="Latest News Image" />
-                                                        <?php else : ?>
-                                                            <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/latest-news/medium-size/1.jpg" alt="Latest News Image" />
-                                                        <?php endif; ?>
-                                                    </a>
-                                                    <div class="inner-btn">
-                                                        <a class="ademy-btn denim-color_btn with-border_radius btn-md_size" href="<?php the_permalink() ?>">Read more</a>
+                                        $args = [
+                                            'post_type' => 'post',
+                                            'post_status' => 'publish',
+                                            'posts_per_page' => 10,
+                                            'lang' => [$language],
+                                        ];
+                                        $loop = new WP_Query($args);
+                                        while ($loop->have_posts()) : $loop->the_post();
+                                        ?>
+                                            <div class="slide-item">
+                                                <div class="single-item img-zoom_effect">
+                                                    <div class="single-img">
+                                                        <a href="<?php the_permalink() ?>">
+                                                            <?php if (get_the_post_thumbnail_url()) : ?>
+                                                                <img class="img-full" src="<?php the_post_thumbnail_url('medium') ?>" alt="Latest News Image" />
+                                                            <?php else : ?>
+                                                                <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/latest-news/medium-size/1.jpg" alt="Latest News Image" />
+                                                            <?php endif; ?>
+                                                        </a>
+                                                        <div class="inner-btn">
+                                                            <a class="ademy-btn denim-color_btn with-border_radius btn-md_size" href="<?php the_permalink() ?>">Read more</a>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="single-item_content">
-                                                    <div class="inner-content">
-                                                        <h4 class="heading mb-0">
-                                                            <a href="<?php echo get_category_link(get_the_category()[0]->cat_ID); ?>"><?php echo get_the_category()[0]->name; ?></a>
-                                                        </h4>
-                                                        <h3 class="sub-heading mb-0">
-                                                            <a href="<?php echo the_permalink() ?>"><?php the_title() ?></a>
-                                                        </h3>
-                                                        <p class="short-desc mb-0">
-                                                            <?php echo get_the_excerpt() ?>
-                                                        </p>
-                                                    </div>
-                                                    <div class="entry-meta">
-                                                        <ul>
-                                                            <li>
-                                                                <a href="javascript:void(0)">
-                                                                    <i class="ion-ios-person"></i>
-                                                                    <?php the_author() ?>
-                                                                </a>
-                                                            </li>
-                                                            <!-- <li>
+                                                    <div class="single-item_content">
+                                                        <div class="inner-content">
+                                                            <h4 class="heading mb-0">
+                                                                <a href="<?php echo get_category_link(get_the_category()[0]->cat_ID); ?>"><?php echo get_the_category()[0]->name; ?></a>
+                                                            </h4>
+                                                            <h3 class="sub-heading mb-0">
+                                                                <a href="<?php echo the_permalink() ?>"><?php the_title() ?></a>
+                                                            </h3>
+                                                            <p class="short-desc mb-0">
+                                                                <?php echo get_the_excerpt() ?>
+                                                            </p>
+                                                        </div>
+                                                        <div class="entry-meta">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="javascript:void(0)">
+                                                                        <i class="ion-ios-person"></i>
+                                                                        <?php the_author() ?>
+                                                                    </a>
+                                                                </li>
+                                                                <!-- <li>
                                                                 <a href="javascript:void(0)">
                                                                     <i class="ion-eye"></i>
                                                                     <span>342 views</span>
@@ -329,17 +321,17 @@ get_header(); ?>
                                                                     <span>0 like</span>
                                                                 </a>
                                                             </li> -->
-                                                        </ul>
+                                                            </ul>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    <?php endwhile;
-                                    wp_reset_postdata(); ?>
+                                        <?php endwhile;
+                                        wp_reset_postdata(); ?>
+                                    </div>
                                 </div>
-                            </div>
-                            <div id="hr-guides" class="tab-pane" role="tabpanel">
-                                <div class="ademy-element-carousel latest-news_slider" data-slick-options='{
+                                <div id="hr-guides" class="tab-pane" role="tabpanel">
+                                    <div class="ademy-element-carousel latest-news_slider" data-slick-options='{
                                     "slidesToShow": 3,
                                     "slidesToScroll": 1,
                                     "infinite": false,
@@ -357,52 +349,52 @@ get_header(); ?>
                                         "slidesToShow": 1
                                     }}
                                 ]'>
-                                    <?php
-                                    $args = [
-                                        'post_type' => 'post',
-                                        'post_status' => 'publish',
-                                        'posts_per_page' => 10,
-                                        'cat' => get_category_by_slug('hr-guides')->term_id,
-                                        'lang' => ['en', 'ar'],
-                                    ];
-                                    $loop = new WP_Query($args);
-                                    while ($loop->have_posts()) : $loop->the_post();
-                                    ?>
-                                        <div class="slide-item">
-                                            <div class="single-item img-zoom_effect">
-                                                <div class="single-img">
-                                                    <a href="<?php the_permalink() ?>">
-                                                        <?php if (get_the_post_thumbnail_url()) : ?>
-                                                            <img class="img-full" src="<?php the_post_thumbnail_url() ?>" alt="Latest News Image" />
-                                                        <?php else : ?>
-                                                            <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/latest-news/medium-size/1.jpg" alt="Latest News Image" />
-                                                        <?php endif; ?>
-                                                    </a>
-                                                    <div class="inner-btn">
-                                                        <a class="ademy-btn denim-color_btn with-border_radius btn-md_size" href="<?php the_permalink() ?>">Read more</a>
+                                        <?php
+                                        $args = [
+                                            'post_type' => 'post',
+                                            'post_status' => 'publish',
+                                            'posts_per_page' => 10,
+                                            'cat' => get_category_by_slug('hr-guides')->term_id,
+                                            'lang' => ['en', 'ar'],
+                                        ];
+                                        $loop = new WP_Query($args);
+                                        while ($loop->have_posts()) : $loop->the_post();
+                                        ?>
+                                            <div class="slide-item">
+                                                <div class="single-item img-zoom_effect">
+                                                    <div class="single-img">
+                                                        <a href="<?php the_permalink() ?>">
+                                                            <?php if (get_the_post_thumbnail_url()) : ?>
+                                                                <img class="img-full" src="<?php the_post_thumbnail_url() ?>" alt="Latest News Image" />
+                                                            <?php else : ?>
+                                                                <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/latest-news/medium-size/1.jpg" alt="Latest News Image" />
+                                                            <?php endif; ?>
+                                                        </a>
+                                                        <div class="inner-btn">
+                                                            <a class="ademy-btn denim-color_btn with-border_radius btn-md_size" href="<?php the_permalink() ?>">Read more</a>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="single-item_content">
-                                                    <div class="inner-content">
-                                                        <h4 class="heading mb-0">
-                                                            <a href="<?php echo get_category_link(get_the_category()[0]->cat_ID); ?>"><?php echo get_the_category()[0]->name; ?></a>
-                                                        </h4>
-                                                        <h3 class="sub-heading mb-0">
-                                                            <a href="<?php echo the_permalink() ?>"><?php the_title() ?></a>
-                                                        </h3>
-                                                        <p class="short-desc mb-0">
-                                                            <?php echo get_the_excerpt() ?>
-                                                        </p>
-                                                    </div>
-                                                    <div class="entry-meta">
-                                                        <ul>
-                                                            <li>
-                                                                <a href="javascript:void(0)">
-                                                                    <i class="ion-ios-person"></i>
-                                                                    <?php the_author() ?>
-                                                                </a>
-                                                            </li>
-                                                            <!-- <li>
+                                                    <div class="single-item_content">
+                                                        <div class="inner-content">
+                                                            <h4 class="heading mb-0">
+                                                                <a href="<?php echo get_category_link(get_the_category()[0]->cat_ID); ?>"><?php echo get_the_category()[0]->name; ?></a>
+                                                            </h4>
+                                                            <h3 class="sub-heading mb-0">
+                                                                <a href="<?php echo the_permalink() ?>"><?php the_title() ?></a>
+                                                            </h3>
+                                                            <p class="short-desc mb-0">
+                                                                <?php echo get_the_excerpt() ?>
+                                                            </p>
+                                                        </div>
+                                                        <div class="entry-meta">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="javascript:void(0)">
+                                                                        <i class="ion-ios-person"></i>
+                                                                        <?php the_author() ?>
+                                                                    </a>
+                                                                </li>
+                                                                <!-- <li>
                                                                 <a href="javascript:void(0)">
                                                                     <i class="ion-eye"></i>
                                                                     <span>342 views</span>
@@ -414,17 +406,17 @@ get_header(); ?>
                                                                     <span>0 like</span>
                                                                 </a>
                                                             </li> -->
-                                                        </ul>
+                                                            </ul>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    <?php endwhile;
-                                    wp_reset_postdata() ?>
+                                        <?php endwhile;
+                                        wp_reset_postdata() ?>
+                                    </div>
                                 </div>
-                            </div>
-                            <div id="development" class="tab-pane" role="tabpanel">
-                                <div class="ademy-element-carousel latest-news_slider" data-slick-options='{
+                                <div id="development" class="tab-pane" role="tabpanel">
+                                    <div class="ademy-element-carousel latest-news_slider" data-slick-options='{
                                     "slidesToShow": 3,
                                     "slidesToScroll": 1,
                                     "infinite": false,
@@ -442,52 +434,52 @@ get_header(); ?>
                                         "slidesToShow": 1
                                     }}
                                 ]'>
-                                    <?php
-                                    $args = [
-                                        'post_type' => 'post',
-                                        'post_status' => 'publish',
-                                        'posts_per_page' => 10,
-                                        'cat' => get_category_by_slug('development')->term_id,
-                                        'lang' => ['en', 'ar'],
-                                    ];
-                                    $loop = new WP_Query($args);
-                                    while ($loop->have_posts()) : $loop->the_post();
-                                    ?>
-                                        <div class="slide-item">
-                                            <div class="single-item img-zoom_effect">
-                                                <div class="single-img">
-                                                    <a href="<?php the_permalink() ?>">
-                                                        <?php if (get_the_post_thumbnail_url()) : ?>
-                                                            <img class="img-full" src="<?php the_post_thumbnail_url() ?>" alt="Latest News Image" />
-                                                        <?php else : ?>
-                                                            <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/latest-news/medium-size/1.jpg" alt="Latest News Image" />
-                                                        <?php endif; ?>
-                                                    </a>
-                                                    <div class="inner-btn">
-                                                        <a class="ademy-btn denim-color_btn with-border_radius btn-md_size" href="<?php the_permalink() ?>">Read more</a>
+                                        <?php
+                                        $args = [
+                                            'post_type' => 'post',
+                                            'post_status' => 'publish',
+                                            'posts_per_page' => 10,
+                                            'cat' => get_category_by_slug('development')->term_id,
+                                            'lang' => ['en', 'ar'],
+                                        ];
+                                        $loop = new WP_Query($args);
+                                        while ($loop->have_posts()) : $loop->the_post();
+                                        ?>
+                                            <div class="slide-item">
+                                                <div class="single-item img-zoom_effect">
+                                                    <div class="single-img">
+                                                        <a href="<?php the_permalink() ?>">
+                                                            <?php if (get_the_post_thumbnail_url()) : ?>
+                                                                <img class="img-full" src="<?php the_post_thumbnail_url() ?>" alt="Latest News Image" />
+                                                            <?php else : ?>
+                                                                <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/latest-news/medium-size/1.jpg" alt="Latest News Image" />
+                                                            <?php endif; ?>
+                                                        </a>
+                                                        <div class="inner-btn">
+                                                            <a class="ademy-btn denim-color_btn with-border_radius btn-md_size" href="<?php the_permalink() ?>">Read more</a>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="single-item_content">
-                                                    <div class="inner-content">
-                                                        <h4 class="heading mb-0">
-                                                            <a href="<?php echo get_category_link(get_the_category()[0]->cat_ID); ?>"><?php echo get_the_category()[0]->name; ?></a>
-                                                        </h4>
-                                                        <h3 class="sub-heading mb-0">
-                                                            <a href="<?php echo the_permalink() ?>"><?php the_title() ?></a>
-                                                        </h3>
-                                                        <p class="short-desc mb-0">
-                                                            <?php echo get_the_excerpt() ?>
-                                                        </p>
-                                                    </div>
-                                                    <div class="entry-meta">
-                                                        <ul>
-                                                            <li>
-                                                                <a href="javascript:void(0)">
-                                                                    <i class="ion-ios-person"></i>
-                                                                    <?php the_author() ?>
-                                                                </a>
-                                                            </li>
-                                                            <!-- <li>
+                                                    <div class="single-item_content">
+                                                        <div class="inner-content">
+                                                            <h4 class="heading mb-0">
+                                                                <a href="<?php echo get_category_link(get_the_category()[0]->cat_ID); ?>"><?php echo get_the_category()[0]->name; ?></a>
+                                                            </h4>
+                                                            <h3 class="sub-heading mb-0">
+                                                                <a href="<?php echo the_permalink() ?>"><?php the_title() ?></a>
+                                                            </h3>
+                                                            <p class="short-desc mb-0">
+                                                                <?php echo get_the_excerpt() ?>
+                                                            </p>
+                                                        </div>
+                                                        <div class="entry-meta">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="javascript:void(0)">
+                                                                        <i class="ion-ios-person"></i>
+                                                                        <?php the_author() ?>
+                                                                    </a>
+                                                                </li>
+                                                                <!-- <li>
                                                                 <a href="javascript:void(0)">
                                                                     <i class="ion-eye"></i>
                                                                     <span>342 views</span>
@@ -499,17 +491,17 @@ get_header(); ?>
                                                                     <span>0 like</span>
                                                                 </a>
                                                             </li> -->
-                                                        </ul>
+                                                            </ul>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    <?php endwhile;
-                                    wp_reset_postdata() ?>
+                                        <?php endwhile;
+                                        wp_reset_postdata() ?>
+                                    </div>
                                 </div>
-                            </div>
-                            <div id="career" class="tab-pane" role="tabpanel">
-                                <div class="ademy-element-carousel latest-news_slider" data-slick-options='{
+                                <div id="career" class="tab-pane" role="tabpanel">
+                                    <div class="ademy-element-carousel latest-news_slider" data-slick-options='{
                                     "slidesToShow": 3,
                                     "slidesToScroll": 1,
                                     "infinite": false,
@@ -527,52 +519,52 @@ get_header(); ?>
                                         "slidesToShow": 1
                                     }}
                                 ]'>
-                                    <?php
-                                    $args = [
-                                        'post_type' => 'post',
-                                        'post_status' => 'publish',
-                                        'posts_per_page' => 10,
-                                        'cat' => get_category_by_slug('career')->term_id,
-                                        'lang' => ['en', 'ar'],
-                                    ];
-                                    $loop = new WP_Query($args);
-                                    while ($loop->have_posts()) : $loop->the_post();
-                                    ?>
-                                        <div class="slide-item">
-                                            <div class="single-item img-zoom_effect">
-                                                <div class="single-img">
-                                                    <a href="<?php the_permalink() ?>">
-                                                        <?php if (get_the_post_thumbnail_url()) : ?>
-                                                            <img class="img-full" src="<?php the_post_thumbnail_url() ?>" alt="Latest News Image" />
-                                                        <?php else : ?>
-                                                            <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/latest-news/medium-size/1.jpg" alt="Latest News Image" />
-                                                        <?php endif; ?>
-                                                    </a>
-                                                    <div class="inner-btn">
-                                                        <a class="ademy-btn denim-color_btn with-border_radius btn-md_size" href="<?php the_permalink() ?>">Read more</a>
+                                        <?php
+                                        $args = [
+                                            'post_type' => 'post',
+                                            'post_status' => 'publish',
+                                            'posts_per_page' => 10,
+                                            'cat' => get_category_by_slug('career')->term_id,
+                                            'lang' => ['en', 'ar'],
+                                        ];
+                                        $loop = new WP_Query($args);
+                                        while ($loop->have_posts()) : $loop->the_post();
+                                        ?>
+                                            <div class="slide-item">
+                                                <div class="single-item img-zoom_effect">
+                                                    <div class="single-img">
+                                                        <a href="<?php the_permalink() ?>">
+                                                            <?php if (get_the_post_thumbnail_url()) : ?>
+                                                                <img class="img-full" src="<?php the_post_thumbnail_url() ?>" alt="Latest News Image" />
+                                                            <?php else : ?>
+                                                                <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/latest-news/medium-size/1.jpg" alt="Latest News Image" />
+                                                            <?php endif; ?>
+                                                        </a>
+                                                        <div class="inner-btn">
+                                                            <a class="ademy-btn denim-color_btn with-border_radius btn-md_size" href="<?php the_permalink() ?>">Read more</a>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="single-item_content">
-                                                    <div class="inner-content">
-                                                        <h4 class="heading mb-0">
-                                                            <a href="<?php echo get_category_link(get_the_category()[0]->cat_ID); ?>"><?php echo get_the_category()[0]->name; ?></a>
-                                                        </h4>
-                                                        <h3 class="sub-heading mb-0">
-                                                            <a href="<?php echo the_permalink() ?>"><?php the_title() ?></a>
-                                                        </h3>
-                                                        <p class="short-desc mb-0">
-                                                            <?php echo get_the_excerpt() ?>
-                                                        </p>
-                                                    </div>
-                                                    <div class="entry-meta">
-                                                        <ul>
-                                                            <li>
-                                                                <a href="javascript:void(0)">
-                                                                    <i class="ion-ios-person"></i>
-                                                                    <?php the_author() ?>
-                                                                </a>
-                                                            </li>
-                                                            <!-- <li>
+                                                    <div class="single-item_content">
+                                                        <div class="inner-content">
+                                                            <h4 class="heading mb-0">
+                                                                <a href="<?php echo get_category_link(get_the_category()[0]->cat_ID); ?>"><?php echo get_the_category()[0]->name; ?></a>
+                                                            </h4>
+                                                            <h3 class="sub-heading mb-0">
+                                                                <a href="<?php echo the_permalink() ?>"><?php the_title() ?></a>
+                                                            </h3>
+                                                            <p class="short-desc mb-0">
+                                                                <?php echo get_the_excerpt() ?>
+                                                            </p>
+                                                        </div>
+                                                        <div class="entry-meta">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="javascript:void(0)">
+                                                                        <i class="ion-ios-person"></i>
+                                                                        <?php the_author() ?>
+                                                                    </a>
+                                                                </li>
+                                                                <!-- <li>
                                                                 <a href="javascript:void(0)">
                                                                     <i class="ion-eye"></i>
                                                                     <span>342 views</span>
@@ -584,17 +576,18 @@ get_header(); ?>
                                                                     <span>0 like</span>
                                                                 </a>
                                                             </li> -->
-                                                        </ul>
+                                                            </ul>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    <?php endwhile;
-                                    wp_reset_postdata() ?>
+                                        <?php endwhile;
+                                        wp_reset_postdata() ?>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="btn-wrap">
-                                <a class="ademy-btn fullwidth-btn denim-color_btn with-border_radius" href="<?php echo get_permalink(get_option('page_for_posts')); ?>">Go to blog</a>
+                                <div class="btn-wrap">
+                                    <a class="ademy-btn fullwidth-btn denim-color_btn with-border_radius" href="<?php echo get_permalink(get_option('page_for_posts')); ?>">Go to blog</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -602,7 +595,7 @@ get_header(); ?>
             </div>
         </div>
     </div>
-</div>
+<?php endif; ?>
 <!-- Latest News Area End Here -->
 
 <!-- Begin Testimonials Area -->

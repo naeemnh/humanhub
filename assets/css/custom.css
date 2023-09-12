@@ -47,6 +47,10 @@
     background-color: #1a55a5;
 }
 
+.breadcrumb-area .breadcrumb-content ul>li>a:hover {
+    color: #fff;
+}
+
 .entry-view a {
     font-size: inherit;
 }

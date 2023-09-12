@@ -27,7 +27,7 @@ $results = (is_search()) ? $args['results'] : null;
                     <?php if (is_search()) : ?>
                         <li class="text-capitalize"><?php echo 'Search Results for ' . $cur_title ?></li>
                     <?php else : ?>
-                        <li><a class="text-capitalize" href="<?php echo home_url() ?>">Home</a></li>
+                        <li><a class="text-capitalize" href="<?php echo home_url() ?>"><?php echo get_the_title(get_option('page_on_front')); ?></a></li>
                         <li class="active text-capitalize"><?php echo $cur_title ?></li>
                     <?php endif; ?>
                 </ul>

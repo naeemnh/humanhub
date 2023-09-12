@@ -40,3 +40,28 @@ html:lang(ar) .latest-news_area .tab-section_area .latest-news_tab>ul.latest-new
 html:lang(ar) ul.pricing-plans_menu {
   direction: ltr;
 }
+
+
+html:lang(ar) .feedback-form .form-group.group-input .wpcf7-form-control-wrap:first-child {
+  margin-right: 0 !important;
+}
+
+html:lang(ar) .feedback-form .form-group.group-input .wpcf7-form-control-wrap:last-child {
+  margin-right: 1.5em !important;
+}
+
+html:lang(ar) .show-interest .feedback-form .form-group.group-input .wpcf7-form-control-wrap:last-child {
+  margin-right: 0 !important;
+}
+
+/* Breadcrumb */
+
+html:lang(ar) .breadcrumb-area .breadcrumb-content ul>li:before {
+  right: auto;
+  left: -12px;
+}
+
+html:lang(ar) .breadcrumb-area .breadcrumb-content ul>li {
+  padding-left: 0;
+  padding-right: 20px;
+}

@@ -77,41 +77,18 @@
                                 <div class="col-xl-3 col-md-8 d-none d-md-block position-relative">
                                     <div class="header-right_area with-radius">
                                         <ul class="social-link">
-                                            <!-- <li class="facebook">
-                                                <a href="https://www.facebook.com" data-bs-toggle="tooltip" target="_blank" title="Facebook">
-                                                    <i class="fa-brands fa-facebook-f"></i>
-                                                </a>
-                                            </li>
-                                            <li class="twitter">
-                                                <a href="https://twitter.com" data-bs-toggle="tooltip" target="_blank" title="Twitter">
-                                                    <i class="fa-brands fa-twitter"></i>
-                                                </a>
-                                            </li>
-                                            <li class="linkedin">
-                                                <a href="https://www.linkedin.com/" data-bs-toggle="tooltip" target="_blank" title="Linkedin">
-                                                    <i class="fa-brands fa-linkedin-in"></i>
-                                                </a>
-                                            </li>
-                                            <li class="snapchat">
-                                                <a href="https://snapchat.com/" data-bs-toggle="tooltip" target="_blank" title="Snapchat">
-                                                    <i class="fa-brands fa-snapchat"></i>
-                                                </a>
-                                            </li>
-                                            <li class="instagram">
-                                                <a href="https://instagram.com/" data-bs-toggle="tooltip" target="_blank" title="Instagram">
-                                                    <i class="fa-brands fa-instagram"></i>
-                                                </a>
-                                            </li> -->
                                             <li class="language d-inline-block d-lg-inline-block">
                                                 <a href="#" class="lang-btn">
                                                     <i class="ion-ios-world-outline"></i>
                                                 </a>
                                             </li>
-                                            <li class="search-bar d-none d-lg-inline-block">
-                                                <a class="search-btn" href="#">
-                                                    <i class="ion-ios-search-strong"></i>
-                                                </a>
-                                            </li>
+                                            <?php if (get_locale() == 'en') : ?>
+                                                <li class="search-bar d-none d-lg-inline-block">
+                                                    <a class="search-btn" href="#">
+                                                        <i class="ion-ios-search-strong"></i>
+                                                    </a>
+                                                </li>
+                                            <?php endif; ?>
                                             <li class="mobile-menu_wrap d-inline-block d-lg-none">
                                                 <a href="#mobileMenu" class="mobile-menu_btn toolbar-btn">
                                                     <i class="ion-navicon-round"></i>
@@ -185,36 +162,18 @@
                                 <div class="col-xl-3 col-md-8 d-none d-md-block position-relative">
                                     <div class="header-right_area with-radius">
                                         <ul class="social-link">
-                                            <!-- <li class="facebook">
-                                                <a href="https://www.facebook.com" data-bs-toggle="tooltip" target="_blank" title="Facebook">
-                                                    <i class="ion-social-facebook"></i>
-                                                </a>
-                                            </li>
-                                            <li class="twitter">
-                                                <a href="https://twitter.com" data-bs-toggle="tooltip" target="_blank" title="Twitter">
-                                                    <i class="ion-social-twitter"></i>
-                                                </a>
-                                            </li>
-                                            <li class="linkedin">
-                                                <a href="https://www.linkedin.com/" data-bs-toggle="tooltip" target="_blank" title="Linkedin">
-                                                    <i class="ion-social-linkedin"></i>
-                                                </a>
-                                            </li>
-                                            <li class="snapchat">
-                                                <a href="https://snapchat.com/" data-bs-toggle="tooltip" target="_blank" title="Snapchat">
-                                                    <i class="ion-social-snapchat"></i>
-                                                </a>
-                                            </li> -->
                                             <li class="language d-none d-lg-inline-block">
                                                 <a href="#" class="sticky-lang-btn">
                                                     <i class="ion-ios-world-outline"></i>
                                                 </a>
                                             </li>
-                                            <li class="search-bar d-none d-lg-inline-block">
-                                                <a class="sticky-search-btn" href="#">
-                                                    <i class="ion-ios-search-strong"></i>
-                                                </a>
-                                            </li>
+                                            <?php if (get_locale() == 'en') : ?>
+                                                <li class="search-bar d-none d-lg-inline-block">
+                                                    <a class="sticky-search-btn" href="#">
+                                                        <i class="ion-ios-search-strong"></i>
+                                                    </a>
+                                                </li>
+                                            <?php endif; ?>
                                             <li class="mobile-menu_wrap d-inline-block d-lg-none">
                                                 <a href="#mobileMenu" class="mobile-menu_btn toolbar-btn">
                                                     <i class="ion-navicon-round"></i>
