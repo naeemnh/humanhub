@@ -32,26 +32,35 @@ get_header(); ?>
                 <div class="slide-content">
                     <!-- <span class="intro">Human Hub</span> -->
                     <h1 class="heading intro pb-1 mb-0">
-                        <?php if ($language == 'en') : ?>
-                            Mehan
-                        <?php else : ?>
-                            مهن
-                        <?php endif; ?>
+                        <?php echo ($language == 'en') ? 'Mehan' : 'مهن' ?>
                     </h1>
                     <h1 class="heading cd-headline letters type mb-0">
-                        <?php if ($language == 'en') : ?>
-                            Success through people
-                        <?php else : ?>
-                            النجاح من خلال الناس
-                        <?php endif; ?>
+                        <?php echo ($language == 'en') ? 'Success through people' : 'النجاح من خلال الناس' ?>
                     </h1>
-                    <h1 class="sub-heading cd-headline letters type white-color pb-5 mb-0">
-                        <?php if ($language == 'en') : ?>
-                            We stand for innovation and continuous transformation
-                        <?php else : ?>
-                            ندعم الابتكار والتحول المستمر
-                        <?php endif; ?>
+                    <h1 class="sub-heading cd-headline letters type white-color pb-2 mb-0">
+                        <?php echo ($language == 'en') ? 'We stand for innovation and continuous transformation' : 'ندعم الابتكار والتحول المستمر ' ?>
                     </h1>
+                    <?php if ($language == 'en') { ?>
+                        <div class="button-wrap position-center pb-3">
+                            <a class="ademy-btn btn-transparent white-border with-border_radius active" href="<?php echo get_site_url() ?>/employers">Employers
+                                <i class="ion-android-arrow-forward"></i>
+                            </a>
+                            <a class="ademy-btn btn-transparent white-border with-border_radius" href="<?php echo get_site_url() ?>/job-seekers">Job Seekers
+                                <i class="ion-android-arrow-forward"></i>
+                            </a>
+                        </div>
+                    <?php } else { ?>
+                        <div class="button-wrap position-center pb-3">
+                            <a class="ademy-btn btn-transparent white-border with-border_radius active" href="<?php echo get_site_url() ?>/ar/أرباب-العمل/">
+                                أرباب العمل
+                                <i class="ion-android-arrow-forward"></i>
+                            </a>
+                            <a class="ademy-btn btn-transparent white-border with-border_radius" href="<?php echo get_site_url() ?>/ar/الباحثين-عن-عمل/">
+                                الباحثين عن عمل
+                                <i class="ion-android-arrow-forward"></i>
+                            </a>
+                        </div>
+                    <?php } ?>
                 </div>
             </div>
         <?php endfor; ?>
@@ -137,16 +146,16 @@ get_header(); ?>
 </div>
 <!-- Introduction Area End Here -->
 
-<!-- Begin Human Hub Introduction Area - Human Hub -->
+<!-- Begin Talent Acquisition Introduction Area -->
 <div id="welcome" class="introduction-area bg-smoke_color">
     <div class="container">
         <div class="section-title pb-5">
             <!-- <h6 class="heading mb-0">Human Hub</h6> -->
             <h2 class="sub-heading mb-0">
                 <?php if ($language == 'en') : ?>
-                    <span>Human</span> Hub
+                    <span>Talent</span> Acquisition
                 <?php else : ?>
-                    منصة <span>الإنسان</span>
+                    اكتساب <span>موهبة</span>
                 <?php endif; ?>
             </h2>
         </div>
@@ -183,7 +192,7 @@ get_header(); ?>
                             <!-- <h3 class="heading mb-0">Human Hub</h3> -->
                             <?php if ($language == 'en') : ?>
                                 <p class="short-desc">
-                                    A Continuous Learning Human Capital Hub that allows human capital professionals and students to transform, grow, share knowledge, innovate and advance in their careers by collaborating with other Human Capital professionals through virtual, mixed reality and physical platforms.
+                                    At Mehan, we help businesses headhunt the most suitable talented Emirati professionals for their Emiratization roles as well as the world’s talented professionals for their middle and senior management roles through extensive client communication, best executive search and constant networking.
                                 </p>
                                 <div class="intro-btn_wrap">
                                     <a class="ademy-btn denim-color_btn fullwidth-btn" href="<?php echo get_home_url() ?>/humanhub">
@@ -209,7 +218,7 @@ get_header(); ?>
         </div>
     </div>
 </div>
-<!-- Human Hub Introduction Area End Here -->
+<!-- Talent Acquisition Introduction Area End Here -->
 
 <!-- Begin Latest News Area -->
 <div id="latestnews" class="latest-news_area">
@@ -264,11 +273,12 @@ get_header(); ?>
                                     }}
                                 ]'>
                                     <?php
+
                                     $args = [
                                         'post_type' => 'post',
                                         'post_status' => 'publish',
                                         'posts_per_page' => 10,
-                                        'lang' => ['en', 'ar'],
+                                        'lang' => [$language],
                                     ];
                                     $loop = new WP_Query($args);
                                     while ($loop->have_posts()) : $loop->the_post();

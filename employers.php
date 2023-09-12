@@ -81,36 +81,71 @@ if (have_posts()) :
           </div>
         </div>
       </div>
-      <div id="welcome" class="introduction-area introduction-area-3">
+      <div id="welcome" class="introduction-area bg-smoke_color">
         <div class="container">
           <div class="section-title pb-5">
+            <!-- <h6 class="heading mb-0">Human Hub</h6> -->
             <h2 class="sub-heading mb-0">
               <?php if ($language == 'en') : ?>
-                Welcome to <span>Mehan's</span> HumanHub
+                Looking For Talented UAE Nationals?
               <?php else : ?>
-                مرحبا بكم في منصة الإنسان التابعة <span>لمهن</span>
+                اكتساب <span>موهبة</span>
               <?php endif; ?>
             </h2>
           </div>
           <div class="row">
-            <div class="col-lg-5 order-2">
-              <div class="section-wrap">
-                <p class="short-desc mb-0">
-                  <?php if ($language == 'en') : ?>
-                    Mehan's Human Hub is a continuous learning Human Capital Hub that allows human capital professionals and students to transform, grow, share knowledge, innovate and advance in their careers by collaborating with other HC professionals through virtual and physical platforms.
-                  <?php else : ?>
-                    منصة الإنسان التابعة لمهن هي منصة التعلم المستمر لرأس المال البشري التي تتيح للعاملين وطلاب رأس المال البشري التحول والنمو بمشاركتهم المعرفة والابتكار للتطور في حياتهم المهنية من خلال التعاون مع متخصصي رأس المال البشري الآخرين على منصات افتراضية وواقعية.
-                  <?php endif; ?>
-                </p>
-                <!-- <div class="btn-wrap">
-                                <a class="ademy-btn denim-color_btn with-border_radius" href="academics.html">Learn more</a>
-                            </div> -->
+            <div class="col-lg-6">
+              <div class="introduction-img_area bg-white_color">
+                <div class="inner-img">
+                  <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/services/employers-1.jpg" alt="Introduction Image" />
+                </div>
               </div>
             </div>
-            <div class="col-lg-6 order-1">
-              <div class="introduction-img_area">
-                <div class="inner-img">
-                  <img class="img-full mx-auto w-75" src="<?php echo get_template_directory_uri() ?>/assets/images/introduction/elements_human-hub-min.png" alt="Introduction Image" />
+            <div class="col-lg-6">
+              <div class="ademy-element-carousel introduction-slider" data-slick-options='{
+                    "slidesToShow": 1,
+                    "slidesToScroll": 1,
+                    "infinite": true,
+                    "arrows": false,
+                    "dots": false,
+                    "autoplay" : false,
+                    "fade" : false,
+                    "autoplaySpeed" : 7000,
+                    "pauseOnHover" : false,
+                    "pauseOnFocus" : false
+                    }' data-slick-responsive='[
+                    {"breakpoint":768, "settings": {
+                    "slidesToShow": 1
+                    }},
+                    {"breakpoint":575, "settings": {
+                    "slidesToShow": 1
+                    }}
+                ]'>
+                <div class="intro-item">
+                  <div class="intro-content">
+                    <!-- <h3 class="heading mb-0">Human Hub</h3> -->
+                    <?php if ($language == 'en') : ?>
+                      <p class="short-desc">
+                        Emiratization is one of the top priorities on the UAE's government list when it comes to tackling and finding solutions to the workforce issues in the country.
+                      </p>
+                      <p class="short-desc">
+                        At Mehan, we understand the importance of Emiratization and how competitive it is for companies to attract committed talented UAE Nationals.
+                      </p>
+                      <p class="short-desc">
+                        UAE Nationals trust us to help them with their job search so let us help you with your Emiratization targets. We would go above and beyond for our clients to insure that we provide our clients quality candidates. We are very particular and it is very important to us to not only match your technical job requirements but to also match your need of finding the Emirati who would fit smoothly in your workplace culture.
+                      </p>
+                    <?php else : ?>
+                      <p class="short-desc">
+                        هي منصة رأس المال البشري للتعلم المستمر التي يسمح لمحترفي رأس المال البشري والطلاب بالتحول، والنمو، وتبادل المعرفة، والابتكار والتقدم في حياتهم المهنية من خلال التعاون مع غيرهم من المتخصصين في رأس المال البشري عن طريق منصات افتراضية وواقعية.
+                      </p>
+                      <div class="intro-btn_wrap">
+                        <a class="ademy-btn denim-color_btn fullwidth-btn" href="<?php echo get_home_url() ?>/ar/هيومن-هب/">
+                          تعرف على المزيد
+                          <i class="ion-android-arrow-forward"></i>
+                        </a>
+                      </div>
+                    <?php endif; ?>
+                  </div>
                 </div>
               </div>
             </div>
@@ -121,7 +156,10 @@ if (have_posts()) :
         <div class="container">
           <div class="row">
             <div class="col">
-              <?php the_content() ?>
+              <div class="show-interest">
+                <h3 class="sub-heading">Show us you interest: </h3>
+                <?php the_content() ?>
+              </div>
             </div>
           </div>
         </div>
