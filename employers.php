@@ -48,7 +48,7 @@ if (have_posts()) :
                     <!-- <h3 class="heading mb-0">Our Story</h3> -->
                     <?php if ($language == 'en') : ?>
                       <p class="short-desc">
-                        Mehan Experts are your link find knowledgeable and experienced senior talents for your business.
+                        Mehan Experts are your link to find knowledgeable and experienced senior talents for your business.
                       </p>
                       <p class="short-desc">
                         We understand that every well-established and successful company depends on their senior talented professionals to help its business grow. Choosing your senior professionals, whether your next CFO or CEO, must be carefully studied as they can make or break your company.
@@ -159,7 +159,7 @@ if (have_posts()) :
               <div class="show-interest">
                 <h3 class="sub-heading">
                   <?php if ($language == 'en') : ?>
-                    Show us you interest:
+                    Show us your interest:
                   <?php else : ?>
                     أظهر لنا اهتمامك:
                   <?php endif; ?>
