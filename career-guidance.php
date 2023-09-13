@@ -169,7 +169,9 @@ if (have_posts()) :
           <div class="row">
             <div class="col">
               <div class="show-interest">
-                <h3 class="sub-heading">Request to Book a Career Guidance Session: </h3>
+                <h3 class="sub-heading">
+                  <?php echo $language == 'en' ? 'Request to Book a Career Guidance Session:' : 'طلب حجز موعد جلسة توجيه وظيفي:'; ?>
+                </h3>
                 <?php the_content() ?>
               </div>
             </div>
