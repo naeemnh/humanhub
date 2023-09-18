@@ -4,7 +4,7 @@
  * Custom Gutenberg functions
  */
 
-function mehan_gutenberg_default_colors()
+function mehan_editor_default_colors()
 {
     add_theme_support("editor-styles");
     add_editor_style("style-editor.css");
@@ -44,18 +44,18 @@ function mehan_gutenberg_default_colors()
     );
 }
 
-// add_action('init', 'mehan_gutenberg_default_colors');
+add_action('init', 'mehan_editor_default_colors');
 
-function mehan_gutenberg_block()
-{
-    wp_enqueue_script(
-        'mehan-testimonial-js',
-        get_template_directory_uri() . '/build/index.js',
-        array('wp-blocks')
-    );
-    register_block_type('mehan/mehan-testimonial', array(
-        'editor_script' => 'mehan-testimonial-js',
-    ));
-}
+// function mehan_gutenberg_block()
+// {
+//     wp_enqueue_script(
+//         'mehan-testimonial-js',
+//         get_template_directory_uri() . '/build/index.js',
+//         array('wp-blocks')
+//     );
+//     register_block_type('mehan/mehan-testimonial', array(
+//         'editor_script' => 'mehan-testimonial-js',
+//     ));
+// }
 
 // add_action('init', 'mehan_gutenberg_block');

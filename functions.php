@@ -352,7 +352,7 @@ if (in_array(get_locale(), $english)) {
     ==========================================
 */
 
-// require get_template_directory() . '/inc/gutenberg.php';
+require get_template_directory() . '/inc/editor.php';
 
 /*
     ==========================================
