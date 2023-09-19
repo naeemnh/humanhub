@@ -1,54 +1,362 @@
 <?php
-function mehan_add_local_field_groups()
-{
-  // Contact Information Field Groups
-  try {
-    acf_add_local_field_group([
-      'key' => 'group_1',
-      'title' => 'Contact',
-      'fields' => [
-        [
-          'key' => 'field_address',
-          'label' => 'Address',
-          'name' => 'address',
-          'type' => 'text',
-        ],
-        [
-          'key' => 'field_mobile',
-          'label' => 'Mobile Number',
-          'name' => 'mobile_number',
-          'type' => 'text',
-        ],
-        [
-          'key' => 'field_email',
-          'label' => 'Email Address',
-          'name' => 'email_address',
-          'type' => 'email',
-        ],
-      ],
-      'location' => [
-        [
-          [
-            'param' => 'page_template',
-            'operator' => '==',
-            'value' => 'Contact Page'
-          ]
-        ]
-      ]
-    ]); ?>
-    <div class="error">
-      <p>Error: Field group could not be added</p>
-      <span>
-        Somthing is not right
-      </span>
-    </div>
-  <?php } catch (Error $e) { ?>
-    <div class="error">
-      <p>Error: Field group could not be added</p>
-      <span>
-        <?php $e->getMessage() ?>
-      </span>
-    </div>
-<?php }
-}
-add_action('acf/init', 'mehan_add_local_field_groups');
+
+add_action('acf/include_fields', function () {
+  if (!function_exists('acf_add_local_field_group')) {
+    return;
+  }
+
+  acf_add_local_field_group(array(
+    'key' => 'group_65093b598526e',
+    'title' => 'About Us Page Images',
+    'fields' => array(
+      array(
+        'key' => 'field_65093b598c78f',
+        'label' => 'Intro Image',
+        'name' => 'intro_image',
+        'aria-label' => '',
+        'type' => 'image',
+        'instructions' => '',
+        'required' => 0,
+        'conditional_logic' => 0,
+        'wrapper' => array(
+          'width' => '',
+          'class' => '',
+          'id' => '',
+        ),
+        'return_format' => 'url',
+        'library' => 'all',
+        'min_width' => '',
+        'min_height' => '',
+        'min_size' => '',
+        'max_width' => '',
+        'max_height' => '',
+        'max_size' => '',
+        'mime_types' => '',
+        'preview_size' => 'medium',
+      ),
+      array(
+        'key' => 'field_65093b598c795',
+        'label' => 'Knowledge and Experience Image',
+        'name' => 'experience_image',
+        'aria-label' => '',
+        'type' => 'image',
+        'instructions' => '',
+        'required' => 0,
+        'conditional_logic' => 0,
+        'wrapper' => array(
+          'width' => '',
+          'class' => '',
+          'id' => '',
+        ),
+        'return_format' => 'url',
+        'library' => 'all',
+        'min_width' => '',
+        'min_height' => '',
+        'min_size' => '',
+        'max_width' => '',
+        'max_height' => '',
+        'max_size' => '',
+        'mime_types' => '',
+        'preview_size' => 'medium',
+      ),
+      array(
+        'key' => 'field_65093be540689',
+        'label' => 'Communication and Professionalism Image',
+        'name' => 'communication_image',
+        'aria-label' => '',
+        'type' => 'image',
+        'instructions' => '',
+        'required' => 0,
+        'conditional_logic' => 0,
+        'wrapper' => array(
+          'width' => '',
+          'class' => '',
+          'id' => '',
+        ),
+        'return_format' => 'url',
+        'library' => 'all',
+        'min_width' => '',
+        'min_height' => '',
+        'min_size' => '',
+        'max_width' => '',
+        'max_height' => '',
+        'max_size' => '',
+        'mime_types' => '',
+        'preview_size' => 'medium',
+      ),
+      array(
+        'key' => 'field_65093c1f4068b',
+        'label' => 'Headhunting Image',
+        'name' => 'headhunting_image',
+        'aria-label' => '',
+        'type' => 'image',
+        'instructions' => '',
+        'required' => 0,
+        'conditional_logic' => 0,
+        'wrapper' => array(
+          'width' => '',
+          'class' => '',
+          'id' => '',
+        ),
+        'return_format' => 'url',
+        'library' => 'all',
+        'min_width' => '',
+        'min_height' => '',
+        'min_size' => '',
+        'max_width' => '',
+        'max_height' => '',
+        'max_size' => '',
+        'mime_types' => '',
+        'preview_size' => 'medium',
+      ),
+      array(
+        'key' => 'field_65093c1e4068a',
+        'label' => 'Internal Database Image',
+        'name' => 'database_image',
+        'aria-label' => '',
+        'type' => 'image',
+        'instructions' => '',
+        'required' => 0,
+        'conditional_logic' => 0,
+        'wrapper' => array(
+          'width' => '',
+          'class' => '',
+          'id' => '',
+        ),
+        'return_format' => 'url',
+        'library' => 'all',
+        'min_width' => '',
+        'min_height' => '',
+        'min_size' => '',
+        'max_width' => '',
+        'max_height' => '',
+        'max_size' => '',
+        'mime_types' => '',
+        'preview_size' => 'medium',
+      ),
+    ),
+    'location' => array(
+      array(
+        array(
+          'param' => 'page_template',
+          'operator' => '==',
+          'value' => 'page-aboutus.php',
+        ),
+      ),
+    ),
+    'menu_order' => 0,
+    'position' => 'normal',
+    'style' => 'default',
+    'label_placement' => 'top',
+    'instruction_placement' => 'label',
+    'hide_on_screen' => '',
+    'active' => true,
+    'description' => '',
+    'show_in_rest' => 0,
+  ));
+
+  acf_add_local_field_group(array(
+    'key' => 'group_65093f8c24a9c',
+    'title' => 'Career Guidance Page Images',
+    'fields' => array(
+      array(
+        'key' => 'field_65093f8c2beb8',
+        'label' => 'Intro Image',
+        'name' => 'intro_image',
+        'aria-label' => '',
+        'type' => 'image',
+        'instructions' => '',
+        'required' => 0,
+        'conditional_logic' => 0,
+        'wrapper' => array(
+          'width' => '',
+          'class' => '',
+          'id' => '',
+        ),
+        'return_format' => 'url',
+        'library' => 'all',
+        'min_width' => '',
+        'min_height' => '',
+        'min_size' => '',
+        'max_width' => '',
+        'max_height' => '',
+        'max_size' => '',
+        'mime_types' => '',
+        'preview_size' => 'medium',
+      ),
+    ),
+    'location' => array(
+      array(
+        array(
+          'param' => 'page_template',
+          'operator' => '==',
+          'value' => 'career-guidance.php',
+        ),
+      ),
+    ),
+    'menu_order' => 0,
+    'position' => 'normal',
+    'style' => 'default',
+    'label_placement' => 'top',
+    'instruction_placement' => 'label',
+    'hide_on_screen' => '',
+    'active' => true,
+    'description' => '',
+    'show_in_rest' => 0,
+  ));
+
+  acf_add_local_field_group(array(
+    'key' => 'group_65093c649dfc1',
+    'title' => 'Employers and Job Seekers Page Images',
+    'fields' => array(
+      array(
+        'key' => 'field_65093c64a4b07',
+        'label' => 'Intro Image',
+        'name' => 'intro_image',
+        'aria-label' => '',
+        'type' => 'image',
+        'instructions' => '',
+        'required' => 0,
+        'conditional_logic' => 0,
+        'wrapper' => array(
+          'width' => '',
+          'class' => '',
+          'id' => '',
+        ),
+        'return_format' => 'url',
+        'library' => 'all',
+        'min_width' => '',
+        'min_height' => '',
+        'min_size' => '',
+        'max_width' => '',
+        'max_height' => '',
+        'max_size' => '',
+        'mime_types' => '',
+        'preview_size' => 'medium',
+      ),
+      array(
+        'key' => 'field_65093c64a4b0e',
+        'label' => 'UAE Nationals Image',
+        'name' => 'uae_nationals_image',
+        'aria-label' => '',
+        'type' => 'image',
+        'instructions' => '',
+        'required' => 0,
+        'conditional_logic' => 0,
+        'wrapper' => array(
+          'width' => '',
+          'class' => '',
+          'id' => '',
+        ),
+        'return_format' => 'url',
+        'library' => 'all',
+        'min_width' => '',
+        'min_height' => '',
+        'min_size' => '',
+        'max_width' => '',
+        'max_height' => '',
+        'max_size' => '',
+        'mime_types' => '',
+        'preview_size' => 'medium',
+      ),
+    ),
+    'location' => array(
+      array(
+        array(
+          'param' => 'page_template',
+          'operator' => '==',
+          'value' => 'employers.php',
+        ),
+        array(
+          'param' => 'page_template',
+          'operator' => '==',
+          'value' => 'job-seekers.php',
+        ),
+      ),
+    ),
+    'menu_order' => 0,
+    'position' => 'normal',
+    'style' => 'default',
+    'label_placement' => 'top',
+    'instruction_placement' => 'label',
+    'hide_on_screen' => '',
+    'active' => true,
+    'description' => '',
+    'show_in_rest' => 0,
+  ));
+
+  acf_add_local_field_group(array(
+    'key' => 'group_65093a7a9c435',
+    'title' => 'Home Page Images',
+    'fields' => array(
+      array(
+        'key' => 'field_65093a7a8ee1a',
+        'label' => 'Intro Image',
+        'name' => 'intro_image',
+        'aria-label' => '',
+        'type' => 'image',
+        'instructions' => '',
+        'required' => 0,
+        'conditional_logic' => 0,
+        'wrapper' => array(
+          'width' => '',
+          'class' => '',
+          'id' => '',
+        ),
+        'return_format' => 'url',
+        'library' => 'all',
+        'min_width' => '',
+        'min_height' => '',
+        'min_size' => '',
+        'max_width' => '',
+        'max_height' => '',
+        'max_size' => '',
+        'mime_types' => '',
+        'preview_size' => 'medium',
+      ),
+      array(
+        'key' => 'field_65093ae58ee1c',
+        'label' => 'Talent Acquisition Image',
+        'name' => 'talent_acquisition_image',
+        'aria-label' => '',
+        'type' => 'image',
+        'instructions' => '',
+        'required' => 0,
+        'conditional_logic' => 0,
+        'wrapper' => array(
+          'width' => '',
+          'class' => '',
+          'id' => '',
+        ),
+        'return_format' => 'url',
+        'library' => 'all',
+        'min_width' => '',
+        'min_height' => '',
+        'min_size' => '',
+        'max_width' => '',
+        'max_height' => '',
+        'max_size' => '',
+        'mime_types' => '',
+        'preview_size' => 'medium',
+      ),
+    ),
+    'location' => array(
+      array(
+        array(
+          'param' => 'page_type',
+          'operator' => '==',
+          'value' => 'front_page',
+        ),
+      ),
+    ),
+    'menu_order' => 0,
+    'position' => 'normal',
+    'style' => 'default',
+    'label_placement' => 'top',
+    'instruction_placement' => 'label',
+    'hide_on_screen' => '',
+    'active' => true,
+    'description' => '',
+    'show_in_rest' => 0,
+  ));
+});
