@@ -5,11 +5,12 @@ add_action('acf/include_fields', function () {
     return;
   }
 
-  acf_add_local_field_group(array(
+  // About Us
+  acf_add_local_field_group([
     'key' => 'group_65093b598526e',
     'title' => 'About Us Page Images',
-    'fields' => array(
-      array(
+    'fields' => [
+      [
         'key' => 'field_65093b598c78f',
         'label' => 'Intro Image',
         'name' => 'intro_image',
@@ -18,11 +19,11 @@ add_action('acf/include_fields', function () {
         'instructions' => '',
         'required' => 0,
         'conditional_logic' => 0,
-        'wrapper' => array(
+        'wrapper' => [
           'width' => '',
           'class' => '',
           'id' => '',
-        ),
+        ],
         'return_format' => 'url',
         'library' => 'all',
         'min_width' => '',
@@ -33,8 +34,8 @@ add_action('acf/include_fields', function () {
         'max_size' => '',
         'mime_types' => '',
         'preview_size' => 'medium',
-      ),
-      array(
+      ],
+      [
         'key' => 'field_65093b598c795',
         'label' => 'Knowledge and Experience Image',
         'name' => 'experience_image',
@@ -43,11 +44,11 @@ add_action('acf/include_fields', function () {
         'instructions' => '',
         'required' => 0,
         'conditional_logic' => 0,
-        'wrapper' => array(
+        'wrapper' => [
           'width' => '',
           'class' => '',
           'id' => '',
-        ),
+        ],
         'return_format' => 'url',
         'library' => 'all',
         'min_width' => '',
@@ -58,8 +59,8 @@ add_action('acf/include_fields', function () {
         'max_size' => '',
         'mime_types' => '',
         'preview_size' => 'medium',
-      ),
-      array(
+      ],
+      [
         'key' => 'field_65093be540689',
         'label' => 'Communication and Professionalism Image',
         'name' => 'communication_image',
@@ -68,11 +69,11 @@ add_action('acf/include_fields', function () {
         'instructions' => '',
         'required' => 0,
         'conditional_logic' => 0,
-        'wrapper' => array(
+        'wrapper' => [
           'width' => '',
           'class' => '',
           'id' => '',
-        ),
+        ],
         'return_format' => 'url',
         'library' => 'all',
         'min_width' => '',
@@ -83,8 +84,8 @@ add_action('acf/include_fields', function () {
         'max_size' => '',
         'mime_types' => '',
         'preview_size' => 'medium',
-      ),
-      array(
+      ],
+      [
         'key' => 'field_65093c1f4068b',
         'label' => 'Headhunting Image',
         'name' => 'headhunting_image',
@@ -93,11 +94,11 @@ add_action('acf/include_fields', function () {
         'instructions' => '',
         'required' => 0,
         'conditional_logic' => 0,
-        'wrapper' => array(
+        'wrapper' => [
           'width' => '',
           'class' => '',
           'id' => '',
-        ),
+        ],
         'return_format' => 'url',
         'library' => 'all',
         'min_width' => '',
@@ -108,8 +109,8 @@ add_action('acf/include_fields', function () {
         'max_size' => '',
         'mime_types' => '',
         'preview_size' => 'medium',
-      ),
-      array(
+      ],
+      [
         'key' => 'field_65093c1e4068a',
         'label' => 'Internal Database Image',
         'name' => 'database_image',
@@ -118,11 +119,11 @@ add_action('acf/include_fields', function () {
         'instructions' => '',
         'required' => 0,
         'conditional_logic' => 0,
-        'wrapper' => array(
+        'wrapper' => [
           'width' => '',
           'class' => '',
           'id' => '',
-        ),
+        ],
         'return_format' => 'url',
         'library' => 'all',
         'min_width' => '',
@@ -133,17 +134,17 @@ add_action('acf/include_fields', function () {
         'max_size' => '',
         'mime_types' => '',
         'preview_size' => 'medium',
-      ),
-    ),
-    'location' => array(
-      array(
-        array(
+      ],
+    ],
+    'location' => [
+      [
+        [
           'param' => 'page_template',
           'operator' => '==',
           'value' => 'page-aboutus.php',
-        ),
-      ),
-    ),
+        ],
+      ],
+    ],
     'menu_order' => 0,
     'position' => 'normal',
     'style' => 'default',
@@ -153,13 +154,14 @@ add_action('acf/include_fields', function () {
     'active' => true,
     'description' => '',
     'show_in_rest' => 0,
-  ));
+  ]);
 
-  acf_add_local_field_group(array(
+  // Career Guidance
+  acf_add_local_field_group([
     'key' => 'group_65093f8c24a9c',
     'title' => 'Career Guidance Page Images',
-    'fields' => array(
-      array(
+    'fields' => [
+      [
         'key' => 'field_65093f8c2beb8',
         'label' => 'Intro Image',
         'name' => 'intro_image',
@@ -168,11 +170,11 @@ add_action('acf/include_fields', function () {
         'instructions' => '',
         'required' => 0,
         'conditional_logic' => 0,
-        'wrapper' => array(
+        'wrapper' => [
           'width' => '',
           'class' => '',
           'id' => '',
-        ),
+        ],
         'return_format' => 'url',
         'library' => 'all',
         'min_width' => '',
@@ -183,17 +185,17 @@ add_action('acf/include_fields', function () {
         'max_size' => '',
         'mime_types' => '',
         'preview_size' => 'medium',
-      ),
-    ),
-    'location' => array(
-      array(
-        array(
+      ],
+    ],
+    'location' => [
+      [
+        [
           'param' => 'page_template',
           'operator' => '==',
           'value' => 'career-guidance.php',
-        ),
-      ),
-    ),
+        ],
+      ],
+    ],
     'menu_order' => 0,
     'position' => 'normal',
     'style' => 'default',
@@ -203,13 +205,14 @@ add_action('acf/include_fields', function () {
     'active' => true,
     'description' => '',
     'show_in_rest' => 0,
-  ));
+  ]);
 
-  acf_add_local_field_group(array(
+  // Employers and Job Seekers
+  acf_add_local_field_group([
     'key' => 'group_65093c649dfc1',
     'title' => 'Employers and Job Seekers Page Images',
-    'fields' => array(
-      array(
+    'fields' => [
+      [
         'key' => 'field_65093c64a4b07',
         'label' => 'Intro Image',
         'name' => 'intro_image',
@@ -218,11 +221,11 @@ add_action('acf/include_fields', function () {
         'instructions' => '',
         'required' => 0,
         'conditional_logic' => 0,
-        'wrapper' => array(
+        'wrapper' => [
           'width' => '',
           'class' => '',
           'id' => '',
-        ),
+        ],
         'return_format' => 'url',
         'library' => 'all',
         'min_width' => '',
@@ -233,8 +236,8 @@ add_action('acf/include_fields', function () {
         'max_size' => '',
         'mime_types' => '',
         'preview_size' => 'medium',
-      ),
-      array(
+      ],
+      [
         'key' => 'field_65093c64a4b0e',
         'label' => 'UAE Nationals Image',
         'name' => 'uae_nationals_image',
@@ -243,11 +246,11 @@ add_action('acf/include_fields', function () {
         'instructions' => '',
         'required' => 0,
         'conditional_logic' => 0,
-        'wrapper' => array(
+        'wrapper' => [
           'width' => '',
           'class' => '',
           'id' => '',
-        ),
+        ],
         'return_format' => 'url',
         'library' => 'all',
         'min_width' => '',
@@ -258,22 +261,22 @@ add_action('acf/include_fields', function () {
         'max_size' => '',
         'mime_types' => '',
         'preview_size' => 'medium',
-      ),
-    ),
-    'location' => array(
-      array(
-        array(
+      ],
+    ],
+    'location' => [
+      [
+        [
           'param' => 'page_template',
           'operator' => '==',
           'value' => 'employers.php',
-        ),
-        array(
+        ],
+        [
           'param' => 'page_template',
           'operator' => '==',
           'value' => 'job-seekers.php',
-        ),
-      ),
-    ),
+        ],
+      ],
+    ],
     'menu_order' => 0,
     'position' => 'normal',
     'style' => 'default',
@@ -283,13 +286,14 @@ add_action('acf/include_fields', function () {
     'active' => true,
     'description' => '',
     'show_in_rest' => 0,
-  ));
+  ]);
 
-  acf_add_local_field_group(array(
+  // Home Page
+  acf_add_local_field_group([
     'key' => 'group_65093a7a9c435',
     'title' => 'Home Page Images',
-    'fields' => array(
-      array(
+    'fields' => [
+      [
         'key' => 'field_65093a7a8ee1a',
         'label' => 'Intro Image',
         'name' => 'intro_image',
@@ -298,11 +302,11 @@ add_action('acf/include_fields', function () {
         'instructions' => '',
         'required' => 0,
         'conditional_logic' => 0,
-        'wrapper' => array(
+        'wrapper' => [
           'width' => '',
           'class' => '',
           'id' => '',
-        ),
+        ],
         'return_format' => 'url',
         'library' => 'all',
         'min_width' => '',
@@ -313,8 +317,8 @@ add_action('acf/include_fields', function () {
         'max_size' => '',
         'mime_types' => '',
         'preview_size' => 'medium',
-      ),
-      array(
+      ],
+      [
         'key' => 'field_65093ae58ee1c',
         'label' => 'Talent Acquisition Image',
         'name' => 'talent_acquisition_image',
@@ -323,11 +327,11 @@ add_action('acf/include_fields', function () {
         'instructions' => '',
         'required' => 0,
         'conditional_logic' => 0,
-        'wrapper' => array(
+        'wrapper' => [
           'width' => '',
           'class' => '',
           'id' => '',
-        ),
+        ],
         'return_format' => 'url',
         'library' => 'all',
         'min_width' => '',
@@ -338,17 +342,17 @@ add_action('acf/include_fields', function () {
         'max_size' => '',
         'mime_types' => '',
         'preview_size' => 'medium',
-      ),
-    ),
-    'location' => array(
-      array(
-        array(
+      ],
+    ],
+    'location' => [
+      [
+        [
           'param' => 'page_type',
           'operator' => '==',
           'value' => 'front_page',
-        ),
-      ),
-    ),
+        ],
+      ],
+    ],
     'menu_order' => 0,
     'position' => 'normal',
     'style' => 'default',
@@ -358,5 +362,116 @@ add_action('acf/include_fields', function () {
     'active' => true,
     'description' => '',
     'show_in_rest' => 0,
-  ));
+  ]);
+
+  // Contact Page
+  acf_add_local_field_group([
+    'key' => 'group_624d4d1f0f89e',
+    'title' => 'Contact',
+    'fields' => [
+      [
+        'key' => 'field_624d4d23c00e3',
+        'label' => 'Address',
+        'name' => 'address',
+        'aria-label' => '',
+        'type' => 'text',
+        'instructions' => 'Short Office Address',
+        'required' => 0,
+        'conditional_logic' => 0,
+        'wrapper' => [
+          'width' => '',
+          'class' => '',
+          'id' => '',
+        ],
+        'default_value' => '',
+        'placeholder' => '',
+        'prepend' => '',
+        'append' => '',
+        'maxlength' => '',
+      ],
+      [
+        'key' => 'field_624d4dc3c00e4',
+        'label' => 'Mobile No. 1',
+        'name' => 'mobile_no_1',
+        'aria-label' => '',
+        'type' => 'text',
+        'instructions' => 'There should be atleast one Mobile number entered',
+        'required' => 0,
+        'conditional_logic' => 0,
+        'wrapper' => [
+          'width' => '',
+          'class' => '',
+          'id' => '',
+        ],
+        'default_value' => '',
+        'placeholder' => '+971 55 756 0966',
+        'prepend' => '',
+        'append' => '',
+        'maxlength' => '',
+      ],
+      [
+        'key' => 'field_624d4ecdc00e6',
+        'label' => 'Email 1',
+        'name' => 'email_1',
+        'aria-label' => '',
+        'type' => 'email',
+        'instructions' => 'At least one email should be entered',
+        'required' => 0,
+        'conditional_logic' => 0,
+        'wrapper' => [
+          'width' => '',
+          'class' => '',
+          'id' => '',
+        ],
+        'default_value' => '',
+        'placeholder' => 'mehan@mehanhr.com',
+        'prepend' => '',
+        'append' => '',
+      ],
+      [
+        'key' => 'field_624d4f13c00e7',
+        'label' => 'Email 2',
+        'name' => 'email_2',
+        'aria-label' => '',
+        'type' => 'email',
+        'instructions' => 'Make sure at least one email address is entered',
+        'required' => 0,
+        'conditional_logic' => 0,
+        'wrapper' => [
+          'width' => '',
+          'class' => '',
+          'id' => '',
+        ],
+        'default_value' => '',
+        'placeholder' => '',
+        'prepend' => '',
+        'append' => '',
+      ],
+    ],
+    'location' => [
+      [
+        [
+          'param' => 'page',
+          'operator' => '==',
+          'value' => '13',
+        ],
+      ],
+      [
+        [
+          'param' => 'page_template',
+          'operator' => '==',
+          'value' => 'page-contact.php',
+        ],
+      ],
+    ],
+    'menu_order' => 0,
+    'position' => 'normal',
+    'style' => 'default',
+    'label_placement' => 'top',
+    'instruction_placement' => 'label',
+    'hide_on_screen' => '',
+    'active' => true,
+    'description' => '',
+    'show_in_rest' => 0,
+  ]);
 });
