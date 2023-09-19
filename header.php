@@ -55,7 +55,7 @@
                             <div class="main-header_nav row align-items-center">
                                 <div class="col-xl-3 col-md-4 col-6">
                                     <div class="header-logo">
-                                        <?php humanhub_the_custom_logo(); ?>
+                                        <?php mehan_23_the_custom_logo(); ?>
                                         <!-- <a href="<?php home_url() ?>">
                                             <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/logo/mehan_270x163.svg" alt="Header Logo" />
                                         </a> -->
@@ -115,11 +115,13 @@
                                                     <i class="ion-ios-world-outline"></i>
                                                 </a>
                                             </li>
-                                            <li class="mobile-menu_wrap d-inline-block d-lg-none">
-                                                <a href="#mobileMenu" class="mobile-menu_btn toolbar-btn">
-                                                    <i class="ion-navicon-round"></i>
-                                                </a>
-                                            </li>
+                                            <?php if (get_locale() == 'en') : ?>
+                                                <li class="mobile-menu_wrap d-inline-block d-lg-none">
+                                                    <a href="#mobileMenu" class="mobile-menu_btn toolbar-btn">
+                                                        <i class="ion-navicon-round"></i>
+                                                    </a>
+                                                </li>
+                                            <?php endif; ?>
                                         </ul>
                                     </div>
                                     <div class="mobile-lang-body">
@@ -140,7 +142,7 @@
                             <div class="main-header_nav row align-items-center">
                                 <div class="col-xl-3 col-md-4 col-6">
                                     <div class="header-logo">
-                                        <?php humanhub_the_custom_logo() ?>
+                                        <?php mehan_23_the_custom_logo() ?>
                                         <!-- <a href="index.html">
                                             <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/logo/mehan_180x108.png" alt="Header Logo" />
                                         </a> -->

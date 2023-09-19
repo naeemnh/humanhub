@@ -8,16 +8,8 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="footer-widgets_area">
                                 <div class="logo">
-                                    <?php humanhub_the_custom_logo(); ?>
-                                    <!-- <a href="index.html">
-                                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/logo/mehan_white.png" alt="Footer Logo" />
-                                    </a> -->
+                                    <?php mehan_23_the_custom_logo(); ?>
                                 </div>
-                                <!-- <p class="short-desc mb-0">
-                                    Enrich your Human Capital Experience
-                                    <br />
-                                    Share, Network, Collaborate, Innovate, Learn, Transform, Do it again.
-                                </p> -->
                             </div>
                         </div>
                         <div class="col-lg-2 col-md-6">
@@ -86,8 +78,8 @@
                             <span>
                                 <?php
                                 if (get_locale() == 'en') : ?>
-                                    Copyright 2022 &copy;
-                                    <a href="<?php echo home_url() ?>">Mehan Limited.</a>
+                                    Copyright 2023 &copy;
+                                    <a href="<?php echo home_url() ?>">Mehan L.L.C.</a>
                                 <?php else : ?>
                                     حقوق الطبع والنشر © جميع الحقوق محفوظة <a href="<?php echo home_url() ?>"> مهن ذ م م</a>
                                 <?php endif; ?>

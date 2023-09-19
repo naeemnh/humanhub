@@ -75,7 +75,7 @@ if (have_posts()) :
         <div class="row">
           <div class="col-lg-12">
             <div class="paginatoin-area position-center pb-0">
-              <?php humanhub_pagination() ?>
+              <?php mehan_23_pagination() ?>
             </div>
           </div>
         </div>

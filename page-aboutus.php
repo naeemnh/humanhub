@@ -74,7 +74,11 @@ if (have_posts()) :
                         <div class="col-lg-6 order-1">
                             <div class="introduction-img_area">
                                 <div class="inner-img">
-                                    <img class="img-full mx-auto w-75" src="<?php echo get_template_directory_uri() ?>/assets/images/services/about-us.jpg" alt="Introduction Image" />
+                                    <?php if (get_field('intro_image')) : ?>
+                                        <img class="img-full mx-auto" src="<?php the_field('intro_image') ?>" alt="Introduction Image" />
+                                    <?php else : ?>
+                                        <img class="img-full mx-auto" src="<?php echo get_template_directory_uri() ?>/assets/images/services/about-us.jpg" alt="Introduction Image" />
+                                    <?php endif; ?>
                                 </div>
                             </div>
                         </div>
@@ -96,62 +100,14 @@ if (have_posts()) :
                         </h2>
                     </div>
                     <div class="row">
-                        <!-- <div class="col-lg-6 col-sm-12">
-                            <div class="services-item">
-                                <div class="services-img">
-                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/services/elements_human-hub-1-min.png" alt="" class="img-full">
-                                </div>
-                                <div class="services-content">
-                                    <h3 class="title mb-0 white-color">Knowledge</h3>
-                                    <p class="short-desc mb-0">
-                                        Facilitating Knowledge and Experience Sharing among Human Capital professionals through speaking via podcasts & webinars, writing articles, and posting, brainstroming & collaborating.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-12">
-                            <div class="services-item">
-                                <div class="services-img">
-                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/services/elements_human-hub-2-min.png" alt="" class="img-full">
-                                </div>
-                                <div class="services-content">
-                                    <h3 class="title mb-0 white-color">Enlightenment</h3>
-                                    <p class="short-desc mb-0">
-                                        Inspiring the next generation of Human Capital leaders through shadowing, mentorship, coaching, and internships.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-12">
-                            <div class="services-item">
-                                <div class="services-img">
-                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/services/elements_human-hub-4-min.png" alt="" class="img-full">
-                                </div>
-                                <div class="services-content">
-                                    <h3 class="title mb-0 white-color">Networking</h3>
-                                    <p class="short-desc mb-0">
-                                        Providing opportunities for Human Capital professionals to strengthen their network via physical and virtual events, access to direct messaging and joining or creating groups and communities.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-12">
-                            <div class="services-item">
-                                <div class="services-img">
-                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/services/elements_human-hub-3-min.png" alt="" class="img-full">
-                                </div>
-                                <div class="services-content">
-                                    <h3 class="title mb-0 white-color">Entrepreneurship</h3>
-                                    <p class="short-desc mb-0">
-                                        To influence human capital practices by supporting entrepreneurs and freelancers.
-                                    </p>
-                                </div>
-                            </div>
-                        </div> -->
                         <div class="col-md-6 col-xs-12">
                             <article class="service flex-column">
                                 <div class="service-img">
-                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/services/elements_human-hub-1-min.png" alt="img-full">
+                                    <?php if (get_field('experience_image')) : ?>
+                                        <img src="<?php the_field('experience_image') ?>" alt="img-full">
+                                    <?php else : ?>
+                                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/services/elements_human-hub-1-min.png" alt="img-full">
+                                    <?php endif; ?>
                                 </div>
                                 <div class="service-content">
                                     <?php if ($language == 'en') : ?>
@@ -169,7 +125,11 @@ if (have_posts()) :
                             </article>
                             <article class="service flex-md-row flex-sm-column flex-column">
                                 <div class="service-img">
-                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/services/elements_human-hub-2-min.png" alt="img-full">
+                                    <?php if (get_field('headhunting_image')) : ?>
+                                        <img src="<?php the_field('headhunting_image') ?>" alt="img-full">
+                                    <?php else : ?>
+                                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/services/elements_human-hub-2-min.png" alt="img-full">
+                                    <?php endif; ?>
                                 </div>
                                 <div class="service-content">
                                     <?php if ($language == 'en') : ?>
@@ -189,7 +149,11 @@ if (have_posts()) :
                         <div class="col-md-6 col-xs-12">
                             <article class="service flex-md-row flex-sm-column flex-column">
                                 <div class="service-img">
-                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/services/elements_human-hub-4-min.png" alt="img-full">
+                                    <?php if (get_field('communcation_image')) : ?>
+                                        <img src="<?php the_field('communcation_image') ?>" alt="img-full">
+                                    <?php else : ?>
+                                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/services/elements_human-hub-4-min.png" alt="img-full">
+                                    <?php endif; ?>
                                 </div>
                                 <div class="service-content">
                                     <?php if ($language == 'en') : ?>
@@ -207,7 +171,11 @@ if (have_posts()) :
                             </article>
                             <article class="service flex-column">
                                 <div class="service-img">
-                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/services/elements_human-hub-3-min.png" alt="img-full">
+                                    <?php if (get_field('database_image')) : ?>
+                                        <img src="<?php the_field('database_image') ?>" alt="img-full">
+                                    <?php else : ?>
+                                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/services/elements_human-hub-3-min.png" alt="img-full">
+                                    <?php endif; ?>
                                 </div>
                                 <div class="service-content">
                                     <?php if ($language == 'en') : ?>
