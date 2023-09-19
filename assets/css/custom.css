@@ -101,7 +101,7 @@
     color: #ababab;
 }
 
-/* ---------------------- What Human Hub Offers ---------------------- */
+/* ---------------------- What Mehan Offers ---------------------- */
 
 .services-item .services-content p.short-desc,
 .service .service-content p.short-desc {
@@ -290,6 +290,18 @@
 
 .services-area.cg-works .col-md-6:nth-child(2) .service.flex-column:nth-child(2) {
     padding-bottom: 8%;
+}
+
+/* ----------------------------------------
+    Testimonial
+---------------------------------------- */
+.testimonials-area .section-title .sub-heading {
+    font-weight: 700;
+    font-style: italic;
+}
+
+.testimonial-slider .slide-item .single-item .single-img img {
+    border-radius: 0;
 }
 
 /* ----------------------------------------

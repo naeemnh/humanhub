@@ -24,25 +24,7 @@ if (have_posts()) :
           </div>
           <div class="row">
             <div class="col-lg-6">
-              <div class="ademy-element-carousel introduction-slider" data-slick-options='{
-                      "slidesToShow": 1,
-                      "slidesToScroll": 1,
-                      "infinite": true,
-                      "arrows": false,
-                      "dots": false,
-                      "autoplay" : false,
-                      "fade" : false,
-                      "autoplaySpeed" : 7000,
-                      "pauseOnHover" : false,
-                      "pauseOnFocus" : false
-                      }' data-slick-responsive='[
-                      {"breakpoint":768, "settings": {
-                      "slidesToShow": 1
-                      }},
-                      {"breakpoint":575, "settings": {
-                      "slidesToShow": 1
-                      }}
-                  ]'>
+              <div class="ademy-element-carousel introduction-slider">
                 <div class="intro-item">
                   <div class="intro-content">
                     <!-- <h3 class="heading mb-0">Our Story</h3> -->
@@ -68,7 +50,11 @@ if (have_posts()) :
             <div class="col-lg-6">
               <div class="introduction-img_area">
                 <div class="inner-img">
-                  <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/job-seekers/design-desk-display.jpg" alt="Introduction Image" />
+                  <?php if (get_field('intro_image')) : ?>
+                    <img class="img-full" src="<?php the_field('intro_image') ?>" alt="Introduction Image" />
+                  <?php else : ?>
+                    <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/job-seekers/design-desk-display.jpg" alt="Introduction Image" />
+                  <?php endif; ?>
                 </div>
               </div>
             </div>

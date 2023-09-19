@@ -20,13 +20,15 @@ if (have_posts()) :
                         <div class="col-lg-4">
                             <div class="contact-info">
                                 <ul>
-                                    <?php if (get_field('address')) : ?>
-                                        <li>
-                                            <h4 class="heading text-uppercase mb-0"><i class="ti-map-alt"></i>Address</h4>
-                                            <span class="short-desc"><?php the_field('address') ?></span>
-                                        </li>
-                                    <?php endif;
-                                    if (get_field('mobile_no_1') || get_field('mobile_no_2')) : ?>
+                                    <li>
+                                        <h4 class="heading text-uppercase mb-0">Get in Touch</h4>
+                                        <p class="short-desc">
+                                            With years of experience in providing HR services, we strive to deliver professional approach and exceptional execution to both employers and job seekers.
+                                            <br />
+                                            Should you have any questions, feel free to contact us.
+                                        </p>
+                                    </li>
+                                    <?php if (get_field('mobile_no_1') || get_field('mobile_no_2')) : ?>
                                         <li>
                                             <h4 class="heading text-uppercase mb-0"><i class="ti-mobile"></i>Phone</h4>
                                             <!-- Mobile Number -->
@@ -51,7 +53,6 @@ if (have_posts()) :
                         </div>
                         <div class="col-lg-8">
                             <div class="feedback-area contact-form_area">
-                                <h2 class="heading mb-0">Get in Touch</h2>
                                 <?php the_content() ?>
                             </div>
                         </div>

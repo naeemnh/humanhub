@@ -24,25 +24,7 @@ if (have_posts()) :
           </div>
           <div class="row">
             <div class="col-lg-6">
-              <div class="ademy-element-carousel introduction-slider" data-slick-options='{
-                      "slidesToShow": 1,
-                      "slidesToScroll": 1,
-                      "infinite": true,
-                      "arrows": false,
-                      "dots": false,
-                      "autoplay" : false,
-                      "fade" : false,
-                      "autoplaySpeed" : 7000,
-                      "pauseOnHover" : false,
-                      "pauseOnFocus" : false
-                      }' data-slick-responsive='[
-                      {"breakpoint":768, "settings": {
-                      "slidesToShow": 1
-                      }},
-                      {"breakpoint":575, "settings": {
-                      "slidesToShow": 1
-                      }}
-                  ]'>
+              <div class="ademy-element-carousel introduction-slider">
                 <div class="intro-item">
                   <div class="intro-content">
                     <!-- <h3 class="heading mb-0">Our Story</h3> -->
@@ -74,7 +56,11 @@ if (have_posts()) :
             <div class="col-lg-6">
               <div class="introduction-img_area">
                 <div class="inner-img">
-                  <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/job-seekers/job-01.jpg" alt="Introduction Image" />
+                  <?php if (get_field('intro_image')) : ?>
+                    <img class="img-full" src="<?php the_field('intro_image') ?>" alt="Introduction Image" />
+                  <?php else : ?>
+                    <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/job-seekers/job-01.jpg" alt="Introduction Image" />
+                  <?php endif; ?>
                 </div>
               </div>
             </div>
@@ -84,7 +70,6 @@ if (have_posts()) :
       <div id="welcome" class="introduction-area bg-smoke_color">
         <div class="container">
           <div class="section-title pb-5">
-            <!-- <h6 class="heading mb-0">Human Hub</h6> -->
             <h2 class="sub-heading mb-0">
               <?php if ($language == 'en') : ?>
                 Career Opportunities for UAE Nationals
@@ -97,33 +82,18 @@ if (have_posts()) :
             <div class="col-lg-6">
               <div class="introduction-img_area bg-white_color">
                 <div class="inner-img">
-                  <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/job-seekers/job-02.jpg" alt="Introduction Image" />
+                  <?php if (get_field('uae_nationals_image')) : ?>
+                    <img class="img-full" src="<?php the_field('uae_nationals_image') ?>" alt="Introduction Image" />
+                  <?php else : ?>
+                    <img class="img-full" src="<?php echo get_template_directory_uri() ?>/assets/images/job-seekers/job-02.jpg" alt="Introduction Image" />
+                  <?php endif; ?>
                 </div>
               </div>
             </div>
             <div class="col-lg-6">
-              <div class="ademy-element-carousel introduction-slider" data-slick-options='{
-                    "slidesToShow": 1,
-                    "slidesToScroll": 1,
-                    "infinite": true,
-                    "arrows": false,
-                    "dots": false,
-                    "autoplay" : false,
-                    "fade" : false,
-                    "autoplaySpeed" : 7000,
-                    "pauseOnHover" : false,
-                    "pauseOnFocus" : false
-                    }' data-slick-responsive='[
-                    {"breakpoint":768, "settings": {
-                    "slidesToShow": 1
-                    }},
-                    {"breakpoint":575, "settings": {
-                    "slidesToShow": 1
-                    }}
-                ]'>
+              <div class="ademy-element-carousel introduction-slider">
                 <div class="intro-item">
                   <div class="intro-content">
-                    <!-- <h3 class="heading mb-0">Human Hub</h3> -->
                     <?php if ($language == 'en') : ?>
                       <p class="short-desc">
                         As the founders of Mehan are UAE Nationals, we at Mehan care about supporting Talented Emirati Professionals to find the most suitable career opportunities in the UAE’s job market.
