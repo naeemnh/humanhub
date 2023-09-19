@@ -11,7 +11,7 @@
               <img src="<?php echo get_template_directory_uri() ?>/assets/images/error-404/1.png" alt="Error Image">
             </div>
             <h1 class="heading mb-0">
-              <?php if (get_locale() == 'ar') : ?>
+              <?php if (get_language() == 'ar') : ?>
                 أُووبس! الصفحة غير موجودة!.
               <?php else : ?>
                 Oops! Page not found!
@@ -19,7 +19,7 @@
             </h1>
             <div class="button-wrap position-center">
               <a class="ademy-btn btn-transparent whisper-border btn-lg_size with-border_radius" href="<?php echo home_url() ?>">
-                <?php if (get_locale() == 'ar') : ?>
+                <?php if (get_language() == 'ar') : ?>
                   الى الصفحة الرئيسية
                 <?php else : ?>
                   Go back to homepage

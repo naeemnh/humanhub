@@ -15,7 +15,7 @@ if (have_posts()) :
           <div class="section-title pb-5">
             <!-- <h6 class="heading mb-0">Our Story</h6> -->
             <h2 class="sub-heading mb-0">
-              <?php if ($language == 'en') : ?>
+              <?php if (get_language() == 'en') : ?>
                 Careers <span>Opportunities</span> for Senior <span>Professionals</span>
               <?php else : ?>
                 الفرص <span>التوظيفية</span> لكبار <span>المهنيين</span>
@@ -28,7 +28,7 @@ if (have_posts()) :
                 <div class="intro-item">
                   <div class="intro-content">
                     <!-- <h3 class="heading mb-0">Our Story</h3> -->
-                    <?php if ($language == 'en') : ?>
+                    <?php if (get_language() == 'en') : ?>
                       <p class="short-desc">
                         Every career oriented professional is always on the lookout for their next career move, whether you are an HR Manager looking to become an HR Director or a Finance Director looking to become a CFO.
                       </p>
@@ -71,7 +71,7 @@ if (have_posts()) :
         <div class="container">
           <div class="section-title pb-5">
             <h2 class="sub-heading mb-0">
-              <?php if ($language == 'en') : ?>
+              <?php if (get_language() == 'en') : ?>
                 Career Opportunities for UAE Nationals
               <?php else : ?>
                 الفرص الوظيفية للمواطنين الإماراتيين
@@ -94,7 +94,7 @@ if (have_posts()) :
               <div class="ademy-element-carousel introduction-slider">
                 <div class="intro-item">
                   <div class="intro-content">
-                    <?php if ($language == 'en') : ?>
+                    <?php if (get_language() == 'en') : ?>
                       <p class="short-desc">
                         As the founders of Mehan are UAE Nationals, we at Mehan care about supporting Talented Emirati Professionals to find the most suitable career opportunities in the UAE’s job market.
                       </p>
@@ -131,7 +131,7 @@ if (have_posts()) :
                 <div class="heading-wrap">
                   <img src="<?php echo get_template_directory_uri() ?>/assets/images/ticket/arrow.png" alt="Ticket Arrow" />
                   <h2 class="heading mb-0 blue-color">
-                    <?php if ($language == 'en') : ?>
+                    <?php if (get_language() == 'en') : ?>
                       Apply with us
                     <?php else : ?>
                       تقدم بطلب وظيفة
@@ -141,7 +141,7 @@ if (have_posts()) :
                 <div class="group-btn_wrap d-flex">
 
                   <a class="ademy-btn denim-color_btn with-border_radius" href="<?php echo get_site_url(); ?>/apply-with-us">
-                    <?php if ($language == 'en') : ?>
+                    <?php if (get_language() == 'en') : ?>
                       Register
                     <?php else : ?>
                       سجل

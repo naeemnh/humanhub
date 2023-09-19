@@ -15,7 +15,7 @@ if (have_posts()) :
           <div class="section-title pb-5">
             <!-- <h6 class="heading mb-0">Our Story</h6> -->
             <h2 class="sub-heading mb-0">
-              <?php if ($language == 'en') : ?>
+              <?php if (get_language() == 'en') : ?>
                 Need Senior <span>Professionals</span>?
               <?php else : ?>
                 هل تحتاج إلى </span>شخص مهني<span> على مستوى عالي من الخبرة؟
@@ -28,7 +28,7 @@ if (have_posts()) :
                 <div class="intro-item">
                   <div class="intro-content">
                     <!-- <h3 class="heading mb-0">Our Story</h3> -->
-                    <?php if ($language == 'en') : ?>
+                    <?php if (get_language() == 'en') : ?>
                       <p class="short-desc">
                         Mehan Experts are your link to find knowledgeable and experienced senior talents for your business.
                       </p>
@@ -71,7 +71,7 @@ if (have_posts()) :
         <div class="container">
           <div class="section-title pb-5">
             <h2 class="sub-heading mb-0">
-              <?php if ($language == 'en') : ?>
+              <?php if (get_language() == 'en') : ?>
                 Looking For Talented UAE Nationals?
               <?php else : ?>
                 اكتساب <span>موهبة</span>
@@ -94,7 +94,7 @@ if (have_posts()) :
               <div class="ademy-element-carousel introduction-slider">
                 <div class="intro-item">
                   <div class="intro-content">
-                    <?php if ($language == 'en') : ?>
+                    <?php if (get_language() == 'en') : ?>
                       <p class="short-desc">
                         Emiratization is one of the top priorities on the UAE's government list when it comes to tackling and finding solutions to the workforce issues in the country.
                       </p>
@@ -128,7 +128,7 @@ if (have_posts()) :
             <div class="col">
               <div class="show-interest">
                 <h3 class="sub-heading">
-                  <?php if ($language == 'en') : ?>
+                  <?php if (get_language() == 'en') : ?>
                     Show us your interest:
                   <?php else : ?>
                     أظهر لنا اهتمامك:

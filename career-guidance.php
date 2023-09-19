@@ -15,7 +15,7 @@ if (have_posts()) :
           <div class="section-title pb-5">
             <!-- <h6 class="heading mb-0">Our Story</h6> -->
             <h2 class="sub-heading mb-0">
-              <?php if ($language == 'en') : ?>
+              <?php if (get_language() == 'en') : ?>
                 Need a Career Advice?
               <?php else : ?>
                 هل تحتاج إلى </span>شخص مهني<span> على مستوى عالي من الخبرة؟
@@ -28,7 +28,7 @@ if (have_posts()) :
                 <div class="intro-item">
                   <div class="intro-content">
                     <!-- <h3 class="heading mb-0">Our Story</h3> -->
-                    <?php if ($language == 'en') : ?>
+                    <?php if (get_language() == 'en') : ?>
                       <p class="short-desc">
                         If you are starting a new business, don't know how to get a long with colleagues, recently got promoted and facing difficulty managing your team, making organizational changes and don't know how to manage the transition, or a fresh graduate looking to start a job search journey, we are here to help you and guide you through it.
                       </p>
@@ -66,7 +66,7 @@ if (have_posts()) :
         <div class="container">
           <div class="section-title pb-5">
             <h2 class="sub-heading mb-0">
-              <?php if ($language == 'en') : ?>
+              <?php if (get_language() == 'en') : ?>
                 How It Works
               <?php else : ?>
                 كيف تبدأ عملية التوجيه الوظيفي
@@ -80,7 +80,7 @@ if (have_posts()) :
                   <img src="<?php echo get_template_directory_uri() ?>/assets/images/job-seekers/icon1.png" alt="img-full">
                 </div>
                 <div class="service-content">
-                  <?php if ($language == 'en') : ?>
+                  <?php if (get_language() == 'en') : ?>
                     <p class="short-desc mb-0">
                       Request to book an appointment through our website detailing what you need help with
                     </p>
@@ -97,7 +97,7 @@ if (have_posts()) :
                   <img src="<?php echo get_template_directory_uri() ?>/assets/images/job-seekers/icon3.png" alt="img-full">
                 </div>
                 <div class="service-content">
-                  <?php if ($language == 'en') : ?>
+                  <?php if (get_language() == 'en') : ?>
                     <p class="short-desc mb-0">
                       Pay the invoice to confirm your career guidance session
                     </p>
@@ -116,7 +116,7 @@ if (have_posts()) :
                   <img src="<?php echo get_template_directory_uri() ?>/assets/images/job-seekers/icon2.png" alt="img-full">
                 </div>
                 <div class="service-content">
-                  <?php if ($language == 'en') : ?>
+                  <?php if (get_language() == 'en') : ?>
                     <p class="short-desc mb-0">
                       We will give you a call to schedule a one hour long session and send you an invoice
                     </p>
@@ -133,7 +133,7 @@ if (have_posts()) :
                   <img src="<?php echo get_template_directory_uri() ?>/assets/images/job-seekers/icon4.png" alt="img-full">
                 </div>
                 <div class="service-content">
-                  <?php if ($language == 'en') : ?>
+                  <?php if (get_language() == 'en') : ?>
                     <p class="short-desc mb-0">
                       Attend the session to get the help you need
                     </p>
@@ -156,7 +156,7 @@ if (have_posts()) :
             <div class="col">
               <div class="show-interest">
                 <h3 class="sub-heading">
-                  <?php echo $language == 'en' ? 'Request to Book a Career Guidance Session:' : 'طلب حجز موعد جلسة توجيه وظيفي:'; ?>
+                  <?php echo get_language() == 'en' ? 'Request to Book a Career Guidance Session:' : 'طلب حجز موعد جلسة توجيه وظيفي:'; ?>
                 </h3>
                 <?php the_content() ?>
               </div>

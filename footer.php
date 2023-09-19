@@ -30,7 +30,7 @@
                         <div class="col-lg-3 col-md-6">
                             <div class="footer-widgets_area p-md-0">
                                 <h3 class="widgets-heading mb-0" style="visibility:hidden">
-                                    <?php if (get_locale() == 'en') : ?>
+                                    <?php if (get_language() == 'en') : ?>
                                         Explore
                                     <?php else : ?>
                                         يستكشف
@@ -77,7 +77,7 @@
                         <div class="copyright">
                             <span>
                                 <?php
-                                if (get_locale() == 'en') : ?>
+                                if (get_language() == 'en') : ?>
                                     Copyright 2023 &copy;
                                     <a href="<?php echo home_url() ?>">Mehan L.L.C.</a>
                                 <?php else : ?>

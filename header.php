@@ -43,6 +43,9 @@
 </head>
 
 <body class="template-color-1">
+    <?php if (!is_single()) :
+        print_r('Single Page');
+    endif; ?>
     <!-- Start Main Wrapper -->
     <div class="main-wrapper">
         <!-- Begin Main Header Area -->
@@ -77,12 +80,14 @@
                                 <div class="col-xl-3 col-md-8 d-none d-md-block position-relative">
                                     <div class="header-right_area with-radius">
                                         <ul class="social-link">
-                                            <li class="language d-inline-block d-lg-inline-block">
-                                                <a href="#" class="lang-btn">
-                                                    <i class="ion-ios-world-outline"></i>
-                                                </a>
-                                            </li>
-                                            <?php if (get_locale() == 'en') : ?>
+                                            <?php if (!is_single()) : ?>
+                                                <li class="language d-inline-block d-lg-inline-block">
+                                                    <a href="#" class="lang-btn">
+                                                        <i class="ion-ios-world-outline"></i>
+                                                    </a>
+                                                </li>
+                                            <?php endif; ?>
+                                            <?php if (get_language() == 'en') : ?>
                                                 <li class="search-bar d-none d-lg-inline-block">
                                                     <a class="search-btn" href="#">
                                                         <i class="ion-ios-search-strong"></i>
@@ -115,7 +120,7 @@
                                                     <i class="ion-ios-world-outline"></i>
                                                 </a>
                                             </li>
-                                            <?php if (get_locale() == 'en') : ?>
+                                            <?php if (get_language() == 'en') : ?>
                                                 <li class="mobile-menu_wrap d-inline-block d-lg-none">
                                                     <a href="#mobileMenu" class="mobile-menu_btn toolbar-btn">
                                                         <i class="ion-navicon-round"></i>
@@ -169,7 +174,7 @@
                                                     <i class="ion-ios-world-outline"></i>
                                                 </a>
                                             </li>
-                                            <?php if (get_locale() == 'en') : ?>
+                                            <?php if (get_language() == 'en') : ?>
                                                 <li class="search-bar d-none d-lg-inline-block">
                                                     <a class="sticky-search-btn" href="#">
                                                         <i class="ion-ios-search-strong"></i>

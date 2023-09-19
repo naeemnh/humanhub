@@ -32,15 +32,15 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
                     <div class="slide-item bg-1 animation-style-01" style="background-image: url(<?php echo get_template_directory_uri() ?>/assets/images/slider/home-slide-<?php echo $i + 1 ?>.jpg)">
                         <div class="slide-content">
                             <h1 class="heading intro pb-1 mb-0">
-                                <?php echo ($language == 'en') ? 'Mehan' : 'مهن' ?>
+                                <?php echo (get_language() == 'en') ? 'Mehan' : 'مهن' ?>
                             </h1>
                             <h1 class="heading cd-headline letters type mb-0">
-                                <?php echo ($language == 'en') ? 'Success through people' : 'النجاح من خلال الناس' ?>
+                                <?php echo (get_language() == 'en') ? 'Success through people' : 'النجاح من خلال الناس' ?>
                             </h1>
                             <h1 class="sub-heading cd-headline letters type white-color pb-2 mb-0">
-                                <?php echo ($language == 'en') ? 'We stand for innovation and continuous transformation' : 'ندعم الابتكار والتحول المستمر ' ?>
+                                <?php echo (get_language() == 'en') ? 'We stand for innovation and continuous transformation' : 'ندعم الابتكار والتحول المستمر ' ?>
                             </h1>
-                            <?php if ($language == 'en') { ?>
+                            <?php if (get_language() == 'en') { ?>
                                 <div class="button-wrap position-center pb-3">
                                     <a class="ademy-btn btn-transparent white-border with-border_radius active" href="<?php echo get_site_url() ?>/employers">Employers
                                         <i class="ion-android-arrow-forward"></i>
@@ -74,7 +74,7 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
                 <div class="section-title pb-5">
                     <!-- <h6 class="heading mb-0">Our Story</h6> -->
                     <h2 class="sub-heading mb-0">
-                        <?php if ($language == 'en') : ?>
+                        <?php if (get_language() == 'en') : ?>
                             Our <span>Story</span>
                         <?php else : ?>
                             <span>قصتنا</span>
@@ -87,7 +87,7 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
                             <div class="intro-item">
                                 <div class="intro-content">
                                     <!-- <h3 class="heading mb-0">Our Story</h3> -->
-                                    <?php if ($language == 'en') : ?>
+                                    <?php if (get_language() == 'en') : ?>
                                         <p class="short-desc">
                                             Mehan was founded as a boutique talent acquisition agency in 2018, catering to private, semi government, and government sectors in the UAE.
                                         </p>
@@ -132,7 +132,7 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
                 <div class="section-title pb-5">
                     <!-- <h6 class="heading mb-0">Human Hub</h6> -->
                     <h2 class="sub-heading mb-0">
-                        <?php if ($language == 'en') : ?>
+                        <?php if (get_language() == 'en') : ?>
                             <span>Talent</span> Acquisition
                         <?php else : ?>
                             اكتساب <span>موهبة</span>
@@ -156,15 +156,15 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
                             <div class="intro-item">
                                 <div class="intro-content">
                                     <p class="short-desc">
-                                        <?php if ($language == 'en') : ?>
+                                        <?php if (get_language() == 'en') : ?>
                                             At Mehan, we help businesses headhunt the most suitable talented Emirati professionals for their Emiratization roles as well as the world’s talented professionals for their middle and senior management roles through extensive client communication, best executive search and constant networking.
                                         <?php else : ?>
                                             هي منصة رأس المال البشري للتعلم المستمر التي يسمح لمحترفي رأس المال البشري والطلاب بالتحول، والنمو، وتبادل المعرفة، والابتكار والتقدم في حياتهم المهنية من خلال التعاون مع غيرهم من المتخصصين في رأس المال البشري عن طريق منصات افتراضية وواقعية.
                                         <?php endif; ?>
                                     </p>
                                     <div class="intro-btn_wrap">
-                                        <a class="ademy-btn denim-color_btn fullwidth-btn" href="<?php echo get_permalink(get_page_by_title($language == 'en' ? 'About Us' : 'معلومات عنا')); ?>">
-                                            <?php echo $language == 'en' ? 'Learn more' : 'تعرف على المزيد' ?>
+                                        <a class="ademy-btn denim-color_btn fullwidth-btn" href="<?php echo get_permalink(get_page_by_title(get_language() == 'en' ? 'About Us' : 'معلومات عنا')); ?>">
+                                            <?php echo get_language() == 'en' ? 'Learn more' : 'تعرف على المزيد' ?>
                                             <i class="ion-android-arrow-forward"></i>
                                         </a>
                                     </div>
@@ -178,7 +178,7 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
         <!-- Talent Acquisition Introduction Area End Here -->
 
         <!-- Begin Latest News Area -->
-        <?php if ($language == 'en') : ?>
+        <?php if (get_language() == 'en') : ?>
             <div id="latestnews" class="latest-news_area">
                 <div class="container">
                     <div class="section-title pb-4">
@@ -580,7 +580,7 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
                     <div class="section-title pb-4">
                         <!-- <h6 class="heading text-uppercase mb-0">Satisfied clients</h6> -->
                         <h2 class="sub-heading text-capitalize mb-0">
-                            <?php if ($language == 'en') : ?>
+                            <?php if (get_language() == 'en') : ?>
                                 Testimonials
                             <?php else : ?>
                                 الموافقات
