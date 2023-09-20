@@ -163,7 +163,7 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
                                         <?php endif; ?>
                                     </p>
                                     <div class="intro-btn_wrap">
-                                        <a class="ademy-btn denim-color_btn fullwidth-btn" href="<?php echo get_permalink(get_page_by_title(get_language() == 'en' ? 'About Us' : 'معلومات عنا')); ?>">
+                                        <a class="ademy-btn denim-color_btn fullwidth-btn" href="<?php echo get_site_url(); ?>/about-us">
                                             <?php echo get_language() == 'en' ? 'Learn more' : 'تعرف على المزيد' ?>
                                             <i class="ion-android-arrow-forward"></i>
                                         </a>
