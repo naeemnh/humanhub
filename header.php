@@ -43,9 +43,6 @@
 </head>
 
 <body class="template-color-1">
-    <?php if (!is_single()) :
-        print_r('Single Page');
-    endif; ?>
     <!-- Start Main Wrapper -->
     <div class="main-wrapper">
         <!-- Begin Main Header Area -->
