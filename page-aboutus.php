@@ -215,12 +215,8 @@ if (have_posts()) :
                                 </div>
                                 <div class="group-btn_wrap d-flex">
 
-                                    <a class="ademy-btn denim-color_btn with-border_radius" href="https://humanhub.me/user/register">
-                                        <?php if (get_language() == 'en') : ?>
-                                            Book a Session
-                                        <?php else : ?>
-                                            سجل الان
-                                        <?php endif; ?>
+                                    <a class="ademy-btn denim-color_btn with-border_radius" href="<?php echo get_site_url() . get_language() == 'en' ? '/career-guidance' : '/ar/التوجيه-المهنى/' ?>">
+                                        <?php echo (get_language() == 'en') ? 'Book a Session' : 'سجل الان' ?>
                                         <i class="ion-android-arrow-forward"></i>
                                     </a>
                                 </div>

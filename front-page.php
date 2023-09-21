@@ -213,30 +213,29 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
                                     <div class="tab-content latest-news_content">
                                         <div id="all" class="tab-pane active show" role="tabpanel">
                                             <div class="ademy-element-carousel latest-news_slider" data-slick-options='{
-                                    "slidesToShow": 3,
-                                    "slidesToScroll": 1,
-                                    "infinite": false,
-                                    "arrows": false,
-                                    "dots": false,
-                                    "spaceBetween": 30
-                                    }' data-slick-responsive='[
-                                    {"breakpoint": 1200, "settings": {
-                                    "slidesToShow": 3
-                                    }},
-                                    {"breakpoint": 992, "settings": {
-                                    "slidesToShow": 2
-                                    }},
-                                    {"breakpoint": 768, "settings": {
-                                    "slidesToShow": 1
-                                    }}
-                                ]'>
+                                                "slidesToShow": 3,
+                                                "slidesToScroll": 1,
+                                                "infinite": false,
+                                                "arrows": false,
+                                                "dots": false,
+                                                "spaceBetween": 30
+                                                }' data-slick-responsive='[
+                                                {"breakpoint": 1200, "settings": {
+                                                "slidesToShow": 3
+                                                }},
+                                                {"breakpoint": 992, "settings": {
+                                                "slidesToShow": 2
+                                                }},
+                                                {"breakpoint": 768, "settings": {
+                                                "slidesToShow": 1
+                                                }}
+                                            ]'>
                                                 <?php
-
                                                 $args = [
                                                     'post_type' => 'post',
                                                     'post_status' => 'publish',
                                                     'posts_per_page' => 10,
-                                                    'lang' => [$language],
+                                                    'lang' => [get_language()],
                                                 ];
                                                 $loop = new WP_Query($args);
                                                 while ($loop->have_posts()) : $loop->the_post();
@@ -298,30 +297,30 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
                                         </div>
                                         <div id="hr-guides" class="tab-pane" role="tabpanel">
                                             <div class="ademy-element-carousel latest-news_slider" data-slick-options='{
-                                    "slidesToShow": 3,
-                                    "slidesToScroll": 1,
-                                    "infinite": false,
-                                    "arrows": false,
-                                    "dots": false,
-                                    "spaceBetween": 30
-                                    }' data-slick-responsive='[
-                                    {"breakpoint": 1200, "settings": {
-                                    "slidesToShow": 3
-                                    }},
-                                    {"breakpoint": 992, "settings": {
-                                        "slidesToShow": 2
-                                    }},
-                                    {"breakpoint": 768, "settings": {
-                                        "slidesToShow": 1
-                                    }}
-                                ]'>
+                                                "slidesToShow": 3,
+                                                "slidesToScroll": 1,
+                                                "infinite": false,
+                                                "arrows": false,
+                                                "dots": false,
+                                                "spaceBetween": 30
+                                                }' data-slick-responsive='[
+                                                {"breakpoint": 1200, "settings": {
+                                                "slidesToShow": 3
+                                                }},
+                                                {"breakpoint": 992, "settings": {
+                                                    "slidesToShow": 2
+                                                }},
+                                                {"breakpoint": 768, "settings": {
+                                                    "slidesToShow": 1
+                                                }}
+                                            ]'>
                                                 <?php
                                                 $args = [
                                                     'post_type' => 'post',
                                                     'post_status' => 'publish',
                                                     'posts_per_page' => 10,
                                                     'cat' => get_category_by_slug('hr-guides')->term_id,
-                                                    'lang' => ['en', 'ar'],
+                                                    'lang' => [get_language()],
                                                 ];
                                                 $loop = new WP_Query($args);
                                                 while ($loop->have_posts()) : $loop->the_post();
@@ -383,30 +382,30 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
                                         </div>
                                         <div id="development" class="tab-pane" role="tabpanel">
                                             <div class="ademy-element-carousel latest-news_slider" data-slick-options='{
-                                    "slidesToShow": 3,
-                                    "slidesToScroll": 1,
-                                    "infinite": false,
-                                    "arrows": false,
-                                    "dots": false,
-                                    "spaceBetween": 30
-                                    }' data-slick-responsive='[
-                                    {"breakpoint": 1200, "settings": {
-                                    "slidesToShow": 3
-                                    }},
-                                    {"breakpoint": 992, "settings": {
-                                        "slidesToShow": 2
-                                    }},
-                                    {"breakpoint": 768, "settings": {
-                                        "slidesToShow": 1
-                                    }}
-                                ]'>
+                                                "slidesToShow": 3,
+                                                "slidesToScroll": 1,
+                                                "infinite": false,
+                                                "arrows": false,
+                                                "dots": false,
+                                                "spaceBetween": 30
+                                                }' data-slick-responsive='[
+                                                {"breakpoint": 1200, "settings": {
+                                                "slidesToShow": 3
+                                                }},
+                                                {"breakpoint": 992, "settings": {
+                                                    "slidesToShow": 2
+                                                }},
+                                                {"breakpoint": 768, "settings": {
+                                                    "slidesToShow": 1
+                                                }}
+                                            ]'>
                                                 <?php
                                                 $args = [
                                                     'post_type' => 'post',
                                                     'post_status' => 'publish',
                                                     'posts_per_page' => 10,
                                                     'cat' => get_category_by_slug('development')->term_id,
-                                                    'lang' => ['en', 'ar'],
+                                                    'lang' => [get_language()],
                                                 ];
                                                 $loop = new WP_Query($args);
                                                 while ($loop->have_posts()) : $loop->the_post();
@@ -468,30 +467,30 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
                                         </div>
                                         <div id="career" class="tab-pane" role="tabpanel">
                                             <div class="ademy-element-carousel latest-news_slider" data-slick-options='{
-                                    "slidesToShow": 3,
-                                    "slidesToScroll": 1,
-                                    "infinite": false,
-                                    "arrows": false,
-                                    "dots": false,
-                                    "spaceBetween": 30
-                                    }' data-slick-responsive='[
-                                    {"breakpoint": 1200, "settings": {
-                                    "slidesToShow": 3
-                                    }},
-                                    {"breakpoint": 992, "settings": {
-                                        "slidesToShow": 2
-                                    }},
-                                    {"breakpoint": 768, "settings": {
-                                        "slidesToShow": 1
-                                    }}
-                                ]'>
+                                                "slidesToShow": 3,
+                                                "slidesToScroll": 1,
+                                                "infinite": false,
+                                                "arrows": false,
+                                                "dots": false,
+                                                "spaceBetween": 30
+                                                }' data-slick-responsive='[
+                                                {"breakpoint": 1200, "settings": {
+                                                "slidesToShow": 3
+                                                }},
+                                                {"breakpoint": 992, "settings": {
+                                                    "slidesToShow": 2
+                                                }},
+                                                {"breakpoint": 768, "settings": {
+                                                    "slidesToShow": 1
+                                                }}
+                                            ]'>
                                                 <?php
                                                 $args = [
                                                     'post_type' => 'post',
                                                     'post_status' => 'publish',
                                                     'posts_per_page' => 10,
                                                     'cat' => get_category_by_slug('career')->term_id,
-                                                    'lang' => ['en', 'ar'],
+                                                    'lang' => [get_language()],
                                                 ];
                                                 $loop = new WP_Query($args);
                                                 while ($loop->have_posts()) : $loop->the_post();
@@ -570,7 +569,7 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
             'post_type' => 'testimonial',
             'post_status' => 'publish',
             'posts_per_page' => 10,
-            'lang' => [$language],
+            'lang' => [get_language()],
         ];
         $loop = new WP_Query($args);
         if ($loop->have_posts()) : ?>
