@@ -14,7 +14,6 @@
                         </div>
                         <div class="col-lg-2 col-md-6">
                             <div class="footer-widgets_area">
-                                <h3 class="widgets-heading mb-0">Explore</h3>
                                 <div class="footer-widgets">
                                     <?php
                                     wp_nav_menu(array(
@@ -29,13 +28,13 @@
                         </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="footer-widgets_area p-md-0">
-                                <h3 class="widgets-heading mb-0" style="visibility:hidden">
+                                <!-- <h3 class="widgets-heading mb-0" style="visibility:hidden">
                                     <?php if (get_language() == 'en') : ?>
                                         Explore
                                     <?php else : ?>
                                         يستكشف
                                     <?php endif; ?>
-                                </h3>
+                                </h3> -->
                                 <div class="footer-widgets">
                                     <?php
                                     wp_nav_menu(array(
@@ -89,31 +88,41 @@
                     <div class="col-lg-5 col-sm-6">
                         <div class="footer-right_area">
                             <ul class="social-link">
-                                <li class="facebook">
-                                    <a href="https://www.facebook.com" data-bs-toggle="tooltip" target="_blank" title="Facebook">
-                                        <i class="fa-brands fa-facebook-f"></i>
-                                    </a>
-                                </li>
-                                <li class="twitter">
-                                    <a href="https://twitter.com" data-bs-toggle="tooltip" target="_blank" title="Twitter">
-                                        <i class="fa-brands fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li class="linkedin">
-                                    <a href="https://www.linkedin.com/" data-bs-toggle="tooltip" target="_blank" title="Linkedin">
-                                        <i class="fa-brands fa-linkedin-in"></i>
-                                    </a>
-                                </li>
-                                <li class="snapchat">
-                                    <a href="https://snapchat.com/" data-bs-toggle="tooltip" target="_blank" title="Snapchat">
-                                        <i class="fa-brands fa-snapchat"></i>
-                                    </a>
-                                </li>
-                                <li class="instagram">
-                                    <a href="https://instagram.com/" data-bs-toggle="tooltip" target="_blank" title="Instagram">
-                                        <i class="fa-brands fa-instagram"></i>
-                                    </a>
-                                </li>
+                                <?php if (get_theme_mod('mehan_23_facebook')) : ?>
+                                    <li class="facebook">
+                                        <a href="<?php echo get_theme_mod('mehan_23_facebook'); ?>" data-bs-toggle="tooltip" target="_blank" title="Facebook">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                <?php endif;
+                                if (get_theme_mod('mehan_23_twitter')) : ?>
+                                    <li class="twitter">
+                                        <a href="<?php echo get_theme_mod('mehan_23_twitter'); ?>" data-bs-toggle="tooltip" target="_blank" title="Twitter">
+                                            <i class="fa-brands fa-x-twitter"></i>
+                                        </a>
+                                    </li>
+                                <?php endif;
+                                if (get_theme_mod('mehan_23_linkedin')) : ?>
+                                    <li class="linkedin">
+                                        <a href="<?php echo get_theme_mod('mehan_23_linkedin'); ?>" data-bs-toggle="tooltip" target="_blank" title="Linkedin">
+                                            <i class="fa-brands fa-linkedin-in"></i>
+                                        </a>
+                                    </li>
+                                <?php endif;
+                                if (get_theme_mod('mehan_23_snapchat')) : ?>
+                                    <li class="snapchat">
+                                        <a href="<?php echo get_theme_mod('mehan_23_snapchat'); ?>" data-bs-toggle="tooltip" target="_blank" title="Snapchat">
+                                            <i class="fa-brands fa-snapchat"></i>
+                                        </a>
+                                    </li>
+                                <?php endif;
+                                if (get_theme_mod('mehan_23_instagram')) : ?>
+                                    <li class="instagram">
+                                        <a href="<?php echo get_theme_mod('mehan_23_instagram'); ?>" data-bs-toggle="tooltip" target="_blank" title="Instagram">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                <?php endif; ?>
                             </ul>
                         </div>
                     </div>
@@ -161,7 +170,7 @@
 <!-- datetimepicker JS -->
 <script src="<?php echo get_template_directory_uri() ?>/assets/js/plugins/jquery.datetimepicker.full.min.js"></script>
 <!-- Font Awesome JS -->
-<script src="https://kit.fontawesome.com/9c183d1175.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <!-- Main JS -->
 <script src="<?php echo get_template_directory_uri() ?>/assets/js/main.js"></script>
 
