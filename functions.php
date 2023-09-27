@@ -8,6 +8,9 @@ require get_template_directory() . '/inc/mehan-theme-setup.php';
 // Logo
 require get_template_directory() . '/inc/mehan-logo.php';
 
+//Socials
+require get_template_directory() . '/inc/mehan-social.php';
+
 // Pagination
 require get_template_directory() . '/inc/mehan-pagination.php';
 
