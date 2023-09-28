@@ -589,23 +589,19 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="ademy-element-carousel testimonial-slider" data-slick-options='{
-                    "slidesToShow": 1,
-                    "slidesToScroll": 1,
-                    "infinite": true,
-                    "arrows": false,
-                    "dots": false,
-                    "spaceBetween": 30
-                    }' data-slick-responsive='[
-                    {"breakpoint": 1200, "settings": {
-                    "slidesToShow": 1
-                    }},
-                    {"breakpoint": 992, "settings": {
-                    "slidesToShow": 1
-                    }},
-                    {"breakpoint": 768, "settings": {
-                    "slidesToShow": 1
-                    }}
-                ]'>
+                                "slidesToShow": 1,
+                                "slidesToScroll": 1,
+                                "infinite": true,
+                                "arrows": false,
+                                "dots": true,
+                                "spaceBetween": 30,
+                                "autoplay" : true,
+                                "autoplaySpeed" : 7500,
+                            }' data-slick-responsive='[
+                                {"breakpoint": 1200, "settings": { "slidesToShow": 1 }},
+                                {"breakpoint": 992, "settings": { "slidesToShow": 1 }},
+                                {"breakpoint": 768, "settings": { "slidesToShow": 1 }}
+                            ]'>
                                 <?php while ($loop->have_posts()) : $loop->the_post(); ?>
                                     <div class="slide-item">
                                         <div class="single-item">
