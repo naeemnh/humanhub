@@ -12,7 +12,7 @@ function mehan_23_theme_setup()
     'name'              => _x('Testimonials', 'post type general name'),
     'singular_name'     => _x('Testimonial', 'post type singular name'),
     'add_new'           => _x('Add New', 'testimonial'),
-    'add_new_item'      => __('Add New Testomonial'),
+    'add_new_item'      => __('Add New Testimonial'),
     'edit_item'         => __('Edit Testimonial'),
     'new_item'          => __('New Testimonial'),
     'view_item'         => __('View Testimonial'),
