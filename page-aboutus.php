@@ -12,7 +12,7 @@ if (have_posts()) :
         <!-- Begin Main Content Area -->
         <main class="main-content">
             <!-- Begin Introduction Area Three -->
-            <div id="welcome" class="introduction-area introduction-area-3">
+            <div id="welcome" class="introduction-area">
                 <div class="container">
                     <div class="section-title pb-5">
                         <h2 class="sub-heading mb-0">
@@ -24,54 +24,55 @@ if (have_posts()) :
                         </h2>
                     </div>
                     <div class="row">
-                        <div class="col-lg-5 order-2">
+                        <div class="col-lg-6">
                             <div class="section-wrap">
-                                <!-- <h2 class="heading mb-0">
-                                Welcome to
-                                <span>Ademy</span>
-                                a prestigious secondary school
-                            </h2> -->
-                                <p class="short-desc mb-0">
-                                    <?php if (get_language() == 'en') : ?>
-                                        We are the innovators. We are the dreamers. We are the professionals who deliver the consistent experience to extend your business.
-                                    <?php else : ?>
-                                        نحن المبتكرين، نحن الحالمون ، نحن المتخصصين الذين يقدمون تجربة متناسقة لتوسيع أعمالك.
-                                    <?php endif; ?>
-                                </p>
-                                <p class="short-desc mb-0">
-                                    <?php if (get_language() == 'en') : ?>
-                                        We are the innovators. We are the dreamers. We are the professionals who deliver the consistent experience to extend your business.Building an agile, comprehensive and powerful business drives us to accomplish the most challenging recruiting goals. We are always ready to rethink and reinvent recruiting models to develop a new and unexpected approach for finding top-tier talents.
-                                    <?php else : ?>
-                                        يقودنا بناء شركة ناجحة إلى تحقيق أهداف التوظيف الأكثر تحديا ، نحن مستعدون دائما لإعادة التفكير في نماذج التوظيف وإعادة ابتكارها لتطوير نهج جديد وغير متوقع للعثور على مواهب من الدرجة الأولى.
-                                    <?php endif; ?>
-                                </p>
-                                <p class="short-desc mb-0">
-                                    <?php if (get_language() == 'en') : ?>
-                                        At Mehan we help businesses headhunt the most suitable talented Emirati professionals for their Emiratization roles as well as the world’s talented professionals for their middle and senior management roles through extensive client communication, best executive search and constant networking.
-                                    <?php else : ?>
-                                        نحن في شركة مين تساعد الشركات على توظيف أفضل المهنيين الإماراتيين الموهوبين الشواعرهم المخصصة للامارتيين . بالإضافة إلى المهنيين الموهوبين في العالم الشواعرهم في الإدارة المتوسطة والعليا من خلال التواصل المكلف مع العملاء وشبكات التواصل وأفضل طرق البحث عن المواهب على المستوى التنفيذي.
-                                    <?php endif; ?>
-                                </p>
-                                <p class="short-desc mb-0">
-                                    <?php if (get_language() == 'en') : ?>
-                                        We help businesses grow and succeed by finding the best match for their most sensitive and important roles. We justify the expectations of the most demanding clients from the most complicated industries.
-                                    <?php else : ?>
-                                        نحن نساعد الشركات على النمو والنجاح من خلال مطابقة اهتماماتها الأكثر حساسية وأهمية مع المواهب المناسبة، وتبرير توقعات العملاء الأكثر تطلبًا من خلال الممارسات الأكثر تعقيدًا.
-                                    <?php endif; ?>
-                                </p>
-                                <p class="short-desc mb-0">
-                                    <?php if (get_language() == 'en') : ?>
-                                        Whether you are an employer looking for best talents for your business or a talented professional looking for a career change, it would be our pleasure to help you.
-                                    <?php else : ?>
-                                        سواء كنت صاحب عمل تبحث عن أفضل المواهب لعملك أو محترف موهوب يبحث عن تغيير مهني ، سيكون من دواعي سرورنا أن تساعدك.
-                                    <?php endif; ?>
-                                </p>
+                                <div class="introduction-slider">
+                                    <div class="intro-item">
+                                        <div class="intro-content">
+                                            <p class="short-desc">
+                                                <?php if (get_language() == 'en') : ?>
+                                                    We are the innovators. We are the dreamers. We are the professionals who deliver the consistent experience to extend your business.
+                                                <?php else : ?>
+                                                    نحن المبتكرين، نحن الحالمون ، نحن المتخصصين الذين يقدمون تجربة متناسقة لتوسيع أعمالك.
+                                                <?php endif; ?>
+                                            </p>
+                                            <p class="short-desc">
+                                                <?php if (get_language() == 'en') : ?>
+                                                    We are the innovators. We are the dreamers. We are the professionals who deliver the consistent experience to extend your business.Building an agile, comprehensive and powerful business drives us to accomplish the most challenging recruiting goals. We are always ready to rethink and reinvent recruiting models to develop a new and unexpected approach for finding top-tier talents.
+                                                <?php else : ?>
+                                                    يقودنا بناء شركة ناجحة إلى تحقيق أهداف التوظيف الأكثر تحديا ، نحن مستعدون دائما لإعادة التفكير في نماذج التوظيف وإعادة ابتكارها لتطوير نهج جديد وغير متوقع للعثور على مواهب من الدرجة الأولى.
+                                                <?php endif; ?>
+                                            </p>
+                                            <p class="short-desc">
+                                                <?php if (get_language() == 'en') : ?>
+                                                    At Mehan we help businesses headhunt the most suitable talented Emirati professionals for their Emiratization roles as well as the world’s talented professionals for their middle and senior management roles through extensive client communication, best executive search and constant networking.
+                                                <?php else : ?>
+                                                    نحن في شركة مين تساعد الشركات على توظيف أفضل المهنيين الإماراتيين الموهوبين الشواعرهم المخصصة للامارتيين . بالإضافة إلى المهنيين الموهوبين في العالم الشواعرهم في الإدارة المتوسطة والعليا من خلال التواصل المكلف مع العملاء وشبكات التواصل وأفضل طرق البحث عن المواهب على المستوى التنفيذي.
+                                                <?php endif; ?>
+                                            </p>
+                                            <p class="short-desc">
+                                                <?php if (get_language() == 'en') : ?>
+                                                    We help businesses grow and succeed by finding the best match for their most sensitive and important roles. We justify the expectations of the most demanding clients from the most complicated industries.
+                                                <?php else : ?>
+                                                    نحن نساعد الشركات على النمو والنجاح من خلال مطابقة اهتماماتها الأكثر حساسية وأهمية مع المواهب المناسبة، وتبرير توقعات العملاء الأكثر تطلبًا من خلال الممارسات الأكثر تعقيدًا.
+                                                <?php endif; ?>
+                                            </p>
+                                            <p class="short-desc">
+                                                <?php if (get_language() == 'en') : ?>
+                                                    Whether you are an employer looking for best talents for your business or a talented professional looking for a career change, it would be our pleasure to help you.
+                                                <?php else : ?>
+                                                    سواء كنت صاحب عمل تبحث عن أفضل المواهب لعملك أو محترف موهوب يبحث عن تغيير مهني ، سيكون من دواعي سرورنا أن تساعدك.
+                                                <?php endif; ?>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                                 <!-- <div class="btn-wrap">
                                 <a class="ademy-btn denim-color_btn with-border_radius" href="academics.html">Learn more</a>
                             </div> -->
                             </div>
                         </div>
-                        <div class="col-lg-6 order-1">
+                        <div class="col-lg-6">
                             <div class="introduction-img_area">
                                 <div class="inner-img">
                                     <?php if (get_field('intro_image')) : ?>
@@ -207,16 +208,20 @@ if (have_posts()) :
                                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/ticket/arrow.png" alt="Ticket Arrow" />
                                     <h2 class="heading mb-0 blue-color">
                                         <?php if (get_language() == 'en') : ?>
-                                            Are you looking for Career Advice?
+                                            Are you looking for the right candidate?
                                         <?php else : ?>
-                                            سجل وانضم إلينا اليوم
+                                            هل تبحث عن المرشح المناسب؟
                                         <?php endif; ?>
                                     </h2>
                                 </div>
                                 <div class="group-btn_wrap d-flex">
 
-                                    <a class="ademy-btn denim-color_btn with-border_radius" href="<?php echo get_site_url() . get_language() == 'en' ? '/career-guidance' : '/ar/التوجيه-المهنى/' ?>">
-                                        <?php echo (get_language() == 'en') ? 'Book a Session' : 'سجل الان' ?>
+                                    <a class="ademy-btn denim-color_btn with-border_radius" href="<?php echo get_site_url() . (get_language() == 'en' ? '/employers' : '/ar/صاحب-العمل/') ?>">
+                                        <?php if (get_language() == 'en') : ?>
+                                            Find a candidate
+                                        <?php else : ?>
+                                            ابحث عن مرشح
+                                        <?php endif; ?>
                                         <i class="ion-android-arrow-forward"></i>
                                     </a>
                                 </div>
